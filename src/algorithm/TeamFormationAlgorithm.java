@@ -109,10 +109,10 @@ public class TeamFormationAlgorithm {
 	}
 	
 	public void algorithm(){
-		System.out.println(skillInfo.getSkillUsers().get(rarestSkill).size());
+		//System.out.println(skillInfo.getSkillUsers().get(rarestSkill).size());
 		for(int i=0;i<skillInfo.getSkillUsers().get(rarestSkill).size();i++){
 			int rareUser = skillInfo.getSkillUsers().get(rarestSkill).get(i);
-			System.out.println("Starting for rare user: "+rareUser);
+			//System.out.println("Starting for rare user: "+rareUser);
 			//create star team
 			StarTeam star = new StarTeam();
 			star.addMember(rareUser);
@@ -296,11 +296,13 @@ public class TeamFormationAlgorithm {
 					}
 				}
 				if(not_compatible==false){
-					if(max<compatibles.get(current_team_member).get(candidates.get(i))){
-						max=compatibles.get(current_team_member).get(candidates.get(i));
+					if(!compatibles.get(current_team_member).containsKey(candidates.get(i))){
+						notCompatible.add(candidates.get(i));
 					}
 					else{
-						notCompatible.add(candidates.get(i));
+						if(max<compatibles.get(current_team_member).get(candidates.get(i))){
+							max=compatibles.get(current_team_member).get(candidates.get(i));
+						}
 					}
 				}
 			}
