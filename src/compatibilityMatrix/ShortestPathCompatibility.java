@@ -53,6 +53,7 @@ public class ShortestPathCompatibility {
 			c++;
 			computeSPC(n);
 			System.out.println(c + "/" + g.size());
+			w.flush();
 		}
 		w.close();
 	}

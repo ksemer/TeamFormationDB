@@ -40,7 +40,7 @@ public class StructuralBalancePathCompatibility {
 
 		g = new Graph();
 		g.load(Config.DATA_PATH);
-		w = new FileWriter(Config.OUTPUT_PATH);
+		w = new FileWriter(Config.OUTPUT_PATH, false);
 
 		int c = 0;
 		List<Integer> nodes = new ArrayList<Integer>(g.getNodesAsMap().keySet());
@@ -50,6 +50,7 @@ public class StructuralBalancePathCompatibility {
 		for (int n : nodes) {
 			c++;
 			computeBSP(g.getNode(n));
+			w.flush();
 			System.out.println(c + "/" + g.size());
 		}
 		w.close();
@@ -91,6 +92,7 @@ public class StructuralBalancePathCompatibility {
 
 		Node p, x;
 		int sign;
+		Integer directEdgeSign;
 
 		while (!q.isEmpty()) {
 
@@ -122,14 +124,27 @@ public class StructuralBalancePathCompatibility {
 					if (sign == -1)
 						pathNew.setSign((pathNew.getSign() == 1) ? -1 : 1);
 
+					directEdgeSign = src.getAdjacencyAsMap().get(x);
+
 					// for positive/negative paths check if they are
 					// structurally balanced
-					if (pathNew.getSign() == 1 && pathNew.length() < posDist.get(x) && SBCheck(pathNew))
-						posDist.put(x, pathNew.length());
-					else if (pathNew.getSign() == -1 && pathNew.length() < negDist.get(x) && SBCheck(pathNew))
+					if ((directEdgeSign != null && directEdgeSign == 1)
+							|| (pathNew.getSign() == 1 && directEdgeSign == null)) {
+						if (pathNew.length() < posDist.get(x) && SBCheck(pathNew, src)) {
+							posDist.put(x, pathNew.length());
+
+							if (Config.RUN_HEURISTIC)
+								q.offer(pathNew);
+						}
+					} else if (pathNew.length() < negDist.get(x) && SBCheck(pathNew, src)) {
 						negDist.put(x, pathNew.length());
 
-					q.offer(pathNew);
+						if (Config.RUN_HEURISTIC)
+							q.offer(pathNew);
+					}
+
+					if (!Config.RUN_HEURISTIC)
+						q.offer(pathNew);
 				}
 			}
 
@@ -145,16 +160,15 @@ public class StructuralBalancePathCompatibility {
 		}
 	}
 
-	//
 	/**
 	 * Calls first phase of network balance check and performs the second phase
 	 *
 	 * @param p
 	 * @return
 	 */
-	private static boolean SBCheck(Path p) {
+	private static boolean SBCheck(Path p, Node src) {
 
-		Graph rG = createReducedGraph(p);
+		Graph rG = createReducedGraph(p, src);
 
 		// if is null then graph is unbalanced
 		if (rG == null)
@@ -210,7 +224,7 @@ public class StructuralBalancePathCompatibility {
 	 * @param p
 	 * @return
 	 */
-	private static Graph createReducedGraph(Path p) {
+	private static Graph createReducedGraph(Path p, Node src_) {
 		Graph g_ = new Graph();
 		Node trg;
 		int sign;
@@ -238,6 +252,16 @@ public class StructuralBalancePathCompatibility {
 					g_.addEdge(trg.getID(), src.getID(), sign);
 				}
 			}
+		}
+
+		trg = p.getLastNode();
+
+		// connect src to target iff the edge src -> trg does not exist
+		if (g_.getNode(src_.getID()).getAdjacencyAsMap().get(trg) == null) {
+
+			// add edge
+			g_.addEdge(src_.getID(), trg.getID(), p.getSign());
+			g_.addEdge(trg.getID(), src_.getID(), p.getSign());
 		}
 
 		// run quick union algorithm
