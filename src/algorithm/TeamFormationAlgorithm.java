@@ -22,9 +22,7 @@ public class TeamFormationAlgorithm {
 	private String result = new String();
 	
 	private int compatible_mode=0;
-	
-	//private HashMap<Integer,ArrayList<Integer>> compatibleList = new HashMap<Integer,ArrayList<Integer>>();
-	//private HashMap<String,Integer> compatibleDistances = new HashMap<String,Integer>();
+	private String mode= new String();
 	
 	private boolean compatibility_mode;
 	private int best_diameter=0;
@@ -33,20 +31,25 @@ public class TeamFormationAlgorithm {
 	
 	private HashMap<Integer,HashMap<Integer,Integer>> compatibles = new HashMap<Integer,HashMap<Integer,Integer>>();
 	
-	public TeamFormationAlgorithm(String dataset,int compatible_mode,ArrayList<String> initialTask, SkillInfo skillInfo){
+	public TeamFormationAlgorithm(String mode,String dataset,int compatible_mode,ArrayList<String> initialTask, SkillInfo skillInfo){
 		
 		db.init();
+		
+		this.mode=mode;
 		
 		this.compatible_mode=compatible_mode;
 		
 		if(compatible_mode==1){
-			compatible_table=dataset+"_no_negative_paths";
+			compatible_table=mode+"_"+dataset+"_no_negative_paths";
 		}
 		else if(compatible_mode==2){
-			compatible_table=dataset+"_more_positive_paths";
+			compatible_table=mode+"_"+dataset+"_more_positive_paths";
 		}
 		else if(compatible_mode==3){
-			compatible_table=dataset+"_one_positive_path";
+			compatible_table=mode+"_"+dataset+"_one_positive_path";
+		}
+		else{
+			compatible_table=mode+"_"+dataset+"_distances";
 		}
 		
 		this.initialTask=initialTask;
@@ -60,15 +63,15 @@ public class TeamFormationAlgorithm {
 		//System.out.println(initialTask.get(initialTask.size()-1));
 	}
 	
-	public TeamFormationAlgorithm(String dataset, int compatible_mode, ArrayList<String> initialTask,Network network, SkillInfo skillInfo){
+	public TeamFormationAlgorithm(String mode,String dataset, int compatible_mode, ArrayList<String> initialTask,Network network, SkillInfo skillInfo){
 		
 		db.init();
+		
+		this.mode=mode;
 				
 		this.compatible_mode=compatible_mode;
 		
-		compatible_table=dataset+"_distances";
-		
-		
+		compatible_table=mode+"_"+dataset+"_distances";		
 		
 		this.initialTask=initialTask;
 		this.network=network;
