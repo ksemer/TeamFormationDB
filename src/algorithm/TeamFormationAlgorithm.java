@@ -48,8 +48,11 @@ public class TeamFormationAlgorithm {
 		else if(compatible_mode==3){
 			compatible_table=mode+"_"+dataset+"_one_positive_path";
 		}
+		else if(compatible_mode==0){
+			compatible_table=mode+"_"+dataset+"_compatibles";
+		}
 		else{
-			compatible_table=mode+"_"+dataset+"_distances";
+			compatible_table=mode+"_"+dataset;
 		}
 		
 		this.initialTask=initialTask;
