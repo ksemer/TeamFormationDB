@@ -19,7 +19,7 @@ public class Main {
 		//********** PARAMETERS **********//*
 		int numOfSkills=Integer.parseInt(args[0]);
 		String dataset=args[1];
-		// 0 : sbp, 1 : no_negative_paths, 2 : more_positive_paths, 3 : one_positive_path, 4 : no_negative_edge
+		// 0 : sbp, 1 : no_negative_paths, 2 : more_positive_paths, 3 : one_positive_path, 4 : no_negative_edge, -1 : only for slashdot sbp not heuristic
 		int compatibility_mode=Integer.parseInt(args[2]);
 		//modes: spc, sbp
 		String mode;
@@ -53,8 +53,11 @@ public class Main {
 		else if(compatibility_mode==4){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_edge.txt";
 		}	
-		else{
+		else if(compatibility_mode==0){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp.txt";
+		}
+		else{
+			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp_not_heuristic.txt";
 		}
 
 		String inputPath = "tasks/"+dataset+"/"+dataset+"_"+numOfSkills+".txt";
