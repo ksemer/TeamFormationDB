@@ -45,6 +45,13 @@ public class FileEditor {
 	
 	}
 	
+	public void processSbp(){
+		initReader();
+		initWriter();
+		retrieveSbpData();
+	
+	}
+	
 	public void processNoNegative(){
 		initReader();
 		initWriter();
@@ -110,6 +117,18 @@ public class FileEditor {
 			String tokens[] = strLine.split("\t");
 			if(Integer.parseInt(tokens[2])>Integer.parseInt(tokens[3])){
 				outputWriter.println(tokens[0]+"\t"+tokens[1]+"\t"+tokens[4]);
+			}
+		}
+		inputReader.close();
+		outputWriter.close();
+	}
+	
+	public void retrieveSbpData(){
+		while(inputReader.hasNextLine()){
+			String strLine=inputReader.nextLine();
+			String tokens[] = strLine.split("\t");
+			if(Integer.parseInt(tokens[2])!=1000000000){
+				outputWriter.println(tokens[0]+"\t"+tokens[1]+"\t"+tokens[2]);
 			}
 		}
 		inputReader.close();
