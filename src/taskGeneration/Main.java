@@ -11,9 +11,11 @@ import inputHandler.InputManager;
 
 public class Main {
 	public static void main(String[] args){
-		String dataset="zipf";
-		String userPath="data/"+dataset+"/users.txt";
-		String skillPath="data/"+dataset+"/skills.txt";
+		String dataset="slashdot";
+		/*String userPath="data/"+dataset+"/users.txt";
+		String skillPath="data/"+dataset+"/skills.txt";*/
+		String userPath="data/"+dataset+"/users_rare>1.txt";
+		String skillPath="data/"+dataset+"/skills_rare>1.txt";
 		
 		InputManager manager = new InputManager(userPath,skillPath);
 		manager.retrieveSkillInfo();
@@ -86,7 +88,7 @@ public class Main {
 	public static void writeTasks(String dataset,HashMap<Integer,ArrayList<Task>> allTasks){
 		
 		for(Integer num : allTasks.keySet()){
-			String outputPath="tasks/" + dataset + "/" +dataset + "_" + num + ".txt";
+			String outputPath="tasks/" + dataset + "/rare>1_" +dataset + "_" + num + ".txt";
 			PrintWriter outputWriter;
 			File file = new File(outputPath);
 			try 
