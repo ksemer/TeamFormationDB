@@ -10,9 +10,9 @@ import java.sql.Statement;
 public class Database {
 	 private String url = "jdbc:mysql://localhost:3306/negative_teams?user=root&password=root";
 	 private Connection con;
-	 private String warning = new String();
 	
 	public void init(){
+		
 		try {
 		    Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
@@ -51,5 +51,27 @@ public class Database {
         }
         return stringResult;
 	}
-
+	
+	public int getNumOfCompatibles(String table, int node){
+    	Statement state;
+        ResultSet res;
+        int result=-1;
+        
+        String where="node1="+node+" or node2="+node;
+        
+        String query="select count(*) from "+table+" where "+where;
+        try{
+            state=con.createStatement();
+            res=(ResultSet) state.executeQuery(query);
+            while(res.next()){
+            	result=res.getInt(1);
+            }
+            state.close();
+        }
+        catch(SQLException ex)
+        {
+        	 System.out.println(ex.getMessage());
+        }
+        return result;
+	}
 }
