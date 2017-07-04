@@ -33,5 +33,10 @@ public class DatabaseInput {
 		
 		return compatibles;
 	}
+	
+	public int getNumOfCompatibles(String table, int node){
+		
+		return db.getNumOfCompatibles(table, node);
+	}
 
 }
