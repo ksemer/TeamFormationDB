@@ -21,4 +21,16 @@ public class StarTeam {
 	public ArrayList<Integer> getTeam(){
 		return team;
 	}
+	
+	public void addSkills(ArrayList<String> skills){
+		for(int i=0;i<skills.size();i++){
+			coveredSkills.add(skills.get(i));
+		}
+	}
+	
+	public void addTeam(ArrayList<Integer> members){
+		for(int i=0;i<members.size();i++){
+			team.add(members.get(i));
+		}
+	}
 }
