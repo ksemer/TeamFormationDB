@@ -61,6 +61,8 @@ public class Main {
 		}
 
 		String inputPath = "tasks/"+dataset+"/"+dataset+"_"+numOfSkills+".txt";
+		//String inputPath = "tasks/"+dataset+"/rare>1_"+dataset+"_"+numOfSkills+".txt";
+		
 		Scanner inputReader;
 		ArrayList<String> tasks = new ArrayList<String>();
 		File file = new File(inputPath);
@@ -83,8 +85,14 @@ public class Main {
 			System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
 				
 			String networkPath="data/"+dataset+"/network.txt"; 
+			
 			String userPath="data/"+dataset+"/users.txt";
 			String skillPath="data/"+dataset+"/skills.txt";
+			
+			
+			/*String userPath="data/"+dataset+"/users_rare>1.txt";
+			String skillPath="data/"+dataset+"/skills_rare>1.txt";*/
+			
 			
 			String result;
 			
@@ -106,10 +114,11 @@ public class Main {
 			writer.initAppendWriter();
 			writer.appendLine(result);
 			
+			//System.out.println(result);
+			
 			System.out.print("Finished iteration "+i+" at :");
 			System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
 		}	
-			//System.out.println(result);
 		
 		System.out.print("Finished at: ");
 		System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
