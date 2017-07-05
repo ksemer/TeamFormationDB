@@ -1,0 +1,180 @@
+SBP:
+
+Task size 3 : 
+Results of experiment with number of tasks: 3 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.56
+The average team size was: 2.42
+The average team diameter was: 4.84
+
+Task size 5 : 
+Results of experiment with number of tasks: 5 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.18
+The average team size was: 3.54
+The average team diameter was: 5.9
+
+Task size 10 : 
+Results of experiment with number of tasks: 10 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.0
+The average team size was: 6.2
+The average team diameter was: 7.18
+
+Task size 20 : 
+Results of experiment with number of tasks: 20 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.0
+The average team size was: 10.0
+The average team diameter was: 7.8
+
+SBP HEURISTIC:
+
+Task size 3 : 
+Results of experiment with number of tasks: 3 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.56
+The average team size was: 2.42
+The average team diameter was: 4.74
+
+Task size 5 : 
+Results of experiment with number of tasks: 5 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.18
+The average team size was: 3.48
+The average team diameter was: 5.78
+
+Task size 10 : 
+Results of experiment with number of tasks: 10 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.0
+The average team size was: 5.94
+The average team diameter was: 6.78
+
+Task size 20 : 
+Results of experiment with number of tasks: 20 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.0
+The average team size was: 9.52
+The average team diameter was: 7.24
+
+NO NEGATIVE PATHS:
+
+Task size 3 : 
+Results of experiment with number of tasks: 3 and iterations: 50
+The algorithm found a team: 46 out of 50 times
+The average number of candidate teams was: 2.4347826086956523
+The average team size was: 2.4130434782608696
+The average team diameter was: 4.239130434782608
+
+Task size 5 : 
+Results of experiment with number of tasks: 5 and iterations: 50
+The algorithm found a team: 42 out of 50 times
+The average number of candidate teams was: 1.880952380952381
+The average team size was: 3.4523809523809526
+The average team diameter was: 5.333333333333333
+
+Task size 10 : 
+Results of experiment with number of tasks: 10 and iterations: 50
+The algorithm found a team: 23 out of 50 times
+The average number of candidate teams was: 1.4782608695652173
+The average team size was: 5.434782608695652
+The average team diameter was: 5.782608695652174
+
+Task size 20 : 
+Results of experiment with number of tasks: 20 and iterations: 50
+The algorithm found a team: 2 out of 50 times
+The average number of candidate teams was: 1.5
+The average team size was: 8.0
+The average team diameter was: 6.0
+
+MORE POSITIVE PATHS:
+
+Task size 3 : 
+Results of experiment with number of tasks: 3 and iterations: 50
+The algorithm found a team: 47 out of 50 times
+The average number of candidate teams was: 2.425531914893617
+The average team size was: 2.425531914893617
+The average team diameter was: 4.48936170212766
+
+Task size 5 : 
+Results of experiment with number of tasks: 5 and iterations: 50
+The algorithm found a team: 44 out of 50 times
+The average number of candidate teams was: 1.9318181818181819
+The average team size was: 3.4318181818181817
+The average team diameter was: 5.409090909090909
+
+Task size 10 : 
+Results of experiment with number of tasks: 10 and iterations: 50
+The algorithm found a team: 27 out of 50 times
+The average number of candidate teams was: 1.5555555555555556
+The average team size was: 5.555555555555555
+The average team diameter was: 5.925925925925926
+
+Task size 20 : 
+Results of experiment with number of tasks: 20 and iterations: 50
+The algorithm found a team: 7 out of 50 times
+The average number of candidate teams was: 1.2857142857142858
+The average team size was: 7.714285714285714
+The average team diameter was: 6.142857142857143
+
+ONE POSITIVE PATH:
+
+Task size 3 : 
+Results of experiment with number of tasks: 3 and iterations: 50
+The algorithm found a team: 48 out of 50 times
+The average number of candidate teams was: 2.4166666666666665
+The average team size was: 2.5
+The average team diameter was: 4.333333333333333
+
+Task size 5 : 
+Results of experiment with number of tasks: 5 and iterations: 50
+The algorithm found a team: 45 out of 50 times
+The average number of candidate teams was: 1.9555555555555555
+The average team size was: 3.511111111111111
+The average team diameter was: 5.377777777777778
+
+Task size 10 : 
+Results of experiment with number of tasks: 10 and iterations: 50
+The algorithm found a team: 31 out of 50 times
+The average number of candidate teams was: 1.6129032258064515
+The average team size was: 5.774193548387097
+The average team diameter was: 5.935483870967742
+
+Task size 20 : 
+Results of experiment with number of tasks: 20 and iterations: 50
+The algorithm found a team: 9 out of 50 times
+The average number of candidate teams was: 1.3333333333333333
+The average team size was: 8.444444444444445
+The average team diameter was: 6.222222222222222
+
+NO NEGATIVE EDGE:
+
+Task size 3 : 
+Results of experiment with number of tasks: 3 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.56
+The average team size was: 2.38
+The average team diameter was: 4.46
+
+Task size 5 : 
+Results of experiment with number of tasks: 5 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.18
+The average team size was: 3.36
+The average team diameter was: 5.26
+
+Task size 10 : 
+Results of experiment with number of tasks: 10 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.0
+The average team size was: 6.0
+The average team diameter was: 6.34
+
+Task size 20 : 
+Results of experiment with number of tasks: 20 and iterations: 50
+The algorithm found a team: 50 out of 50 times
+The average number of candidate teams was: 2.0
+The average team size was: 9.64
+The average team diameter was: 6.76
+
