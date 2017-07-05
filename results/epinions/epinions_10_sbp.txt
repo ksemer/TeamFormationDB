@@ -1,0 +1,50 @@
+Microphones,Travel Accessories & Handbags,Mortgage,DS Games,Network Cables,Restaurants,Patio Furniture,Fishing Gear & Accessories,Coffee and Tea Makers,Irrigation;2;4515,2742,276,16359,168,187,31,211;8;3
+Scanners,Diet Foods,Motherboards,Motherboards,Insurance,Sensitive Skin,Audio Shelf Systems,Financial Web Sites,Shipping,Amplifiers;1;5928,722,636,20,1348,1865,353;7;4
+Canoes & Kayaks,Freezers,Clock Radios,Miscellaneous,Summer Camps,Itch Relief,Recruiting,Tools and Accessories,Bottles,KVM Switches;1;172,579,736,41,85,128,657;7;5
+Mortgage,Volleyball,Swings,35mm SLR Cameras,Sunglasses,Typewriters,IP Phones,Zip and Other Drives,Remote Access Servers,Recruiting;1;2618,579,2620,4530,5225,161,3805,106,1499,211;10;5
+Soccer,Personal  Audio Mini Disc Players,Litter,Car CD Changers,As Seen on TV,Nintendo Wii Games,Diving Operations,Heaters,Cigars and Tobacco Accessories,Cookware;1;1470,25749,195,2726,48,211,270;7;4
+Reel Mowers,Furniture,Fragrance,Rice Cookers and Steamers,Old Restaurants,Glucose & Cholesterol Monitors,Miscellaneous,Transceivers,Toys,Sewing Machines;1;456,172,836,7131,5773,167,155;7;6
+Car CD Changers,Server Software,RVs,Keyboards & MIDI,Overhead Projectors,Earplugs,Wireless Access Points,Optics Accessories,Furniture,Single Use Cameras;1;3,56209,4542,4905,345,41,1004,3323,20;9;4
+Tents,2 Way Radios,Internet Banks,Guitars & Basses,PDAs,Film Cameras,Air Purifiers,Home Furnishings,Glucose & Cholesterol Monitors,Safety & Emergency Security Products;1;456,782,593,451,317,1487,20;7;4
+Brokers,Recruiting,Collars and Leads,Sports Nutrition,Diaper Bags,Random Access Memory (RAM),Enterprise Storage,Voice Recorders and Transcribers,PDA Accessories,Locks & Guards;1;579,312,649,683,106,128,20,4799,974;9;5
+Game Boy Color Games,Baby Formula,Networking Hubs and Switches,Tape Decks,Nintendo 64 Games,Feeding Accessories,GPS Accessories,Firewalls,Flashlights,Transcribers;1;314,3145,211,3745,135,31,317,35;8;2
+Beds,Music,Cartridges and Toners,Boats,Golf Bags & Accessories,Canoes & Kayaks,Bridges,Dryers,Flashes,Network Storage;1;715,1447,736,76744,6350,483,106,677;8;4
+Surge Suppressors,Video Games,Flashes,Cruises,Receivers,Vacuums,Backpacks,Drapes & Curtains,KVM Switches,Fertilizers;2;4782,649,18,4588,1463,20,35;7;3
+Spotting Scopes,Monitors,Speakers and Subwoofers,Car Amplifiers,Beers,Camera Lenses,Mac Desktops,Scanners,Mice and Trackballs,Colleges and Universities;5;4784,1896,1851,481,102,23,46;7;2
+Treats,Pets,Diaper Accessories,GameCube Games,Walking Shoes,Sport and Outdoor,Radar Detectors,Blood Pressure Monitors,Destinations,Small Appliances;1;2609,3834,3391,657,636,20,851;7;3
+Employee Benefits,Transceivers,Taxes,35mm SLR Cameras,Xbox Games,Diets,Outdoor Apparel,Hydration & Water Bottles,Other Memory,Anti-Aging/Treatments;1;4987,7131,97,4530,643,1469,4167,48,41;9;4
+Patio Furniture,Garden Tools,KVM Switches,Motorcycles,CD and DVD Burners,Security Systems and Surveillance,Diving Schools,IP Phones,Enterprise Storage,Surge Suppressors;3;59,128,5081,4656,3125,593;6;3
+35mm SLR Cameras,Competitions,Remote Access Servers,Glucose & Cholesterol Monitors,Parks,Projection Screens,Refrigerators,Shampoo,Car Audio and Video Accessories,Wine Accessories;1;456,4606,3764,5225,555,46,93,146;8;4
+Baby Formula,Headphones,Running,Video Conferencing,Cellular Phone Service,Tax Preparation,Office Chairs,Toys,Furniture,Cigars and Tobacco Accessories;2;3806,835,3145,2618,135,18,735;7;4
+Boomboxes,Waffle Makers,Airlines,Baby Care,Serial Adapters,PC Laptops,Running,Wound Care,Tents,Vitamins;2;782,2618,312,3391,435,39,5;7;3
+ISP,Containment,Small Appliance Accessories,Wiring & Cable Management,Sunscreen,Network Adapters,Coffee and Tea Makers,Monitors,Receivers,Conditioner;1;5338,643,46,312,435,1499;6;3
+Acne & Blemish Control,Night Vision,Transcribers,Fertilizers,Clothing Accessories,Sport and Outdoor,Golf Bags & Accessories,Washing Machines,Web TV,Jewelry;0;0;-;-;-
+Bath & Hygiene Accessories,Garden Tools,PC Desktops,Coffee and Espresso Makers,Indoor Grills and Sandwich Makers,Taxes,Spotting Scopes,Water Heaters,PDAs,Specialty Kitchen Appliances;3;59,697,4922,702,39,88;6;3
+Video Headsets,Equalizers,Ski Resorts,Destinations,DVD Drives,Cruises,Software,Mobile Audio/Video,Law Schools,Small Appliance Accessories;1;113282,4931,197,18,1463,167,3890;7;3
+Wound Care,Business Travel,Changing Tables,Strollers,Sports Nutrition,Optics Accessories,Breweries,Mac Desktops,Other Memory,Storage Controllers;1;2190,602,4987,106,636,345,1463,104;8;6
+Audio and Video Media,Gifts- Novelties- Collectibles & Gadgets,Collection Agencies,Cigars and Tobacco Accessories,Multimedia Projector Replacement Lamps ,Barebone Systems,Network Accessories,Merchant Accounts,Credit Cards,Mac Laptops;2;1903,40655,13168,4194,735,4799,851,687;8;4
+Business Schools,Dental Care,Scanner Accessories,Other Peripherals,Pianos,VCRs,Mac Laptops,Test Prep Courses,Acne & Blemish Control,Safety & Emergency Electronics;0;0;-;-;-
+Cartridges and Toners,Sunscreen,Motorsports Accessories,PC Cases,Sewing Machines,Deep Fryers,Serial Adapters,Flat Panel Televisions,Web TV,Jewelry;3;643,435,1958,56,52,709,10,39;8;2
+Wines,Outdoor Apparel,Remote Controls,Mac Desktops,Conditioner,Golf Courses,Miscellaneous,Equalizers,Game Boy Color Games,Taxes;1;172,113282,308,732,20,715,1029,317;8;4
+Other Memory,USB and Firewire Hubs,Frequent Flyer Programs,Swings,Diaper Bags,Sound Cards,Old Restaurants,Cellular Phone Service,Eye Makeup,Golf Clubs;1;4987,649,2620,199,53,160,150;7;3
+Health Aids,DS Games,Office Accessories,Member Center,Power Mowers & Tools,Local Services,Coffee Grinders,Tablets,Coffee and Espresso Makers,Collection Agencies;2;1903,636,2481,1470,2387,450,18,657;8;4
+Tape Drives,Floppy Drives,Mice and Trackballs,Cradles,Shoes,ISP,Equalizers,Fertilizers,Cellular Accessories,Game Boy Color Games;1;113282,649,1615,3077,662,97,20,450,211;9;3
+Nintendo 64 Games,Grills and Smokers,Graphics Cards,Test Prep Courses,DVD Players,Tablets,Online Fax,Flowers,Thermometers,Jewelry;1;602,56,252,20,35;5;4
+Chain Restaurants,Newspapers,Credit Unions,Diaper Pails,Film Cameras,Print Servers,Hotels and Resorts,Insect Repellent,Removable Media,Telephone Accessories;2;2483,636,735,3745,24;5;2
+Ovens,Zoos & Aquariums,Financial Applications,Credit Cards,Washing Machines,Walking Shoes,Collection Agencies,Safety & Emergency Security Products,Answering Machines,Beers;2;16652,1865,3391,677,232,533,1650;7;3
+Motorcycles,PSP Games,Hockey & In-line Skating,Xbox Games,Tripods,Answering Machines,Home Theater Systems,Health Aids,Storage Controllers,Network Terminals;1;3792,4645,1463,52,100,10,20;7;4
+Soccer,Magazine Subscriptions,Copiers,Personal CD Players,Flat Panel Televisions,Exercise Equipment,Kitchen Ranges,Ice Cream Makers,Outdoor Electronics,THIS IS AN INVALID URL;1;94,25749,3150,53,50,88,20;7;5
+Electric Kettles,Boats,Microscopes,Cradles,Guitars & Basses,Kitchen Cooktops,UPS Systems Devices,Fishing Advice,Copiers,Graphics Cards;2;732,593,704,4013,18,50,453,673,661;9;2
+Car Audio and Video Accessories,Grills and Smokers,Wound Care,Diet Foods,Venture Capital,Recruiting,Bridges,RVs,Lip Color,Electric Fans;1;579,76744,2193,555,3391,3834,126,83;8;4
+Collars and Leads,Hydration & Water Bottles,RVs,Photography Accessories,Fertilizers,Potty Chairs,Office Accessories,Kitchen,Wireless Adapters,PC Desktops;1;312,649,697,97,636,1004,20,316;8;3
+Luggage,Kitchen,Teethers,Food Processors,Nintendo Wii Games,Sunscreen,Marine Electronics,Gourmet Gifts,GPS Car Navigation Systems,Cellular Phone Service;1;725,643,827,453,636,39;6;3
+Amplifiers,Hockey & In-line Skating,Disposals,Enterprise Applications,Luggage,Kids' TV Shows,Headphones,Film Cameras,Outdoor Apparel,Car Speakers and Subwoofers;1;722,4645,164,1029,4,20;6;4
+Motorsports Accessories,Network Terminals,GPS Devices,Expansion Modules,Leashes,Web TV,Cosmetics,Web Cameras,Mini Disc Players,Kids' TV Shows;1;3792,1447,4799,3771,1853,113;6;3
+Outdoor Apparel,Multimedia Projectors,Sports Nutrition,Glue & Adhesives,Receivers,Fishing Lines,Bridges,Appliance Accessories,Bouncers,Sound Cards;2;4515,254,945,126,39,750,1463,270;8;3
+Car Care,Eye Makeup,Photograph Storage & Display,Stadiums and Arenas,Zoos & Aquariums,Kitchen Hoods,Health Club Chains,Scanners,Car CD Changers,Conferencing Stations;3;275,623,187,822,39,63,321,23,21;9;2
+Film Cameras,Web Cameras,TV Channels,TV Channels,Soccer,Sound Cards,Small Appliance Accessories,Tape Drives,Routers,Air Purifiers;2;25749,3043,18,20,19,3931;6;3
+Airlines,Transcribers,Bath & Hygiene Accessories,Mini Disc Players,Walking Shoes,Garden,Bread Machines,In Dash Receivers,Destinations,Hard Drives;1;314,3771,697,2543,155,20;6;3
+Graphics Cards,Glucose & Cholesterol Monitors,Modems,Headphone Amplifiers,Network Terminals,Routers and Bridges,Videos & DVDs,Venture Capital,Golf Courses,Containment;1;456,3792,5338,230,2872,3244,481;7;5
+Financial Web Sites,ATVs,Remote Controls,Headsets,CD-ROM Drives,Feeding Accessories,Optics Accessories,Clocks,Local Services,Computer Supplies;1;298,211,345,39,183,18,20,323;8;2
+Changing Tables,Tires,Tablet PCs,Mini Disc Players,Flowers,Game Boy Advance Games,Phones,Bathtubs & Bath Seats,Baseball,Hiking Poles;1;602,195,3771,1468,56,155,865;7;5
+Insect Repellent,Health Aids,KVM Switches,Toasters,Video Game Accessories,Baby Care,Tableware,Car Amplifiers,Cordless Phones,Power Mowers & Tools;1;218,636,1470,3829,68230,666;6;3

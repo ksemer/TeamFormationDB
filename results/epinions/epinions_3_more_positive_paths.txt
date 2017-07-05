@@ -1,0 +1,50 @@
+Fishing Gear & Accessories,Coffee and Tea Makers,Irrigation;2;4515,276,211;3;3
+Financial Web Sites,Shipping,Amplifiers;1;722,1865,353;3;3
+Tools and Accessories,Bottles,KVM Switches;2;85,3829;2;2
+Zip and Other Drives,Remote Access Servers,Recruiting;1;579,5225,128;3;4
+Heaters,Cigars and Tobacco Accessories,Cookware;76;436;1;0
+Transceivers,Toys,Sewing Machines;2;7131,108,161;3;3
+Optics Accessories,Furniture,Single Use Cameras;1;3,345,211;3;3
+Home Furnishings,Glucose & Cholesterol Monitors,Safety & Emergency Security Products;1;456,451;2;4
+Voice Recorders and Transcribers,PDA Accessories,Locks & Guards;4;683,41,97;3;3
+Firewalls,Flashlights,Transcribers;1;314,3745,31;3;2
+Dryers,Flashes,Network Storage;16;133,106,155;3;2
+Drapes & Curtains,KVM Switches,Fertilizers;2;649,18,3829;3;2
+Scanners,Mice and Trackballs,Colleges and Universities;64;94;1;0
+Blood Pressure Monitors,Destinations,Small Appliances;1;2609,3834;2;3
+Hydration & Water Bottles,Other Memory,Anti-Aging/Treatments;1;4987,4782,673;3;2
+IP Phones,Enterprise Storage,Surge Suppressors;6;128,691,593;3;2
+Shampoo,Car Audio and Video Accessories,Wine Accessories;8;555,660,636;3;2
+Toys,Furniture,Cigars and Tobacco Accessories;53;436;1;0
+Wound Care,Tents,Vitamins;2;782,312,135;3;2
+Monitors,Receivers,Conditioner;12;46,270;2;2
+Washing Machines,Web TV,Jewelry;19;1958,211,656;3;1
+Water Heaters,PDAs,Specialty Kitchen Appliances;13;702,1568;2;1
+Mobile Audio/Video,Law Schools,Small Appliance Accessories;2;4931,18,3108;3;2
+Mac Desktops,Other Memory,Storage Controllers;1;4987,1463,102;3;2
+Merchant Accounts,Credit Cards,Mac Laptops;3;13168,687,106;3;2
+Test Prep Courses,Acne & Blemish Control,Safety & Emergency Electronics;0;0;-;-;-
+Flat Panel Televisions,Web TV,Jewelry;19;1958,211,656;3;1
+Equalizers,Game Boy Color Games,Taxes;1;113282,353,450;3;2
+Cellular Phone Service,Eye Makeup,Golf Clubs;6;715,3834;2;1
+Tablets,Coffee and Espresso Makers,Collection Agencies;2;1903,2387,751;3;3
+Fertilizers,Cellular Accessories,Game Boy Color Games;2;1457,20,450;3;1
+Flowers,Thermometers,Jewelry;0;0;-;-;-
+Insect Repellent,Removable Media,Telephone Accessories;3;636,735,23;3;2
+Safety & Emergency Security Products,Answering Machines,Beers;10;451,24,735;3;2
+Health Aids,Storage Controllers,Network Terminals;1;3792,3931,5;3;3
+Ice Cream Makers,Outdoor Electronics,THIS IS AN INVALID URL;1;94,3150,2596;3;3
+Fishing Advice,Copiers,Graphics Cards;32;1605,496,1865;3;1
+RVs,Lip Color,Electric Fans;9;643,1004,159;3;2
+Kitchen,Wireless Adapters,PC Desktops;30;628;1;0
+Gourmet Gifts,GPS Car Navigation Systems,Cellular Phone Service;3;827,735;2;1
+Film Cameras,Outdoor Apparel,Car Speakers and Subwoofers;105;3789;1;0
+Web Cameras,Mini Disc Players,Kids' TV Shows;3;3886,20,1682;3;1
+Appliance Accessories,Bouncers,Sound Cards;2;254,39,1463;3;2
+Scanners,Car CD Changers,Conferencing Stations;3;275,20;2;2
+Tape Drives,Routers,Air Purifiers;8;485,3871;2;2
+In Dash Receivers,Destinations,Hard Drives;189;114;1;0
+Venture Capital,Golf Courses,Containment;1;5338,835;2;2
+Clocks,Local Services,Computer Supplies;1;298,23;2;2
+Bathtubs & Bath Seats,Baseball,Hiking Poles;0;0;-;-;-
+Car Amplifiers,Cordless Phones,Power Mowers & Tools;1;218,1470,68230;3;2
