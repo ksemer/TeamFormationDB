@@ -30,9 +30,13 @@ public class TeamFormationAlgorithm {
 	private String compatible_table;
 	private DatabaseInput db = new DatabaseInput();
 	
+	private HashMap<Integer,Integer> compatiblesDistribution = new HashMap<Integer,Integer>();
+	
 	private HashMap<Integer,HashMap<Integer,Integer>> compatibles = new HashMap<Integer,HashMap<Integer,Integer>>();
 	
-	public TeamFormationAlgorithm(String mode,String dataset,int compatible_mode,ArrayList<String> initialTask, SkillInfo skillInfo){
+	public TeamFormationAlgorithm(HashMap<Integer,Integer> compatiblesDistribution,String mode,String dataset,int compatible_mode,ArrayList<String> initialTask, SkillInfo skillInfo){
+		
+		this.compatiblesDistribution=compatiblesDistribution;
 		
 		db.init();
 		
@@ -67,7 +71,9 @@ public class TeamFormationAlgorithm {
 		//System.out.println(initialTask.get(initialTask.size()-1));
 	}
 	
-	public TeamFormationAlgorithm(String mode,String dataset, int compatible_mode, ArrayList<String> initialTask,Network network, SkillInfo skillInfo){
+	public TeamFormationAlgorithm(HashMap<Integer,Integer> compatiblesDistribution,String mode,String dataset, int compatible_mode, ArrayList<String> initialTask,Network network, SkillInfo skillInfo){
+		
+		this.compatiblesDistribution=compatiblesDistribution;
 		
 		db.init();
 		
@@ -386,14 +392,14 @@ public class TeamFormationAlgorithm {
 					//choose best candidate
 					int user;
 					if(compatibility_mode==true){
-						user=getBestCompatibleCandidate(users,star);
+						//user=getBestCompatibleCandidate(users,star);
 						//user=getRandomCompatibleCandidate(users,star);
-						//user=getMostCompatiblesCompatibleCandidate(users,star);
+						user=getMostCompatiblesCompatibleCandidate(users,star);
 					}
 					else{
-						user=getBestNoNegativeCandidate(users,star);
+						//user=getBestNoNegativeCandidate(users,star);
 						//user=getRandomNoNegativeCandidate(users,star);
-						//user=getMostCompatiblesNoNegativeCandidate(users,star);
+						user=getMostCompatiblesNoNegativeCandidate(users,star);
 					}
 					
 					if(user!=-1){
@@ -562,7 +568,8 @@ public class TeamFormationAlgorithm {
 		
 		int max=-1;
 		for(int i=0;i<compatibleList.size();i++){
-			int tmp=db.getNumOfCompatibles(compatible_table, compatibleList.get(i));
+			//int tmp=db.getNumOfCompatibles(compatible_table, compatibleList.get(i));
+			int tmp=compatiblesDistribution.get(compatibleList.get(i));
 			if(max<tmp){
 				max=tmp;
 				compatible=compatibleList.get(i);
@@ -601,7 +608,8 @@ public class TeamFormationAlgorithm {
 		
 		int max=-1;
 		for(int i=0;i<compatibleList.size();i++){
-			int tmp=db.getNumOfCompatibles(compatible_table, compatibleList.get(i));
+			//int tmp=db.getNumOfCompatibles(compatible_table, compatibleList.get(i));
+			int tmp=compatiblesDistribution.get(compatibleList.get(i));
 			if(max<tmp){
 				max=tmp;
 				compatible=compatibleList.get(i);
