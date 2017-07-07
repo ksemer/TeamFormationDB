@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -24,6 +25,7 @@ public class Main {
 		//modes: spc, sbp
 		String mode;
 		//String task=args[3];
+		boolean most_compatibles_mode=true;
 		//********** ********** **********//*
 		
 		if(compatibility_mode>0){
@@ -34,6 +36,15 @@ public class Main {
 		}
 		
 		String resultPath;
+		String distributionPath;
+		
+		String spl="";		
+		if(dataset.equals("epinions")){
+			spl="\t";
+		}
+		else{
+			spl=",";
+		}
 		
 		System.out.print("Started at: ");
 		System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
@@ -42,22 +53,27 @@ public class Main {
 		
 		if(compatibility_mode==1){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_paths.txt";
-
+			distributionPath="compatibles_distribution/"+dataset+"/"+"no_negative_paths.txt";
 		}
 		else if(compatibility_mode==2){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_more_positive_paths.txt";
+			distributionPath="compatibles_distribution/"+dataset+"/"+"more_positive_paths.txt";
 		}
 		else if(compatibility_mode==3){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_one_positive_path.txt";
+			distributionPath="compatibles_distribution/"+dataset+"/"+"one_positive_path.txt";
 		}
 		else if(compatibility_mode==4){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_edge.txt";
+			distributionPath="compatibles_distribution/"+dataset+"/"+"no_negative_edge.txt";
 		}	
 		else if(compatibility_mode==0){
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp.txt";
+			distributionPath="compatibles_distribution/"+dataset+"/"+"sbp.txt";
 		}
 		else{
 			resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp_not_heuristic.txt";
+			distributionPath="compatibles_distribution/"+dataset+"/"+"sbp_not_heuristic.txt";
 		}
 
 		String inputPath = "tasks/"+dataset+"/"+dataset+"_"+numOfSkills+".txt";
@@ -78,6 +94,27 @@ public class Main {
 		 { 
 			 System.out.printf("File %s was not found or could not be opened.\n",inputPath); 
 		 }
+		
+		HashMap<Integer,Integer> compatiblesDistribution = new HashMap<Integer,Integer>();
+		
+		if(most_compatibles_mode==true){
+			Scanner inputReader1;
+			File file1 = new File(distributionPath);
+			try 
+			 { 
+				 inputReader1 = new Scanner(new FileInputStream(file1)); 
+				 while(inputReader1.hasNextLine()){
+					String tokens[]=inputReader1.nextLine().split(spl);
+					compatiblesDistribution.put(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+				 }
+				inputReader1.close();
+			 } 
+			 catch(FileNotFoundException e) 
+			 { 
+				 System.out.printf("File %s was not found or could not be opened.\n",inputPath); 
+			 }
+		}
+		
 		
 		for(int i=0;i<tasks.size();i++){
 		
@@ -103,11 +140,11 @@ public class Main {
 			}
 				
 			if(compatibility_mode<4){
-				result=runCompatibilityAlgorithm(mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
+				result=runCompatibilityAlgorithm(compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
 				
 			}
 			else{
-				result=runNoNegativeAlgorithm(mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
+				result=runNoNegativeAlgorithm(compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
 			}
 			
 			FileWriter writer = new FileWriter(resultPath);
@@ -125,26 +162,26 @@ public class Main {
 	}
 	
 	
-	public static String runCompatibilityAlgorithm(String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
+	public static String runCompatibilityAlgorithm(HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
 		InputManager manager = new InputManager(networkPath,userPath,skillPath);
 		manager.retrieveSkillInfo();
 		
 		//ArrayList<String> initialTask = produceTask(numOfSkills,manager.getSkillInfo());
 				
-		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(mode,dataset,compatibility_mode,initialTask,manager.getSkillInfo());
+		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getSkillInfo());
 		algorithm.start();
 		
 		return algorithm.getResult();
 	}
 	
-	public static String runNoNegativeAlgorithm(String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
+	public static String runNoNegativeAlgorithm(HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
 		InputManager manager = new InputManager(networkPath,userPath,skillPath);
 		manager.retrieveNetwork();
 		manager.retrieveSkillInfo();
 		
 		//ArrayList<String> initialTask = produceTask(numOfSkills,manager.getSkillInfo());
 				
-		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(mode,dataset,compatibility_mode,initialTask,manager.getNetwork(), manager.getSkillInfo());
+		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getNetwork(), manager.getSkillInfo());
 		algorithm.start();
 		
 		return algorithm.getResult();
