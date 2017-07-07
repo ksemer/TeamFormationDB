@@ -122,249 +122,6 @@ public class TeamFormationAlgorithm {
 		return rare;
 	}
 	
-	public void exhaustiveAlgorithm(){
-		//System.out.println(skillInfo.getSkillUsers().get(rarestSkill).size());
-		int numOfTeams=0;
-		for(int i=0;i<skillInfo.getSkillUsers().get(rarestSkill).size();i++){
-			int rareUser = skillInfo.getSkillUsers().get(rarestSkill).get(i);
-			//System.out.println("Starting for rare user: "+rareUser);
-			//create star team
-			ArrayList<StarTeam> starList = new ArrayList<StarTeam>();
-			StarTeam firstStar = new StarTeam();
-			firstStar.addMember(rareUser);
-			
-			//cover rareUser's skill
-			ArrayList<String> taskSkills = getUserTaskSkills(rareUser);
-			for(int k=0;k<taskSkills.size();k++){
-				if(!firstStar.getCoveredSkills().contains(taskSkills.get(k))){
-					firstStar.addSkill(taskSkills.get(k));
-				}	
-			}
-			
-			starList.add(firstStar);
-			
-			for(int j=1;j<task.size();j++){
-				for(int g=0;g<starList.size();g++){
-					StarTeam star=starList.get(g);
-					if(!star.getCoveredSkills().contains(task.get(j))){
-						ArrayList<Integer> users = new ArrayList<Integer>();
-						for(int m=0;m<skillInfo.getSkillUsers().get(task.get(j)).size();m++){
-							users.add(skillInfo.getSkillUsers().get(task.get(j)).get(m));
-						}
-						
-						//get compatibles
-						ArrayList<Integer> compatibleCandidates = new ArrayList<Integer>();
-						if(compatibility_mode==true){
-							compatibleCandidates=getCompatibleCandidates(users,star);
-						}
-						else{
-							compatibleCandidates=getNoNegativeCompatibleCandidates(users,star);
-						}
-						
-						if(compatibleCandidates.size()>1){
-							
-							
-							for(int m=0;m<compatibleCandidates.size();m++){
-								StarTeam tmpStar = new StarTeam();
-								tmpStar.addSkills(star.getCoveredSkills());
-								tmpStar.addTeam(star.getTeam());
-								
-								//add compatible to team
-								tmpStar.addMember(compatibleCandidates.get(m));
-								
-								//add his skills in team
-								ArrayList<String> skillsCovered = getUserTaskSkills(compatibleCandidates.get(m));
-								for(int k=0;k<skillsCovered.size();k++){
-									if(!tmpStar.getCoveredSkills().contains(skillsCovered.get(k))){
-										tmpStar.addSkill(skillsCovered.get(k));
-									}	
-								}
-								
-								starList.add(tmpStar);
-							} 
-							starList.remove(star);							
-						}
-						else{
-							starList.remove(star);
-							break;
-						}
-					}
-				}
-			}
-			if(!starList.isEmpty()){
-				exhaustiveTeams.put(rareUser, starList);
-				numOfTeams+=starList.size();
-			}
-		}
-		
-				
-		result+=numOfTeams+";";
-		
-		if(numOfTeams==1){
-			//System.out.println("Found 1 team:");
-			for(Integer key : exhaustiveTeams.keySet()){
-				for(int i=0;i<exhaustiveTeams.get(key).get(0).getTeam().size()-1;i++){
-					result+=exhaustiveTeams.get(key).get(0).getTeam().get(i)+",";
-				}
-				result+=exhaustiveTeams.get(key).get(0).getTeam().get(exhaustiveTeams.get(key).get(0).getTeam().size()-1)+";";				
-				getBestExhaustiveTeam();
-				result+=exhaustiveTeams.get(key).get(0).getTeam().size()+";"+best_diameter;
-			}
-		}
-		else if(numOfTeams>1){
-			
-			StarTeam best=getBestExhaustiveTeam();
-			//System.out.println("Best team:");
-			for(int i=0;i<best.getTeam().size()-1;i++){
-				result+=best.getTeam().get(i)+",";
-				//System.out.print(best.getTeam().get(i)+"   ,   ");
-			}
-			result+=best.getTeam().get(best.getTeam().size()-1)+";";
-			//System.out.println(best.getTeam().get(best.getTeam().size()-1));
-			result+=best.getTeam().size()+";"+best_diameter;
-		}
-		else{
-			result+="0;-;-;-";
-			//System.out.println("No team found!");
-		}
-	}
-	
-	public ArrayList<Integer> getNoNegativeCompatibleCandidates(ArrayList<Integer> candidates, StarTeam team){
-		ArrayList<Integer> notCompatible = new ArrayList<Integer>();
-		ArrayList<Integer> compatibleList = new ArrayList<Integer>();
-				
-		for(int i=0;i<team.getTeam().size();i++){
-			if(!compatibles.containsKey(team.getTeam().get(i))){
-				compatibles.put(team.getTeam().get(i), db.getCompatibles(compatible_table, team.getTeam().get(i)));
-			}
-		}
-		
-		for(int i=0;i<candidates.size();i++){
-			boolean not_compatible=false;
-			for(int j=0;j<team.getTeam().size();j++){
-				int current_team_member = team.getTeam().get(j);
-				if(network.getEdges().containsKey(candidates.get(i)+","+team.getTeam().get(j))){
-					if(network.getEdges().get(candidates.get(i)+","+team.getTeam().get(j))<0){
-						not_compatible=true;
-						notCompatible.add(candidates.get(i));
-					}
-				}
-				if(network.getEdges().containsKey(team.getTeam().get(j)+","+candidates.get(i))){
-					if(network.getEdges().get(team.getTeam().get(j)+","+candidates.get(i))<0){
-						not_compatible=true;
-						notCompatible.add(candidates.get(i));
-					}
-				}
-				if(not_compatible==false){
-					if(!compatibles.get(current_team_member).containsKey(candidates.get(i))){
-						notCompatible.add(candidates.get(i));
-					}
-					else{
-						compatibleList.add(candidates.get(i));
-					}
-				}
-			}
-		}
-		
-		return compatibleList;
-	}
-	
-	public ArrayList<Integer> getCompatibleCandidates(ArrayList<Integer> candidates, StarTeam team){
-		ArrayList<Integer> notCompatible = new ArrayList<Integer>();
-		ArrayList<Integer> compatibleList= new ArrayList<Integer>();
-				
-		for(int i=0;i<team.getTeam().size();i++){
-			if(!compatibles.containsKey(team.getTeam().get(i))){
-				compatibles.put(team.getTeam().get(i), db.getCompatibles(compatible_table, team.getTeam().get(i)));
-			}
-		}		
-		
-		for(int i=0;i<candidates.size();i++){
-			for(int j=0;j<team.getTeam().size();j++){
-				int current_team_member = team.getTeam().get(j);
-				
-				if(!compatibles.get(current_team_member).containsKey(candidates.get(i))){
-					notCompatible.add(candidates.get(i));
-				}
-			}
-			if(!notCompatible.contains(candidates.get(i))){
-				compatibleList.add(candidates.get(i));
-			}
-		}
-		
-		return compatibleList;
-	}
-	
-	public StarTeam getBestExhaustiveTeam(){
-		
-		System.out.println("Finding exhaustive best team.....");
-		
-		int total_max=-1;
-		StarTeam bestTeam = new StarTeam();
-		for(Integer starNode : exhaustiveTeams.keySet()){
-			for(int k=0;k<exhaustiveTeams.get(starNode).size();k++){	
-				StarTeam currentTeam = exhaustiveTeams.get(starNode).get(k);
-				for(int i=0;i<currentTeam.getTeam().size();i++){
-					if(!compatibles.containsKey(currentTeam.getTeam().get(i))){
-						compatibles.put(currentTeam.getTeam().get(i), db.getCompatibles(compatible_table, currentTeam.getTeam().get(i)));
-					}
-				}	
-				
-				int max=0;
-				for(int i=0;i<currentTeam.getTeam().size();i++){
-					for(int j=0;j<currentTeam.getTeam().size();j++){
-						int node1= currentTeam.getTeam().get(i);
-						int node2= currentTeam.getTeam().get(j);
-						
-						if(compatibles.get(node1).containsKey(node2)){
-							if(max<compatibles.get(node1).get(node2)){
-								max=compatibles.get(node1).get(node2);
-							}
-						}
-					}
-				}
-				//System.out.println("Max distance of "+starNode+"'s team: "+max);
-				if(total_max==-1){
-					total_max=max;
-					bestTeam=currentTeam;
-				}
-				else if(total_max>max){
-					total_max=max;
-					bestTeam=currentTeam;
-				}
-				else if(total_max==max){
-					boolean change = handleExhaustiveTeamTies(bestTeam,currentTeam);
-					if(change==true){
-						total_max=max;
-						bestTeam=currentTeam;
-					}
-				}
-			}
-		}
-		
-		best_diameter=total_max;
-		return bestTeam;
-	}
-	
-	//returns true if bestTeam must change, or false otherwise
-	public boolean handleExhaustiveTeamTies(StarTeam bestTeam,StarTeam currentTeam){
-		int sum1=0;
-		for(int i=0;i<bestTeam.getTeam().size();i++){
-			sum1+=bestTeam.getTeam().get(i);
-		}
-		int sum2=0;
-		for(int i=0;i<currentTeam.getTeam().size();i++){
-			sum2+=currentTeam.getTeam().get(i);
-		}
-		if(sum2<sum1){
-			return true;
-		}
-		else{
-			return false;
-		}
-		
-	}
-	
 	public void algorithm(){
 		//System.out.println(skillInfo.getSkillUsers().get(rarestSkill).size());
 		for(int i=0;i<skillInfo.getSkillUsers().get(rarestSkill).size();i++){
@@ -569,7 +326,10 @@ public class TeamFormationAlgorithm {
 		int max=-1;
 		for(int i=0;i<compatibleList.size();i++){
 			//int tmp=db.getNumOfCompatibles(compatible_table, compatibleList.get(i));
-			int tmp=compatiblesDistribution.get(compatibleList.get(i));
+			int tmp=0;
+			if(compatiblesDistribution.containsKey(compatibleList.get(i))){
+				tmp=compatiblesDistribution.get(compatibleList.get(i));
+			}
 			if(max<tmp){
 				max=tmp;
 				compatible=compatibleList.get(i);
@@ -609,7 +369,10 @@ public class TeamFormationAlgorithm {
 		int max=-1;
 		for(int i=0;i<compatibleList.size();i++){
 			//int tmp=db.getNumOfCompatibles(compatible_table, compatibleList.get(i));
-			int tmp=compatiblesDistribution.get(compatibleList.get(i));
+			int tmp=0;
+			if(compatiblesDistribution.containsKey(compatibleList.get(i))){
+				tmp=compatiblesDistribution.get(compatibleList.get(i));
+			}
 			if(max<tmp){
 				max=tmp;
 				compatible=compatibleList.get(i);
@@ -819,5 +582,146 @@ public class TeamFormationAlgorithm {
 	public String getResult(){
 		return result;
 	}
+	
+	//EXHAUSTIVE
+	
+	/*public StarTeam getBestExhaustiveTeam(){
+		
+		System.out.println("Finding exhaustive best team.....");
+		
+		int total_max=-1;
+		StarTeam bestTeam = new StarTeam();
+		for(Integer starNode : exhaustiveTeams.keySet()){
+			for(int k=0;k<exhaustiveTeams.get(starNode).size();k++){	
+				StarTeam currentTeam = exhaustiveTeams.get(starNode).get(k);
+				for(int i=0;i<currentTeam.getTeam().size();i++){
+					if(!compatibles.containsKey(currentTeam.getTeam().get(i))){
+						compatibles.put(currentTeam.getTeam().get(i), db.getCompatibles(compatible_table, currentTeam.getTeam().get(i)));
+					}
+				}	
+				
+				int max=0;
+				for(int i=0;i<currentTeam.getTeam().size();i++){
+					for(int j=0;j<currentTeam.getTeam().size();j++){
+						int node1= currentTeam.getTeam().get(i);
+						int node2= currentTeam.getTeam().get(j);
+						
+						if(compatibles.get(node1).containsKey(node2)){
+							if(max<compatibles.get(node1).get(node2)){
+								max=compatibles.get(node1).get(node2);
+							}
+						}
+					}
+				}
+				//System.out.println("Max distance of "+starNode+"'s team: "+max);
+				if(total_max==-1){
+					total_max=max;
+					bestTeam=currentTeam;
+				}
+				else if(total_max>max){
+					total_max=max;
+					bestTeam=currentTeam;
+				}
+				else if(total_max==max){
+					boolean change = handleExhaustiveTeamTies(bestTeam,currentTeam);
+					if(change==true){
+						total_max=max;
+						bestTeam=currentTeam;
+					}
+				}
+			}
+		}
+		
+		best_diameter=total_max;
+		return bestTeam;
+	}*/
+	
+	//returns true if bestTeam must change, or false otherwise
+	/*public boolean handleExhaustiveTeamTies(StarTeam bestTeam,StarTeam currentTeam){
+		int sum1=0;
+		for(int i=0;i<bestTeam.getTeam().size();i++){
+			sum1+=bestTeam.getTeam().get(i);
+		}
+		int sum2=0;
+		for(int i=0;i<currentTeam.getTeam().size();i++){
+			sum2+=currentTeam.getTeam().get(i);
+		}
+		if(sum2<sum1){
+			return true;
+		}
+		else{
+			return false;
+		}
+		
+	}*/
+	
+	/*
+	 public ArrayList<Integer> getNoNegativeCompatibleCandidates(ArrayList<Integer> candidates, StarTeam team){
+		ArrayList<Integer> notCompatible = new ArrayList<Integer>();
+		ArrayList<Integer> compatibleList = new ArrayList<Integer>();
+				
+		for(int i=0;i<team.getTeam().size();i++){
+			if(!compatibles.containsKey(team.getTeam().get(i))){
+				compatibles.put(team.getTeam().get(i), db.getCompatibles(compatible_table, team.getTeam().get(i)));
+			}
+		}
+		
+		for(int i=0;i<candidates.size();i++){
+			boolean not_compatible=false;
+			for(int j=0;j<team.getTeam().size();j++){
+				int current_team_member = team.getTeam().get(j);
+				if(network.getEdges().containsKey(candidates.get(i)+","+team.getTeam().get(j))){
+					if(network.getEdges().get(candidates.get(i)+","+team.getTeam().get(j))<0){
+						not_compatible=true;
+						notCompatible.add(candidates.get(i));
+					}
+				}
+				if(network.getEdges().containsKey(team.getTeam().get(j)+","+candidates.get(i))){
+					if(network.getEdges().get(team.getTeam().get(j)+","+candidates.get(i))<0){
+						not_compatible=true;
+						notCompatible.add(candidates.get(i));
+					}
+				}
+				if(not_compatible==false){
+					if(!compatibles.get(current_team_member).containsKey(candidates.get(i))){
+						notCompatible.add(candidates.get(i));
+					}
+					else{
+						compatibleList.add(candidates.get(i));
+					}
+				}
+			}
+		}
+		
+		return compatibleList;
+	}
+	
+	public ArrayList<Integer> getCompatibleCandidates(ArrayList<Integer> candidates, StarTeam team){
+		ArrayList<Integer> notCompatible = new ArrayList<Integer>();
+		ArrayList<Integer> compatibleList= new ArrayList<Integer>();
+				
+		for(int i=0;i<team.getTeam().size();i++){
+			if(!compatibles.containsKey(team.getTeam().get(i))){
+				compatibles.put(team.getTeam().get(i), db.getCompatibles(compatible_table, team.getTeam().get(i)));
+			}
+		}		
+		
+		for(int i=0;i<candidates.size();i++){
+			for(int j=0;j<team.getTeam().size();j++){
+				int current_team_member = team.getTeam().get(j);
+				
+				if(!compatibles.get(current_team_member).containsKey(candidates.get(i))){
+					notCompatible.add(candidates.get(i));
+				}
+			}
+			if(!notCompatible.contains(candidates.get(i))){
+				compatibleList.add(candidates.get(i));
+			}
+		}
+		
+		return compatibleList;
+	}
+	 
+	 */
 	
 }
