@@ -1,0 +1,52 @@
+Thenn	Styr
+House Westerling	Jeyne
+House Payne	Ser Ilyn Payne
+House Martell	Oberyn Martell,Areo Hotah,Trystane Martell,Elia,Tyene,Obara
+Thirteen	Xaro Xhoan Daxos
+House Uller	Ellaria Sand
+House Bolton	Roose Bolton,Walton,Ramsay Bolton,Locke,Myranda,Walda Bolton
+brotherhood without banners	Gendry
+House Mormont	Jorah Mormont,Jeor Mormont
+Brotherhood without banners	Anguy,Lem
+Chataya's brothel	Chataya
+House Lannister	Tyrion Lannister,Tywin Lannister,Cersei Lannister,Jaime Lannister,Joffrey Baratheon,Pycelle,Qyburn,Tommen Baratheon,Kevan Lannister,Ser Amory Lorch,Mountain,Harpy,Cersei
+female	Arya Stark,Cersei Lannister,Meera Reed,Nan,Catelyn Stark,Lysa Arryn,Sansa Stark,Shae,Irri,Daenerys Targaryen,Missandei,Gilly,Margaery Tyrell,Myrcella Baratheon,Dalla,Melisandre,Val,Ellaria Sand,Chataya,Shireen Baratheon,Syrio Forel,Rhaego,Mirri Maz Duur,Yoren,Pyat Pree,Doreah,Tansy,Brienne of Tarth,Jeyne,Roslin,Elia,Olenna Tyrell,Daenerys Targaryens,Daenerys,Ros,Talisa Stark,Karsi,Wights,Myranda,Tyene,Obara,Walda Bolton,Lady Crane,Waif,Cersei
+House Stokeworth	Bronn
+House Arryn	Jon Arryn,Jon Arryn
+House Frey	Lothar Frey,Walder Frey,Walder Rivers,Roslin,Black Walder Rivers
+Free Folk	Mance Rayder,Gilly,Orell,Wun Weg Wun Dar Wun,Rattleshirt
+House Trant	Meryn Trant
+House of Loraq	Hizdahr zo Loraq
+House Clegane	Gregor Clegane,Polliver
+Fre Folk	Mag the Mighty
+House Targaryen	Aerys II Targaryen,Belwas,Irri,Daenerys Targaryen,Missandei,Rakharo,Viserys Targaryen,Rhaego,Doreah,Hizdahr zo Loraq,Khal Drogo,Aegon,Rhaegar,Stillborn,Daenerys Targaryens,Daenerys
+male	Grenn,Aerys II Targaryen,Tyrion Lannister,Tywin Lannister,Alliser Thorne,Mance Rayder,Amory Lorch,Oberyn Martell,Anguy,Beric Dondarrion,Bran Stark,Gendry,Gregor Clegane,Jaime Lannister,Joffrey Baratheon,Jon Snow,Rickon Stark,Roose Bolton,Balon Greyjoy,Loras Tyrell,Belwas,Hodor,Jojen Reed,Theon Greyjoy,Bronn,Lothar Frey,Walder Frey,Robb Stark,Stannis Baratheon,Meryn Trant,Pycelle,Varys,Jorah Mormont,Rakharo,Viserys Targaryen,Cressen,Eddard Stark,Craster,Qyburn,Renly Baratheon,Tommen Baratheon,Janos Slynt,Kevan Lannister,Orell,Ygritte,Lancel Lannister,Marillion,Styr,Mace Tyrell,Doran Martell,Walton,Will,Jon Arryn,Jory Cassel,Rodrik Cassel,Dagmer,Xaro Xhoan Daxos,Jeor Mormont,Rast,Polliver,Hizdahr zo Loraq,Areo Hotah,Trystane Martell,Euron Greyjoy,Howland Reed,Osha,Lem,Grey Worm,Tormund,Wun Weg Wun Dar Wun,Walder Rivers,Aemon,Samwell,Robert Stark,Brynden,Sandor,Thoros,Barristan,Illyrio,Maester Luwin,Podrick,Edmure,Hoster,Petyr,Ser Ilyn Payne,Daario,Khal Drogo,Aegon,Kraznys,Rhaegar,Worm,Davos,Salladhor,Eddison,Bowen,Rattleshirt,Jon Arryn,Qhorin,Rickard,Ramsay Bolton,Ned Stark,Littlefinger,Robert Baratheon,Ser Meryn,Stillborn,Ser Amory Lorch,Karl Tanner,Hound,Black Walder Rivers,Locke,Mountain,Mag the Mighty,Pyp,Olly,Harpy,Theon Grejoy,The Flasher,Ser Arthur Dayne,Khal Moro,Razdal mo Eraz,Belicho Paenymion,Jon Umber,The High Sparrow
+House Reed	Jojen Reed,Meera Reed,Howland Reed
+Night's Watch	Grenn,Craster,Janos Slynt,Will,Yoren,Rast,Samwell,Eddison,Qhorin,Karl Tanner,Pyp,Olly
+Dothraki people	Mirri Maz Duur,Khal Drogo,Khal Moro
+Undying Ones	Pyat Pree
+House Tully	Catelyn Stark,Lysa Arryn,Roslin
+Peach	Tansy
+House Stark	Arya Stark,Bran Stark,Jon Snow,Rickon Stark,Hodor,Nan,Robb Stark,Sansa Stark,Eddard Stark,Syrio Forel,Osha,Robert Stark,Rickard,Ned Stark,Talisa Stark,Jon Umber
+Wildings	Tormund,Karsi,Wights
+House Cassel	Jory Cassel,Rodrik Cassel
+House Tarth	Brienne of Tarth
+House Blackfyre	Aemon
+House of Black and White	Waif
+House Umber	Jon Umber
+House Thorne	Alliser Thorne
+House Lorch	Amory Lorch
+House Nymeros Martell	Doran Martell
+House Greyjoy	Balon Greyjoy,Theon Greyjoy,Dagmer,Euron Greyjoy,Theon Grejoy
+House Baratheon of King's Landing	Myrcella Baratheon
+House Baratheon of Dragonstone	Shireen Baratheon
+House Dondarrion	Beric Dondarrion
+House Dayne	Ser Arthur Dayne
+House Baratheon	Joffrey Baratheon,Stannis Baratheon,Renly Baratheon,Tommen Baratheon,Davos,Salladhor,Robert Baratheon,Ser Meryn
+R'hllor	Melisandre
+House Forrester	Bowen
+House Lannister of Casterly Rock	Lancel Lannister
+House Baelish	Jon Arryn
+House Tyrell	Loras Tyrell,Margaery Tyrell,Mace Tyrell,Olenna Tyrell
+Mance Rayder	Ygritte
+Unsullied	Grey Worm
