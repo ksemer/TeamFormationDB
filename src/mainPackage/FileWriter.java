@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class FileWriter {
 	private String outputPath;
@@ -47,6 +48,15 @@ public class FileWriter {
 	public void writeData(ArrayList<String> data){
 		for(int i=0;i<data.size();i++){
 			outputWriter.println(data.get(i));
+		}
+		outputWriter.close();
+	}
+	
+	public void writeSkillData(HashMap<String,HashMap<String,Integer>> compatibility){
+		for(String skill1 : compatibility.keySet()){
+			for(String skill2 : compatibility.get(skill1).keySet()){
+				outputWriter.println(skill1+"\t"+skill2+"\t"+compatibility.get(skill1).get(skill2));
+			}
 		}
 		outputWriter.close();
 	}
