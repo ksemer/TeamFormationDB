@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class FileReader {
@@ -36,6 +37,25 @@ public class FileReader {
 	
 	public ArrayList<String> getData(){
 		return data;
+	}
+	
+	
+	public HashMap<Integer,ArrayList<Integer>> getCompatibility(){
+		HashMap<Integer,ArrayList<Integer>> compatibility = new HashMap<Integer,ArrayList<Integer>>();
+		while(inputReader.hasNextLine()){
+			String line=inputReader.nextLine();
+			String fields[] =line.split("\t");
+			if(!compatibility.containsKey(Integer.parseInt(fields[0]))){
+				ArrayList<Integer> tmp = new ArrayList<Integer>();
+				tmp.add(Integer.parseInt(fields[1]));
+				compatibility.put(Integer.parseInt(fields[0]),tmp);
+			}
+			else{
+				compatibility.get(Integer.parseInt(fields[0])).add(Integer.parseInt(fields[1]));
+			}
+		}
+		inputReader.close();
+		return compatibility;
 	}
 
 }
