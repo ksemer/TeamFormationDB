@@ -74,4 +74,39 @@ public class Database {
         }
         return result;
 	}
+	
+	public boolean isCompatible(String table, int node1, int node2){
+		Statement state;
+        ResultSet res;
+ 
+        String where="node1="+node1+" and node2="+node2;
+        
+        String query="select * from "+table+" where "+where;
+        
+        try{
+            state=con.createStatement();
+            res=(ResultSet) state.executeQuery(query);
+            if(res.next()){
+            	return true;
+            }
+            state.close();
+            
+            where="node1="+node2+" and node2="+node1;
+            query="select * from "+table+" where "+where;
+            
+            state=con.createStatement();
+            res=(ResultSet) state.executeQuery(query);
+            if(res.next()){
+            	return true;
+            }
+            state.close();
+            
+        }
+        catch(SQLException ex)
+        {
+        	 System.out.println(ex.getMessage());
+        }
+        
+        return false;
+	}
 }
