@@ -1,0 +1,434 @@
+Aemon	Grenn	1
+Aemon	Samwell	1
+Aerys II Targaryen	Robert Stark	1
+Aerys II Targaryen	Tyrion Lannister	1
+Aerys II Targaryen	Tywin Lannister	1
+Alliser Thorne	Mance Rayder	1
+Amory Lorch	Oberyn Martell	1
+Arya Stark	Anguy	1
+Arya Stark	Beric Dondarrion	1
+Arya Stark	Bran Stark	1
+Arya Stark	Brynden	1
+Arya Stark	Cersei Lannister	1
+Arya Stark	Gendry	1
+Arya Stark	Gregor Clegane	1
+Arya Stark	Jaime Lannister	1
+Arya Stark	Joffrey Baratheon	1
+Arya Stark	Jon Snow	1
+Arya Stark	Rickon Stark	1
+Arya Stark	Robert Stark	1
+Arya Stark	Roose Bolton	1
+Arya Stark	Sandor	1
+Arya Stark	Thoros	1
+Arya Stark	Tyrion Lannister	1
+Balon Greyjoy	Loras Tyrell	1
+Belwas	Barristan	1
+Belwas	Illyrio	1
+Beric Dondarrion	Anguy	1
+Beric Dondarrion	Gendry	1
+Beric Dondarrion	Thoros	1
+Bran Stark	Hodor	1
+Bran Stark	Jojen Reed	1
+Bran Stark	Jon Snow	1
+Bran Stark	Maester Luwin	1
+Bran Stark	Meera Reed	1
+Bran Stark	Nan	1
+Bran Stark	Rickon Stark	1
+Bran Stark	Samwell	1
+Bran Stark	Theon Greyjoy	1
+Brienne of Tarth	Loras Tyrell	1
+Bronn	Gregor Clegane	1
+Bronn	Podrick	1
+Brynden	Lothar Frey	1
+Brynden	Walder Frey	1
+Catelyn Stark	Bran Stark	1
+Catelyn Stark	Brienne of Tarth	1
+Catelyn Stark	Brynden	1
+Catelyn Stark	Cersei Lannister	1
+Catelyn Stark	Edmure	1
+Catelyn Stark	Hoster	1
+Catelyn Stark	Jaime Lannister	1
+Catelyn Stark	Jeyne	1
+Catelyn Stark	Lysa Arryn	1
+Catelyn Stark	Petyr	1
+Catelyn Stark	Robb Stark	1
+Catelyn Stark	Roose Bolton	1
+Catelyn Stark	Roslin	1
+Catelyn Stark	Sansa Stark	1
+Catelyn Stark	Stannis Baratheon	1
+Catelyn Stark	Tyrion Lannister	1
+Catelyn Stark	Walder Frey	1
+Cersei Lannister	Brienne of Tarth	1
+Cersei Lannister	Bronn	1
+Cersei Lannister	Elia	1
+Cersei Lannister	Gregor Clegane	1
+Cersei Lannister	Ser Ilyn Payne	1
+Cersei Lannister	Jaime Lannister	1
+Cersei Lannister	Joffrey Baratheon	1
+Cersei Lannister	Meryn Trant	1
+Cersei Lannister	Pycelle	1
+Cersei Lannister	Robert Stark	1
+Cersei Lannister	Sandor	1
+Cersei Lannister	Shae	1
+Cersei Lannister	Tyrion Lannister	1
+Cersei Lannister	Varys	1
+Daario	Khal Drogo	1
+Daario	Irri	1
+Daenerys Targaryen	Aegon	1
+Daenerys Targaryen	Barristan	1
+Daenerys Targaryen	Belwas	1
+Daenerys Targaryen	Daario	1
+Daenerys Targaryen	Khal Drogo	1
+Daenerys Targaryen	Irri	1
+Daenerys Targaryen	Jorah Mormont	1
+Daenerys Targaryen	Kraznys	1
+Daenerys Targaryen	Missandei	1
+Daenerys Targaryen	Rakharo	1
+Daenerys Targaryen	Rhaegar	1
+Daenerys Targaryen	Robert Stark	1
+Daenerys Targaryen	Viserys Targaryen	1
+Daenerys Targaryen	Worm	1
+Davos	Cressen	1
+Davos	Salladhor	1
+Eddard Stark	Arya Stark	1
+Eddard Stark	Beric Dondarrion	1
+Eddard Stark	Bran Stark	1
+Eddard Stark	Catelyn Stark	1
+Eddard Stark	Cersei Lannister	1
+Eddard Stark	Jaime Lannister	1
+Eddard Stark	Jon Snow	1
+Eddard Stark	Rickon Stark	1
+Eddard Stark	Robb Stark	1
+Eddard Stark	Robert Stark	1
+Eddard Stark	Sandor	1
+Eddard Stark	Sansa Stark	1
+Eddison	Grenn	1
+Edmure	Brynden	1
+Edmure	Lothar Frey	1
+Edmure	Roslin	1
+Edmure	Walder Frey	1
+Gendry	Thoros	1
+Gilly	Craster	1
+Gregor Clegane	Elia	1
+Gregor Clegane	Ser Ilyn Payne	1
+Gregor Clegane	Meryn Trant	1
+Gregor Clegane	Oberyn Martell	1
+Gregor Clegane	Sandor	1
+Hodor	Jojen Reed	1
+Hodor	Meera Reed	1
+Hoster	Edmure	1
+Irri	Khal Drogo	1
+Jaime Lannister	Balon Greyjoy	1
+Jaime Lannister	Barristan	1
+Jaime Lannister	Brienne of Tarth	1
+Jaime Lannister	Edmure	1
+Jaime Lannister	Elia	1
+Jaime Lannister	Gregor Clegane	1
+Jaime Lannister	Joffrey Baratheon	1
+Jaime Lannister	Loras Tyrell	1
+Jaime Lannister	Meryn Trant	1
+Jaime Lannister	Qyburn	1
+Jaime Lannister	Renly Baratheon	1
+Jaime Lannister	Robert Stark	1
+Jaime Lannister	Stannis Baratheon	1
+Jaime Lannister	Tommen Baratheon	1
+Jaime Lannister	Tyrion Lannister	1
+Janos Slynt	Alliser Thorne	1
+Janos Slynt	Bowen	1
+Janos Slynt	Mance Rayder	1
+Joffrey Baratheon	Gregor Clegane	1
+Joffrey Baratheon	Ser Ilyn Payne	1
+Joffrey Baratheon	Kevan Lannister	1
+Joffrey Baratheon	Loras Tyrell	1
+Joffrey Baratheon	Margaery Tyrell	1
+Joffrey Baratheon	Meryn Trant	1
+Joffrey Baratheon	Myrcella Baratheon	1
+Joffrey Baratheon	Oberyn Martell	1
+Joffrey Baratheon	Sandor	1
+Joffrey Baratheon	Stannis Baratheon	1
+Joffrey Baratheon	Tommen Baratheon	1
+Joffrey Baratheon	Tyrion Lannister	1
+Jojen Reed	Meera Reed	1
+Jojen Reed	Samwell	1
+Jon Snow	Aemon	1
+Jon Snow	Craster	1
+Jon Snow	Dalla	1
+Jon Snow	Eddison	1
+Jon Snow	Gilly	1
+Jon Snow	Grenn	1
+Jon Snow	Meera Reed	1
+Jon Snow	Melisandre	1
+Jon Snow	Orell	1
+Jon Snow	Rattleshirt	1
+Jon Snow	Robert Stark	1
+Jon Snow	Samwell	1
+Jon Snow	Stannis Baratheon	1
+Jon Snow	Theon Greyjoy	1
+Jon Snow	Val	1
+Jon Snow	Ygritte	1
+Jon Snow Arryn	Lysa Arryn	1
+Jon Snow Arryn	Robert Stark	1
+Jorah Mormont	Barristan	1
+Jorah Mormont	Belwas	1
+Jorah Mormont	Daario	1
+Jorah Mormont	Khal Drogo	1
+Kevan Lannister	Lancel Lannister	1
+Kevan Lannister	Varys	1
+Loras Tyrell	Margaery Tyrell	1
+Loras Tyrell	Olenna Tyrell	1
+Lothar Frey	Roslin	1
+Maester Luwin	Nan	1
+Lysa Arryn	Cersei Lannister	1
+Lysa Arryn	Hoster	1
+Lysa Arryn	Marillion	1
+Lysa Arryn	Petyr	1
+Lysa Arryn	Robert Stark Arryn	1
+Lysa Arryn	Tyrion Lannister	1
+Lysa Arryn	Tywin Lannister	1
+Mance Rayder	Craster	1
+Mance Rayder	Dalla	1
+Mance Rayder	Gilly	1
+Mance Rayder	Qhorin	1
+Mance Rayder	Rattleshirt	1
+Mance Rayder	Styr	1
+Mance Rayder	Val	1
+Mance Rayder	Ygritte	1
+Meera Reed	Samwell	1
+Melisandre	Davos	1
+Melisandre	Samwell	1
+Meryn Trant	Ser Ilyn Payne	1
+Missandei	Irri	1
+Myrcella Baratheon	Tommen Baratheon	1
+Myrcella Baratheon	Tyrion Lannister	1
+Oberyn Martell	Ellaria Sand	1
+Oberyn Martell	Mace Tyrell	1
+Podrick	Margaery Tyrell	1
+Rattleshirt	Qhorin	1
+Renly Baratheon	Loras Tyrell	1
+Renly Baratheon	Margaery Tyrell	1
+Renly Baratheon	Varys	1
+Rhaegar	Barristan	1
+Rhaegar	Elia	1
+Rhaegar	Jorah Mormont	1
+Rhaegar	Robert Stark	1
+Rickard	Brynden	1
+Rickon Stark	Theon Greyjoy	1
+Robb Stark	Arya Stark	1
+Robb Stark	Balon Greyjoy	1
+Robb Stark	Bran Stark	1
+Robb Stark	Brienne of Tarth	1
+Robb Stark	Brynden	1
+Robb Stark	Edmure	1
+Robb Stark	Hodor	1
+Robb Stark	Jaime Lannister	1
+Robb Stark	Jeyne	1
+Robb Stark	Joffrey Baratheon	1
+Robb Stark	Jon Snow	1
+Robb Stark	Lothar Frey	1
+Robb Stark	Petyr	1
+Robb Stark	Ramsay Bolton	1
+Robb Stark	Rickard	1
+Robb Stark	Rickon Stark	1
+Robb Stark	Sansa Stark	1
+Robb Stark	Stannis Baratheon	1
+Robb Stark	Theon Greyjoy	1
+Robb Stark	Tyrion Lannister	1
+Robb Stark	Tywin Lannister	1
+Robb Stark	Walder Frey	1
+Robert Stark	Aemon	1
+Robert Stark	Barristan	1
+Robert Stark	Renly Baratheon	1
+Robert Stark	Stannis Baratheon	1
+Robert Stark	Thoros	1
+Robert Stark Arryn	Marillion	1
+Roose Bolton	Brienne of Tarth	1
+Samwell	Bowen	1
+Samwell	Craster	1
+Samwell	Eddison	1
+Samwell	Gilly	1
+Samwell	Grenn	1
+Samwell	Janos Slynt	1
+Samwell	Mance Rayder	1
+Samwell	Qhorin	1
+Sandor	Beric Dondarrion	1
+Sandor	Gendry	1
+Sandor	Ser Ilyn Payne	1
+Sandor	Meryn Trant	1
+Sandor	Robert Stark	1
+Sandor	Thoros	1
+Sansa Stark	Arya Stark	1
+Sansa Stark	Bran Stark	1
+Sansa Stark	Brienne of Tarth	1
+Sansa Stark	Cersei Lannister	1
+Sansa Stark	Jaime Lannister	1
+Sansa Stark	Joffrey Baratheon	1
+Sansa Stark	Jon Snow	1
+Sansa Stark	Kevan Lannister	1
+Sansa Stark	Loras Tyrell	1
+Sansa Stark	Lysa Arryn	1
+Sansa Stark	Margaery Tyrell	1
+Sansa Stark	Marillion	1
+Sansa Stark	Myrcella Baratheon	1
+Sansa Stark	Olenna Tyrell	1
+Sansa Stark	Petyr	1
+Sansa Stark	Podrick	1
+Sansa Stark	Renly Baratheon	1
+Sansa Stark	Rickon Stark	1
+Sansa Stark	Robert Stark	1
+Sansa Stark	Robert Stark Arryn	1
+Sansa Stark	Sandor	1
+Sansa Stark	Shae	1
+Sansa Stark	Tyrion Lannister	1
+Shae	Chataya	1
+Shae	Varys	1
+Shireen Baratheon	Davos	1
+Stannis Baratheon	Aemon	1
+Stannis Baratheon	Balon Greyjoy	1
+Stannis Baratheon	Davos	1
+Stannis Baratheon	Melisandre	1
+Stannis Baratheon	Renly Baratheon	1
+Stannis Baratheon	Samwell	1
+Tommen Baratheon	Margaery Tyrell	1
+Tyrion Lannister	Balon Greyjoy	1
+Tyrion Lannister	Bronn	1
+Tyrion Lannister	Chataya	1
+Tyrion Lannister	Doran Martell	1
+Tyrion Lannister	Elia	1
+Tyrion Lannister	Ellaria Sand	1
+Tyrion Lannister	Gregor Clegane	1
+Tyrion Lannister	Ser Ilyn Payne	1
+Tyrion Lannister	Janos Slynt	1
+Tyrion Lannister	Kevan Lannister	1
+Tyrion Lannister	Loras Tyrell	1
+Tyrion Lannister	Mace Tyrell	1
+Tyrion Lannister	Margaery Tyrell	1
+Tyrion Lannister	Meryn Trant	1
+Tyrion Lannister	Oberyn Martell	1
+Tyrion Lannister	Petyr	1
+Tyrion Lannister	Podrick	1
+Tyrion Lannister	Pycelle	1
+Tyrion Lannister	Renly Baratheon	1
+Tyrion Lannister	Robert Stark	1
+Tyrion Lannister	Sandor	1
+Tyrion Lannister	Stannis Baratheon	1
+Tyrion Lannister	Varys	1
+Tywin Lannister	Balon Greyjoy	1
+Tywin Lannister	Brynden	1
+Tywin Lannister	Cersei Lannister	1
+Tywin Lannister	Gregor Clegane	1
+Tywin Lannister	Jaime Lannister	1
+Tywin Lannister	Joffrey Baratheon	1
+Tywin Lannister	Kevan Lannister	1
+Tywin Lannister	Mace Tyrell	1
+Tywin Lannister	Oberyn Martell	1
+Tywin Lannister	Petyr	1
+Tywin Lannister	Podrick	1
+Tywin Lannister	Pycelle	1
+Tywin Lannister	Robert Stark	1
+Tywin Lannister	Stannis Baratheon	1
+Tywin Lannister	Tommen Baratheon	1
+Tywin Lannister	Val	1
+Tywin Lannister	Varys	1
+Tywin Lannister	Walder Frey	1
+Val	Dalla	1
+Varys	Pycelle	1
+Viserys Targaryen	Rhaegar	1
+Viserys Targaryen	Tyrion Lannister	1
+Walder Frey	Lothar Frey	1
+Walder Frey	Petyr	1
+Walder Frey	Roslin	1
+Walton	Jaime Lannister	1
+Ygritte	Qhorin	1
+Ygritte	Rattleshirt	1
+Will	Ned Stark	-1
+Jon Arryn	Lysa Arryn	-1
+Jon Arryn	Littlefinger	-1
+Jory Cassel	Jaime Lannister	-1
+Viserys Targaryen	Khal Drogo	-1
+Viserys Targaryen	Daenerys command	-1
+Robert Baratheon	Lancel Lannister	-1
+Robert Baratheon	Cersei Lannisters	-1
+Syrio Forel	Ser Meryn	-1
+Eddard Stark	Ser Ilyn Payne	-1
+Eddard Stark	Joffrey Baratheon	-1
+Rhaego	Stillborn	-1
+Rhaego	Mirri Maz Duur	-1
+Mirri Maz Duur	Daenerys Targaryen	-1
+Yoren	Ser Amory Lorch	-1
+Renly Baratheon	Melisandre	-1
+Rodrik Cassel	Theon Greyjoy	-1
+Maester Luwin	Dagmer	-1
+Qhorin	Jon Snow	-1
+Pyat Pree	Daenerys Targaryens	-1
+Doreah	Jorah Mormont	-1
+Doreah	Daenerys Targaryen	-1
+Xaro Xhoan Daxos	Jorah Mormont	-1
+Xaro Xhoan Daxos	Daenerys Targaryen	-1
+Jeor Mormont	Rast	-1
+Craster	Karl Tanner	-1
+Kraznys	Daenerys	-1
+Beric Dondarrion	Hound	-1
+Ros	Joffrey Baratheon	-1
+Talisa Stark	Lothar Frey	-1
+Robb Stark	Roose Bolton	-1
+Catelyn Stark	Black Walder Rivers	-1
+Polliver	Arya Stark	-1
+Tansy	Ramsay Bolton	-1
+Joffrey Baratheon	Olenna Tyrell	-1
+Joffrey Baratheon	Littlefinger	-1
+Karl Tanner	Jon Snow	-1
+Locke	Bran Stark	-1
+Rast	Jon Snow	-1
+Lysa Arryn	Littlefinger	-1
+Oberyn Martell	Mountain	-1
+Grenn	Mag the Mighty	-1
+Mag the Mighty	Grenn	-1
+Pyp	Ygritte	-1
+Styr	Jon Snow	-1
+Ygritte	Olly	-1
+Shae	Tyrion Lannister	-1
+Tywin Lannister	Tyrion Lannister	-1
+Mance Rayder	Jon Snow	-1
+Janos Slynt	Jon Snow	-1
+Karsi	Wights	-1
+Shireen Baratheon	Melisandre	-1
+Shireen Baratheon	Stannis Baratheon	-1
+Hizdahr zo Loraq	Harpy	-1
+Stannis Baratheon	Brienne of Tarth	-1
+Myranda	Theon Grejoy	-1
+Meryn Trant	Arya Stark	-1
+Myrcella Baratheon	Ellaria Sand	-1
+Jon Snow	Alliser Thorne	-1
+Jon Snow	Olly	-1
+Areo Hotah	Tyene	-1
+Doran Martell	Ellaria Sand	-1
+Trystane Martell	Obara	-1
+The Flasher	Gregor Clegane	-1
+Roose Bolton	Ramsay Bolton	-1
+Walda Bolton	Ramsay Bolton	-1
+Balon Greyjoy	Euron Greyjoy	-1
+Alliser Thorne	Jon Snow	-1
+Olly	Jon Snow	-1
+Ser Arthur Dayne	Howland Reed	-1
+Ser Arthur Dayne	Ned Stark	-1
+Osha	Ramsay Bolton	-1
+Khal Moro	Daenerys Targaryen	-1
+Hodor	Wights	-1
+Aerys II Targaryen	Jaime Lannister	-1
+Lem	Hound	-1
+Lady Crane	Waif	-1
+Waif	Arya Stark	-1
+Razdal mo Eraz	Grey Worm	-1
+Belicho Paenymion	Grey Worm	-1
+Rickon Stark	Ramsay Bolton	-1
+Jon Umber	Tormund	-1
+Wun Weg Wun Dar Wun	Ramsay Bolton	-1
+Ramsay Bolton	Sansa Stark	-1
+The High Sparrow	Cersei	-1
+Loras Tyrell	Cersei	-1
+Mace Tyrell	Cersei	-1
+Kevan Lannister	Cersei	-1
+Margaery Tyrell	Cersei	-1
+Walder Rivers	Arya Stark	-1
+Lothar Frey	Arya Stark	-1
+Walder Frey	Arya Stark	-1

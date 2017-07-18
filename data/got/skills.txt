@@ -1,0 +1,53 @@
+Thenn	97
+House Westerling	45
+House Payne	53
+House Martell	10,148,150,52,149,151
+Thirteen	126
+House Uller	98
+House Bolton	23,105,101,137,146,153
+brotherhood without banners	17
+House Mormont	63,127
+Brotherhood without banners	12,159
+Chataya's brothel	102
+House Lannister	5,6,16,19,20,55,77,79,82,120,138,145,169
+female	11,16,34,35,42,46,50,56,60,61,65,75,83,84,85,86,89,98,102,103,114,116,118,119,123,125,136,37,45,49,52,93,124,130,132,133,142,143,146,149,151,153,160,161,169
+House Stokeworth	38
+House Arryn	108,108
+House Frey	40,41,170,49,134
+Free Folk	8,75,87,167,88
+House Trant	54
+No House	56,57,71,85,89,94,15,24,25,29,30,33,39,43,44,47,58,64,69,109,131,132,152,160,162,164,168
+House of Loraq	144
+House Clegane	18,135
+Fre Folk	139
+House Targaryen	3,28,60,61,65,66,68,116,125,144,59,62,67,117,124,130
+male	1,3,5,6,7,8,9,10,12,13,14,17,18,19,20,21,22,23,26,27,28,31,32,36,38,40,41,48,51,54,55,57,63,66,68,71,73,76,77,78,79,80,82,87,90,92,94,97,99,104,105,106,108,110,121,122,126,127,128,135,144,148,150,154,156,157,159,163,166,167,170,0,2,4,15,24,25,29,30,33,39,43,44,47,53,58,59,62,64,67,69,70,72,74,81,88,108,96,100,101,107,109,112,115,117,120,129,131,134,137,138,139,140,141,145,147,152,155,158,162,164,165,168
+House Reed	32,34,156
+Night's Watch	1,76,80,106,119,128,2,74,96,129,140,141
+Dothraki people	118,59,158
+Undying Ones	123
+House Tully	42,46,49
+Peach	136
+House Stark	11,14,21,22,31,35,48,50,73,114,157,4,100,107,133,165
+Wildings	166,142,143
+House Cassel	110,121
+House Tarth	37
+House Blackfyre	0
+House of Black and White	161
+House Umber	165
+House Thorne	7
+House Lorch	9
+House Nymeros Martell	104
+House Greyjoy	26,36,122,154,147
+House Baratheon of King's Landing	84
+House Baratheon of Dragonstone	103
+House Dondarrion	13
+House Dayne	155
+House Baratheon	20,51,78,79,70,72,112,115
+R'hllor	86
+House Forrester	81
+House Lannister of Casterly Rock	92
+House Baelish	108
+House Tyrell	27,83,99,93
+Mance Rayder	90
+Unsullied	163

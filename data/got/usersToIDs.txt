@@ -1,0 +1,171 @@
+Val	89
+Aegon	62
+Mag the Mighty	139
+Bowen	81
+Stannis Baratheon	51
+Belicho Paenymion	164
+Robert Stark	4
+Walda Bolton	153
+Illyrio	30
+Cersei Lannisters	113
+Qyburn	77
+Jeor Mormont	127
+Locke	137
+Anguy	12
+Rodrik Cassel	121
+Worm	69
+Lothar Frey	40
+Wun Weg Wun Dar Wun	167
+Ellaria Sand	98
+Tommen Baratheon	79
+Rickon Stark	22
+Ramsay Bolton	101
+Black Walder Rivers	134
+Khal Drogo	59
+Daenerys Targaryens	124
+Rhaegar	67
+Roslin	49
+Bronn	38
+Eddard Stark	73
+Jon Snow Arryn	91
+Doran Martell	104
+Pyat Pree	123
+Daenerys	130
+Jon Snow	21
+Cressen	71
+Lady Crane	160
+Rattleshirt	88
+Joffrey Baratheon	20
+Ser Amory Lorch	120
+Brienne of Tarth	37
+Missandei	65
+Jory Cassel	110
+Elia	52
+Cersei	169
+Ser Ilyn Payne	53
+Roose Bolton	23
+Amory Lorch	9
+Beric Dondarrion	13
+Orell	87
+Littlefinger	109
+Hound	131
+Hizdahr zo Loraq	144
+Polliver	135
+Hoster	44
+Karsi	142
+Robb Stark	48
+Arya Stark	11
+Irri	60
+Jon Arryn	108
+Janos Slynt	80
+Myrcella Baratheon	84
+Rickard	100
+Daenerys command	111
+Mirri Maz Duur	118
+Pyp	140
+Harpy	145
+Melisandre	86
+Edmure	43
+Tansy	136
+Syrio Forel	114
+Samwell	2
+Olly	141
+Meryn Trant	54
+Jon Umber	165
+Talisa Stark	133
+Shireen Baratheon	103
+Tormund	166
+The Flasher	152
+Mance Rayder	8
+Styr	97
+Shae	56
+Wights	143
+Belwas	28
+Kraznys	64
+Margaery Tyrell	83
+Varys	57
+Mace Tyrell	99
+Aemon	0
+Tyrion Lannister	5
+Sansa Stark	50
+Robert Stark Arryn	95
+Gendry	17
+Alliser Thorne	7
+Jojen Reed	32
+Podrick	39
+Catelyn Stark	42
+Doreah	125
+Lysa Arryn	46
+Olenna Tyrell	93
+Karl Tanner	129
+Dagmer	122
+Ygritte	90
+Brynden	15
+Sandor	24
+Rakharo	66
+Ser Arthur Dayne	155
+Gilly	75
+Walton	105
+Waif	161
+Jaime Lannister	19
+Walder Frey	41
+Daenerys Targaryen	61
+Trystane Martell	150
+Pycelle	55
+Theon Greyjoy	36
+Rhaego	116
+Tywin Lannister	6
+Ros	132
+Daario	58
+Viserys Targaryen	68
+Cersei Lannister	16
+Barristan	29
+Myranda	146
+Yoren	119
+Euron Greyjoy	154
+Khal Moro	158
+Aerys II Targaryen	3
+Marillion	94
+Balon Greyjoy	26
+Stillborn	117
+Walder Rivers	170
+Gregor Clegane	18
+Ned Stark	107
+Xaro Xhoan Daxos	126
+Grey Worm	163
+Oberyn Martell	10
+The High Sparrow	168
+Renly Baratheon	78
+Petyr	47
+Dalla	85
+Tyene	149
+Mountain	138
+Razdal mo Eraz	162
+Meera Reed	34
+Craster	76
+Rast	128
+Osha	157
+Qhorin	96
+Loras Tyrell	27
+Will	106
+Thoros	25
+Areo Hotah	148
+Maester Luwin	33
+Jorah Mormont	63
+Grenn	1
+Howland Reed	156
+Hodor	31
+Eddison	74
+Salladhor	72
+Davos	70
+Robert Baratheon	112
+Theon Grejoy	147
+Lem	159
+Jeyne	45
+Chataya	102
+Kevan Lannister	82
+Nan	35
+Obara	151
+Ser Meryn	115
+Bran Stark	14
+Lancel Lannister	92

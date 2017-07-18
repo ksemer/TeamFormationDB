@@ -1,0 +1,167 @@
+88	male,Free Folk
+89	female,No House
+110	male,House Cassel
+112	male,House Baratheon
+114	female,House Stark
+115	male,House Baratheon
+116	female,House Targaryen
+90	male,Mance Rayder
+117	male,House Targaryen
+118	female,Dothraki people
+119	female,Night's Watch
+92	male,House Lannister of Casterly Rock
+93	female,House Tyrell
+94	male,No House
+96	male,Night's Watch
+97	male,Thenn
+98	female,House Uller
+10	male,House Martell
+11	female,House Stark
+99	male,House Tyrell
+12	male,Brotherhood without banners
+13	male,House Dondarrion
+14	male,House Stark
+15	male,No House
+16	female,House Lannister
+17	male,brotherhood without banners
+18	male,House Clegane
+19	male,House Lannister
+120	male,House Lannister
+121	male,House Cassel
+0	male,House Blackfyre
+122	male,House Greyjoy
+1	male,Night's Watch
+123	female,Undying Ones
+2	male,Night's Watch
+124	female,House Targaryen
+3	male,House Targaryen
+4	male,House Stark
+125	female,House Targaryen
+5	male,House Lannister
+126	male,Thirteen
+127	male,House Mormont
+6	male,House Lannister
+7	male,House Thorne
+128	male,Night's Watch
+8	male,Free Folk
+129	male,Night's Watch
+9	male,House Lorch
+20	male,House Lannister,House Baratheon
+21	male,House Stark
+22	male,House Stark
+23	male,House Bolton
+24	male,No House
+25	male,No House
+26	male,House Greyjoy
+27	male,House Tyrell
+28	male,House Targaryen
+29	male,No House
+130	female,House Targaryen
+131	male,No House
+132	female,No House
+133	female,House Stark
+134	male,House Frey
+135	male,House Clegane
+136	female,Peach
+137	male,House Bolton
+138	male,House Lannister
+139	male,Fre Folk
+30	male,No House
+31	male,House Stark
+32	male,House Reed
+33	male,No House
+34	female,House Reed
+35	female,House Stark
+36	male,House Greyjoy
+37	female,House Tarth
+38	male,House Stokeworth
+39	male,No House
+140	male,Night's Watch
+141	male,Night's Watch
+142	female,Wildings
+143	female,Wildings
+144	male,House of Loraq,House Targaryen
+145	male,House Lannister
+146	female,House Bolton
+147	male,House Greyjoy
+148	male,House Martell
+149	female,House Martell
+40	male,House Frey
+41	male,House Frey
+42	female,House Tully
+43	male,No House
+44	male,No House
+45	female,House Westerling
+46	female,House Tully
+47	male,No House
+48	male,House Stark
+49	female,House Frey,House Tully
+150	male,House Martell
+151	female,House Martell
+152	male,No House
+153	female,House Bolton
+154	male,House Greyjoy
+155	male,House Dayne
+156	male,House Reed
+157	male,House Stark
+158	male,Dothraki people
+159	male,Brotherhood without banners
+50	female,House Stark
+51	male,House Baratheon
+52	female,House Martell
+53	male,House Payne
+54	male,House Trant
+55	male,House Lannister
+56	female,No House
+57	male,No House
+58	male,No House
+59	male,House Targaryen,Dothraki people
+160	female,No House
+161	female,House of Black and White
+162	male,No House
+163	male,Unsullied
+164	male,No House
+165	male,House Umber,House Stark
+166	male,Wildings
+167	male,Free Folk
+168	male,No House
+169	female,House Lannister
+60	female,House Targaryen
+61	female,House Targaryen
+62	male,House Targaryen
+63	male,House Mormont
+64	male,No House
+65	female,House Targaryen
+66	male,House Targaryen
+67	male,House Targaryen
+68	male,House Targaryen
+69	male,No House
+170	male,House Frey
+70	male,House Baratheon
+71	male,No House
+72	male,House Baratheon
+73	male,House Stark
+74	male,Night's Watch
+75	female,Free Folk
+76	male,Night's Watch
+77	male,House Lannister
+78	male,House Baratheon
+79	male,House Lannister,House Baratheon
+100	male,House Stark
+101	male,House Bolton
+102	female,Chataya's brothel
+103	female,House Baratheon of Dragonstone
+104	male,House Nymeros Martell
+105	male,House Bolton
+106	male,Night's Watch
+80	male,Night's Watch
+107	male,House Stark
+81	male,House Forrester
+108	male,House Baelish,House Arryn
+109	male,No House
+82	male,House Lannister
+83	female,House Tyrell
+84	female,House Baratheon of King's Landing
+85	female,No House
+86	female,R'hllor
+87	male,Free Folk
