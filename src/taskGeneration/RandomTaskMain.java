@@ -9,13 +9,11 @@ import java.util.HashMap;
 
 import inputHandler.InputManager;
 
-public class Main {
+public class RandomTaskMain {
 	public static void main(String[] args){
-		String dataset="slashdot";
-		/*String userPath="data/"+dataset+"/users.txt";
-		String skillPath="data/"+dataset+"/skills.txt";*/
-		String userPath="data/"+dataset+"/users_rare>1.txt";
-		String skillPath="data/"+dataset+"/skills_rare>1.txt";
+		String dataset="got";
+		String userPath="data/"+dataset+"/users.txt";
+		String skillPath="data/"+dataset+"/skills.txt";
 		
 		InputManager manager = new InputManager(userPath,skillPath);
 		manager.retrieveSkillInfo();
@@ -26,7 +24,7 @@ public class Main {
 		
 			TaskGenerator tG = new TaskGenerator();
 			ArrayList<String> initialTask = new ArrayList<String>();
-			initialTask=tG.produceInitialTask(3, manager.getSkillInfo());
+			initialTask=tG.produceRandomInitialTask(3, manager.getSkillInfo());
 			
 			if(i==0){
 				ArrayList<Task> tmp = new ArrayList<Task>();
@@ -40,7 +38,7 @@ public class Main {
 			}
 					
 			ArrayList<String> secondTask = new ArrayList<String>();
-			secondTask=tG.produceAdditionalTask(2, manager.getSkillInfo(),initialTask);
+			secondTask=tG.produceRandomAdditionalTask(2, manager.getSkillInfo(),initialTask);
 			
 			if(i==0){
 				ArrayList<Task> tmp = new ArrayList<Task>();
@@ -54,7 +52,7 @@ public class Main {
 			}
 			
 			ArrayList<String> thirdTask = new ArrayList<String>();
-			thirdTask=tG.produceAdditionalTask(5, manager.getSkillInfo(),secondTask);
+			thirdTask=tG.produceRandomAdditionalTask(5, manager.getSkillInfo(),secondTask);
 			
 			if(i==0){
 				ArrayList<Task> tmp = new ArrayList<Task>();
@@ -68,7 +66,7 @@ public class Main {
 			}
 			
 			ArrayList<String> fourthTask = new ArrayList<String>();
-			fourthTask=tG.produceAdditionalTask(10, manager.getSkillInfo(),thirdTask);
+			fourthTask=tG.produceRandomAdditionalTask(10, manager.getSkillInfo(),thirdTask);
 			
 			if(i==0){
 				ArrayList<Task> tmp = new ArrayList<Task>();
@@ -88,7 +86,7 @@ public class Main {
 	public static void writeTasks(String dataset,HashMap<Integer,ArrayList<Task>> allTasks){
 		
 		for(Integer num : allTasks.keySet()){
-			String outputPath="tasks/" + dataset + "/rare>1_" +dataset + "_" + num + ".txt";
+			String outputPath="tasks/" + dataset + "/" +dataset + "_" + num + ".txt";
 			PrintWriter outputWriter;
 			File file = new File(outputPath);
 			try 
