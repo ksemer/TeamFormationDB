@@ -129,14 +129,19 @@ public class ShortestPathCompatibility {
 
 					// update positive and negative shortest paths
 					if (sign == 1) {
+
 						if (nPos.get(p).getValue() > 0)
 							nPos.get(x).increase(nPos.get(p).getValue());
-						else if (nNeg.get(p).getValue() > 0)
+
+						if (nNeg.get(p).getValue() > 0)
 							nNeg.get(x).increase(nNeg.get(p).getValue());
+
 					} else if (sign == -1) {
+
 						if (nPos.get(p).getValue() > 0)
 							nNeg.get(x).increase(nPos.get(p).getValue());
-						else if (nNeg.get(p).getValue() > 0)
+
+						if (nNeg.get(p).getValue() > 0)
 							nPos.get(x).increase(nNeg.get(p).getValue());
 					}
 				}
