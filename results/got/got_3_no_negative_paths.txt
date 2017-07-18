@@ -1,0 +1,50 @@
+brotherhood without banners,House Payne,House Clegane;1;17,53,18;3;2
+R'hllor,House Nymeros Martell,House Umber;0;0;-;-;-
+House Baratheon,House Martell,Unsullied;0;0;-;-;-
+R'hllor,Brotherhood without banners,House Baratheon of Dragonstone;0;0;-;-;-
+House Dondarrion,Mance Rayder,No House;1;13,90,15;3;3
+House Uller,House of Black and White,House Tarth;0;0;-;-;-
+Brotherhood without banners,Peach,Free Folk;0;0;-;-;-
+House Tyrell,House Trant,male;1;54,27;2;2
+House Clegane,Unsullied,brotherhood without banners;0;0;-;-;-
+House Frey,House Baratheon of Dragonstone,House Bolton;1;103,134,137;3;4
+House Westerling,House Mormont,House Greyjoy;1;45,63,26;3;4
+House Mormont,House Forrester,R'hllor;1;81,86,127;3;4
+House Clegane,House Tully,House Baelish;0;0;-;-;-
+Thenn,House Dayne,R'hllor;0;0;-;-;-
+House Dondarrion,Chataya's brothel,House Greyjoy;1;13,102,26;3;3
+Unsullied,brotherhood without banners,No House;0;0;-;-;-
+House Mormont,Dothraki people,Night's Watch;2;63,59,1;3;4
+Chataya's brothel,No House,male;1;102,56,57;3;2
+House Stark,House Uller,House Tyrell;1;98,27,4;3;2
+Night's Watch,House Bolton,House Greyjoy;2;36,105,2;3;3
+Undying Ones,House Trant,House Tyrell;0;0;-;-;-
+House Baratheon of Dragonstone,House Nymeros Martell,Brotherhood without banners;0;0;-;-;-
+House Forrester,House Dondarrion,House Blackfyre;1;81,13,0;3;4
+Peach,House Thorne,House Tarth;0;0;-;-;-
+House Forrester,House Baratheon,Undying Ones;0;0;-;-;-
+R'hllor,House Lannister of Casterly Rock,House Mormont;1;86,92,127;3;5
+House Nymeros Martell,House Dayne,House Reed;0;0;-;-;-
+House Clegane,female,House Mormont;1;18,63,52;3;3
+House Stokeworth,House Umber,Brotherhood without banners;0;0;-;-;-
+House of Black and White,Mance Rayder,Thenn;0;0;-;-;-
+House Thorne,House Targaryen,House Arryn;0;0;-;-;-
+House Baratheon,Thirteen,House Reed;0;0;-;-;-
+House Uller,House Blackfyre,House Baratheon;1;98,0,51;3;3
+House Dayne,House Westerling,House Tully;0;0;-;-;-
+House Lannister of Casterly Rock,House Bolton,House Tarth;1;92,37,23;3;4
+House Mormont,House of Black and White,House Stokeworth;0;0;-;-;-
+brotherhood without banners,House Payne,House Bolton;1;17,53,105;3;3
+House Frey,Brotherhood without banners,House Arryn;0;0;-;-;-
+House Lorch,House Targaryen,House Umber;0;0;-;-;-
+House Dondarrion,Free Folk,House Arryn;0;0;-;-;-
+House Uller,Night's Watch,House Blackfyre;1;98,0,2;3;3
+House Bolton,Peach,Brotherhood without banners;1;136,159,23;3;6
+House Tarth,Chataya's brothel,House Lannister of Casterly Rock;1;37,102,92;3;3
+House Cassel,House Lannister,House Thorne;0;0;-;-;-
+R'hllor,House Lannister,House Baratheon of King's Landing;0;0;-;-;-
+House Westerling,Mance Rayder,House Baratheon of Dragonstone;0;0;-;-;-
+House Baelish,brotherhood without banners,House Frey;0;0;-;-;-
+Free Folk,House Lorch,Thenn;0;0;-;-;-
+Free Folk,Brotherhood without banners,House Blackfyre;1;0,12,75;3;3
+House Frey,House Lorch,House Tarth;0;0;-;-;-
