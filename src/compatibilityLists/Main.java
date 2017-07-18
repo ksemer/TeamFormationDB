@@ -6,41 +6,46 @@ import java.util.Calendar;
 
 public class Main {
 	public static void main(String[] args){
+		String dataset="got";
 		
-		System.out.print("Started at: ");
-		System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
 		
-		//String inputPath="/home/formation/Desktop/wikipedia_spc";
+		//System.out.print("Started at: ");
+		//System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
+		
+		String inputPath="/home/formation/Desktop/"+dataset+"_spc";
 		
 		//No negative & distances
-		/*String outputPath="/home/formation/Desktop/compatibilityLists/wikipedia/no_negative_paths.txt";
-		String distancesPath="/home/formation/Desktop/compatibilityLists/wikipedia/distances.txt";
+		String outputPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/no_negative_paths.txt";
+		String distancesPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/distances.txt";
 		FileEditor fe = new FileEditor(inputPath,outputPath,distancesPath);
-		fe.processNoNegative();*/	
+		fe.processNoNegative();	
 		
 		//More positive
-		/*String outputPath="/home/formation/Desktop/compatibilityLists/zipf/more_positive_paths.txt";
-		FileEditor fe = new FileEditor(inputPath,outputPath);
-		fe.processMorePositive();*/
+		outputPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/more_positive_paths.txt";
+		fe = new FileEditor(inputPath,outputPath);
+		fe.processMorePositive();
 		 
 		
 		//One positive
-		/*String outputPath="/home/formation/Desktop/compatibilityLists/wikipedia/one_positive_path.txt";
-		FileEditor fe = new FileEditor(inputPath,outputPath);
+		outputPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/one_positive_path.txt";
+		fe = new FileEditor(inputPath,outputPath);
 		fe.processOnePositive();
 		 
-		System.out.print("Finished at: ");
-		System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );*/
-		
 		
 		//sbp
-		String inputPath="/home/formation/Desktop/slashdot_sbp";
-		String outputPath="/home/formation/Desktop/compatibilityLists/slashdot/sbp.txt";
-		FileEditor fe = new FileEditor(inputPath,outputPath);
+		inputPath="/home/formation/Desktop/"+dataset+"_sbp";
+		outputPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/sbp.txt";
+		fe = new FileEditor(inputPath,outputPath);
 		fe.processSbp();
 		
-		System.out.print("Finished at: ");
-		System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
+		//sbp heuristic
+		inputPath="/home/formation/Desktop/"+dataset+"_sbp_heuristic";
+		outputPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/sbp_heuristic.txt";
+		fe = new FileEditor(inputPath,outputPath);
+		fe.processSbp();
+		
+		//System.out.print("Finished at: ");
+		//System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
 	 
 		
 		
