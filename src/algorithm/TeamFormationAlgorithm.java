@@ -38,7 +38,7 @@ public class TeamFormationAlgorithm {
 		
 		this.compatiblesDistribution=compatiblesDistribution;
 		
-		db.init();
+		db.init(mode);
 		
 		this.mode=mode;
 		
@@ -75,7 +75,7 @@ public class TeamFormationAlgorithm {
 		
 		this.compatiblesDistribution=compatiblesDistribution;
 		
-		db.init();
+		db.init(mode);
 		
 		this.mode=mode;
 				
@@ -149,14 +149,14 @@ public class TeamFormationAlgorithm {
 					//choose best candidate
 					int user;
 					if(compatibility_mode==true){
-						//user=getBestCompatibleCandidate(users,star);
+						user=getBestCompatibleCandidate(users,star);
 						//user=getRandomCompatibleCandidate(users,star);
-						user=getMostCompatiblesCompatibleCandidate(users,star);
+						//user=getMostCompatiblesCompatibleCandidate(users,star);
 					}
 					else{
-						//user=getBestNoNegativeCandidate(users,star);
+						user=getBestNoNegativeCandidate(users,star);
 						//user=getRandomNoNegativeCandidate(users,star);
-						user=getMostCompatiblesNoNegativeCandidate(users,star);
+						//user=getMostCompatiblesNoNegativeCandidate(users,star);
 					}
 					
 					if(user!=-1){
