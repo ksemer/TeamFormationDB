@@ -119,15 +119,47 @@ public class CompatibleSkillsAlgorithm {
 			int score=0;
 			for(int j=i+1;j<initialTask.size();j++){
 				String skill2=initialTask.get(j);
+				/*System.out.println(skill1);
+				System.out.println(skill2);*/
 				if(i==0 && j==1){
 					lessSkill1=skill1;
 					lessSkill2=skill2;
-					min=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					if(skillsCompatibilityMatrix.containsKey(skill1)){
+						if(skillsCompatibilityMatrix.get(skill1).containsKey(skill2)){
+							min=skillsCompatibilityMatrix.get(skill1).get(skill2);
+						}
+						else{
+							min=0;
+						}
+					}
+					if(skillsCompatibilityMatrix.containsKey(skill2)){
+						if(skillsCompatibilityMatrix.get(skill2).containsKey(skill1)){
+							min=skillsCompatibilityMatrix.get(skill2).get(skill1);
+						}
+						else{
+							min=0;
+						}
+					}
 				}
-				else if(skillsCompatibilityMatrix.get(skill1).get(skill2)<min){
-					lessSkill1=skill1;
-					lessSkill2=skill2;
-					min=skillsCompatibilityMatrix.get(skill1).get(skill2);
+				else{
+					if(skillsCompatibilityMatrix.containsKey(skill1)){
+						if(skillsCompatibilityMatrix.get(skill1).containsKey(skill2)){
+							if(skillsCompatibilityMatrix.get(skill1).get(skill2)<min){
+								lessSkill1=skill1;
+								lessSkill2=skill2;
+								min=skillsCompatibilityMatrix.get(skill1).get(skill2);
+							}
+						}
+					}
+					if(skillsCompatibilityMatrix.containsKey(skill2)){
+						if(skillsCompatibilityMatrix.get(skill2).containsKey(skill1)){	
+							if(skillsCompatibilityMatrix.get(skill2).get(skill1)<min){
+								lessSkill1=skill1;
+								lessSkill2=skill2;
+								min=skillsCompatibilityMatrix.get(skill2).get(skill1);
+							}
+						}
+					}
 				}
 			}
 		}
@@ -142,7 +174,17 @@ public class CompatibleSkillsAlgorithm {
 			for(int j=0;j<initialTask.size();j++){
 				String skill2=initialTask.get(j);
 				if(i!=j){
-					score+=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					if(skillsCompatibilityMatrix.containsKey(skill1)){
+						if(skillsCompatibilityMatrix.get(skill1).containsKey(skill2)){
+							score+=skillsCompatibilityMatrix.get(skill1).get(skill2);
+						}
+					}
+					if(skillsCompatibilityMatrix.containsKey(skill2)){
+						if(skillsCompatibilityMatrix.get(skill2).containsKey(skill1)){
+							score+=skillsCompatibilityMatrix.get(skill2).get(skill1);
+						}
+					}
+					
 				}
 			}
 			skillScores.put(skill1,score);
