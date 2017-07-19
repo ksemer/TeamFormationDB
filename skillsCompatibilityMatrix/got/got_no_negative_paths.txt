@@ -1,0 +1,811 @@
+House Tarth	House Trant	1
+House Trant	House Mormont	1
+House Uller	Chataya's brothel	1
+House Mormont	House Mormont	1
+House Lannister	No House	173
+House Stokeworth	House Lannister of Casterly Rock	1
+House Tyrell	House Baratheon of Dragonstone	1
+male	House of Black and White	27
+Dothraki people	House Arryn	6
+House Tully	House Forrester	3
+House Clegane	House Lannister of Casterly Rock	1
+Brotherhood without banners	House Dondarrion	2
+Night's Watch	House Westerling	4
+House Stark	House Stark	61
+House Blackfyre	House Nymeros Martell	1
+House Trant	House Bolton	2
+House Arryn	female	6
+House Greyjoy	Chataya's brothel	2
+Thenn	female	7
+House Westerling	House Lannister of Casterly Rock	1
+female	House Lannister of Casterly Rock	25
+Dothraki people	Fre Folk	2
+House Tully	R'hllor	2
+House Dondarrion	House Targaryen	9
+House Reed	House Westerling	2
+No House	House Trant	10
+House Baratheon of Dragonstone	House Targaryen	3
+male	House Lannister	606
+House Martell	House Stokeworth	2
+Dothraki people	Thirteen	2
+House Tarth	Wildings	1
+House Baratheon	House Tully	16
+Night's Watch	Fre Folk	4
+House Clegane	House Tyrell	3
+House Trant	House Baratheon of King's Landing	1
+House Baratheon of King's Landing	Peach	1
+House Greyjoy	House Mormont	4
+House Bolton	House Greyjoy	7
+House Thorne	House Tyrell	1
+male	Chataya's brothel	61
+House Thorne	Dothraki people	2
+House Stokeworth	House Forrester	1
+House Blackfyre	brotherhood without banners	1
+House Stokeworth	House Uller	1
+House Stark	House Baratheon of King's Landing	11
+male	House Greyjoy	192
+House Baratheon	House Bolton	12
+House Cassel	House Cassel	1
+House Greyjoy	House Payne	2
+House Thorne	House Cassel	1
+House Forrester	House Lannister of Casterly Rock	1
+House Reed	House Lannister of Casterly Rock	2
+House Tully	House Payne	1
+House Targaryen	Mance Rayder	10
+House Clegane	House Westerling	1
+Thenn	No House	2
+House Lorch	House Payne	1
+House Martell	House Payne	2
+House Blackfyre	male	68
+brotherhood without banners	House Baratheon of King's Landing	1
+House Blackfyre	House Baratheon	6
+House Stark	House Lannister of Casterly Rock	11
+House Baratheon of King's Landing	Mance Rayder	1
+House Baratheon	House Uller	4
+No House	Chataya's brothel	17
+House Westerling	Chataya's brothel	1
+No House	House Stokeworth	16
+No House	House Mormont	37
+House Blackfyre	Wildings	1
+House Lannister	Peach	2
+House Blackfyre	House Reed	2
+House Trant	House Forrester	1
+Brotherhood without banners	House Nymeros Martell	2
+House Lannister	House Baratheon	49
+House Lannister	House Trant	8
+Night's Watch	House Dayne	1
+House Frey	Thirteen	3
+House Forrester	R'hllor	1
+Dothraki people	House Greyjoy	5
+House Greyjoy	House Greyjoy	2
+brotherhood without banners	House Payne	1
+House Cassel	House Clegane	2
+House Baratheon	Fre Folk	1
+House Tyrell	House Frey	5
+House Tyrell	Wildings	3
+Night's Watch	House Clegane	10
+brotherhood without banners	House Reed	2
+House Westerling	R'hllor	1
+House Thorne	House Stokeworth	1
+House Targaryen	House Westerling	8
+female	House Baratheon of Dragonstone	12
+House Baratheon of Dragonstone	Free Folk	1
+House Stark	House Frey	14
+Thirteen	Fre Folk	1
+Night's Watch	R'hllor	4
+House Baratheon of Dragonstone	Night's Watch	4
+male	House Arryn	34
+House Bolton	Fre Folk	1
+female	House Nymeros Martell	17
+male	House Martell	121
+Brotherhood without banners	House Mormont	4
+House Stark	Dothraki people	3
+male	House Baelish	17
+House Dondarrion	House Mormont	2
+House Baratheon of Dragonstone	House Cassel	2
+House Thorne	House Lorch	1
+House Westerling	Wildings	1
+female	Thirteen	7
+Night's Watch	Thenn	5
+House Frey	House of Black and White	4
+brotherhood without banners	House Clegane	1
+House Lannister	House Nymeros Martell	7
+House Blackfyre	R'hllor	1
+House Payne	House Trant	1
+male	House Uller	54
+House Stokeworth	House Frey	1
+House Clegane	Chataya's brothel	1
+male	House Mormont	113
+House Baratheon of King's Landing	House Lannister of Casterly Rock	1
+House Baratheon	House Targaryen	50
+No House	Wildings	23
+House Lannister	House Dondarrion	5
+House Payne	House Nymeros Martell	1
+House Stark	R'hllor	8
+Night's Watch	House Baratheon	21
+House Reed	Chataya's brothel	1
+House Thorne	House Baratheon of Dragonstone	1
+Dothraki people	House Baelish	3
+House Lannister	House Stokeworth	7
+House Dondarrion	Wildings	1
+female	Brotherhood without banners	47
+House Clegane	House of Black and White	1
+House Thorne	No House	2
+House Blackfyre	House Baratheon of King's Landing	1
+House Stark	House Tyrell	39
+House Payne	House Lannister of Casterly Rock	1
+Free Folk	House of Black and White	1
+House Frey	House Frey	6
+female	House of Black and White	8
+House Clegane	House Uller	1
+No House	House Frey	37
+House Stark	House Stokeworth	10
+male	House Reed	125
+House Targaryen	female	256
+House Martell	female	37
+House Stark	Mance Rayder	11
+female	House Frey	51
+Dothraki people	House Mormont	2
+House Thorne	Free Folk	1
+House Thorne	House Trant	1
+Free Folk	House Lorch	1
+House Tarth	House Martell	1
+female	House Payne	8
+House Tyrell	Peach	3
+House Thorne	House Bolton	1
+female	House Tyrell	86
+House Dondarrion	House Martell	1
+Night's Watch	House Stark	44
+House Lorch	Brotherhood without banners	1
+House Blackfyre	House Forrester	1
+House Tarth	House Mormont	1
+female	House Cassel	17
+House Westerling	House Baratheon of King's Landing	1
+Peach	Free Folk	1
+House Bolton	Thirteen	2
+House Mormont	House Bolton	2
+Dothraki people	Mance Rayder	1
+House Martell	House Trant	2
+House Baratheon	House Baratheon of King's Landing	6
+House Forrester	House Uller	1
+female	House Clegane	32
+male	Thirteen	27
+House Trant	Thenn	1
+brotherhood without banners	House Westerling	1
+Free Folk	House Uller	1
+House Frey	Fre Folk	2
+No House	House Payne	7
+No House	House Baratheon	104
+House Thorne	Wildings	1
+House Lannister	House Westerling	9
+House Martell	House Mormont	1
+House Martell	No House	35
+House Martell	House Martell	1
+House Stokeworth	House Tully	3
+brotherhood without banners	House Nymeros Martell	1
+House Tarth	House Tully	3
+male	House Lorch	57
+brotherhood without banners	Chataya's brothel	1
+House Bolton	Peach	2
+House Thorne	House Forrester	1
+House Baelish	Thirteen	1
+House Tully	Peach	1
+Free Folk	Free Folk	5
+House Dondarrion	No House	16
+House Payne	House Bolton	1
+House Baratheon	Thirteen	1
+House Baratheon	House Lannister of Casterly Rock	6
+House Lannister	House Tarth	6
+Free Folk	female	91
+House Nymeros Martell	Wildings	1
+male	Fre Folk	24
+House Blackfyre	House Lannister of Casterly Rock	1
+House Blackfyre	House Lorch	1
+Night's Watch	Night's Watch	20
+Free Folk	House Martell	2
+House Clegane	House Stokeworth	1
+House Lannister	House Tully	24
+Free Folk	House Reed	7
+No House	House Forrester	8
+House Clegane	Fre Folk	1
+House Targaryen	No House	200
+House Lannister	House Lannister	35
+House Reed	House Bolton	2
+House Greyjoy	House Reed	4
+Night's Watch	House Tully	12
+Fre Folk	House of Black and White	1
+House Mormont	Mance Rayder	2
+Free Folk	Wildings	4
+House Cassel	Thirteen	2
+House Tyrell	Mance Rayder	3
+male	No House	1415
+No House	House Tyrell	65
+House Tully	House Westerling	3
+House Bolton	House Arryn	4
+House Trant	Night's Watch	6
+Brotherhood without banners	House Baratheon of King's Landing	1
+No House	Peach	8
+House Baratheon of Dragonstone	Wildings	1
+Free Folk	Thenn	1
+House Thorne	female	9
+House Martell	Chataya's brothel	2
+House Lannister of Casterly Rock	House Mormont	1
+brotherhood without banners	R'hllor	1
+House Stark	House Forrester	4
+House Martell	House Bolton	2
+Free Folk	R'hllor	3
+No House	House Cassel	8
+House Greyjoy	House Tyrell	7
+male	female	1877
+House Blackfyre	House Tully	3
+House Dondarrion	House Bolton	2
+House Tully	House Trant	3
+House Lannister	House Tyrell	26
+House Bolton	House Frey	6
+House Tyrell	House Uller	3
+House Thorne	House Greyjoy	1
+No House	House Nymeros Martell	16
+male	House Tully	195
+House Frey	House Westerling	3
+House Tully	Wildings	3
+House Targaryen	House Reed	19
+House Westerling	House Uller	1
+brotherhood without banners	House Uller	1
+House Tarth	House Baratheon of Dragonstone	1
+No House	Fre Folk	2
+male	House Tarth	40
+House Mormont	Free Folk	6
+House Targaryen	House Tyrell	33
+House Clegane	House Tully	3
+House Lorch	House Stokeworth	1
+House Blackfyre	female	24
+House Baratheon	House Arryn	2
+House Forrester	House Nymeros Martell	1
+House Baratheon	R'hllor	4
+House Reed	House Frey	2
+House Clegane	House Tarth	1
+Free Folk	Thirteen	1
+House Blackfyre	House Uller	1
+Fre Folk	House Lannister	1
+House Baratheon of Dragonstone	House Frey	2
+male	House Targaryen	759
+House Cassel	House of Black and White	2
+House Targaryen	House Forrester	2
+No House	House Bolton	41
+House Blackfyre	House Lannister	9
+House Baelish	House Greyjoy	2
+Brotherhood without banners	House Stokeworth	2
+male	Brotherhood without banners	117
+House Frey	Chataya's brothel	1
+House Frey	Dothraki people	7
+Free Folk	House Nymeros Martell	1
+House Clegane	House Forrester	1
+House Stark	House Lannister	85
+House Frey	House Trant	4
+House Martell	House Nymeros Martell	1
+House Trant	House Nymeros Martell	1
+House Tully	House Lannister of Casterly Rock	3
+House Blackfyre	House Clegane	1
+Free Folk	House Forrester	2
+House Bolton	Free Folk	5
+House Cassel	House Lannister	4
+Brotherhood without banners	House Uller	2
+Night's Watch	Dothraki people	13
+House Frey	House Nymeros Martell	1
+House Stark	female	297
+House Payne	Chataya's brothel	1
+House Trant	House Uller	1
+No House	House Greyjoy	46
+House Reed	House Forrester	2
+House Baratheon	House Nymeros Martell	5
+House Lannister	Wildings	11
+Brotherhood without banners	Wildings	2
+House Lannister	House Martell	17
+male	House Clegane	96
+House Stark	House Reed	23
+House Dondarrion	House Tyrell	1
+Thirteen	House Lannister	2
+House Lannister	House Mormont	11
+House Thorne	House Clegane	1
+House Payne	House Forrester	1
+Free Folk	Mance Rayder	4
+House Greyjoy	House Baratheon of King's Landing	2
+House Tully	Free Folk	7
+House Lannister	R'hllor	3
+House Tully	House Nymeros Martell	3
+House Baratheon of King's Landing	Wildings	1
+Brotherhood without banners	House Targaryen	18
+female	Dothraki people	25
+House Reed	House Martell	1
+House Targaryen	House Arryn	8
+House Targaryen	Dothraki people	13
+House Greyjoy	House Uller	2
+House Cassel	House Greyjoy	4
+House Blackfyre	House Martell	2
+Chataya's brothel	House Nymeros Martell	1
+House Clegane	House Reed	2
+Free Folk	Chataya's brothel	1
+Night's Watch	brotherhood without banners	4
+House Lorch	House Uller	1
+Brotherhood without banners	House Lannister of Casterly Rock	1
+female	female	332
+House Clegane	House Targaryen	11
+male	Wildings	98
+House Lannister of Casterly Rock	House Nymeros Martell	1
+Brotherhood without banners	Brotherhood without banners	1
+male	House Baratheon of Dragonstone	27
+House Reed	House Baratheon of King's Landing	2
+House Frey	House Baratheon of King's Landing	1
+House Tyrell	House Stokeworth	3
+Night's Watch	House Frey	11
+House Targaryen	House Targaryen	53
+No House	House Baratheon of King's Landing	17
+House Targaryen	House Martell	18
+House Cassel	Fre Folk	2
+House Reed	House Mormont	4
+House Blackfyre	House Mormont	2
+House Blackfyre	House Tyrell	2
+Night's Watch	House Forrester	6
+House Martell	House Greyjoy	4
+House Lannister	House Baelish	1
+No House	Dothraki people	16
+brotherhood without banners	House Greyjoy	2
+brotherhood without banners	House Targaryen	9
+House Clegane	House Bolton	3
+House Nymeros Martell	House Bolton	1
+Free Folk	House Cassel	1
+House Baratheon	House Tyrell	14
+No House	House Lannister of Casterly Rock	19
+House Lannister	House Uller	6
+House Tyrell	House Forrester	3
+House Greyjoy	House Nymeros Martell	2
+House Baratheon	Wildings	7
+House Frey	House Baratheon	14
+House Targaryen	House Payne	2
+R'hllor	Mance Rayder	1
+Thenn	Dothraki people	2
+House Lannister	House Lorch	9
+Night's Watch	Chataya's brothel	2
+House Greyjoy	R'hllor	2
+House Lannister	Chataya's brothel	7
+Thenn	Wildings	1
+House Uller	House Bolton	1
+House Frey	R'hllor	1
+male	Thenn	26
+No House	House Clegane	23
+House Lannister	House Lannister of Casterly Rock	9
+House Martell	House Clegane	2
+House Thorne	House Nymeros Martell	1
+House Thorne	Chataya's brothel	1
+Thenn	House Targaryen	3
+Night's Watch	House Baelish	5
+House Greyjoy	House Targaryen	24
+House Lannister	House Reed	12
+House Bolton	House Cassel	3
+House Lannister of Casterly Rock	House Bolton	2
+House Trant	House Lannister of Casterly Rock	1
+House Trant	Fre Folk	1
+House Bolton	House Baelish	2
+House Baratheon	House Baratheon	13
+House Stokeworth	House Baratheon of King's Landing	1
+Chataya's brothel	House Bolton	1
+House Targaryen	House Stark	113
+Night's Watch	House Dondarrion	4
+House Baratheon	House of Black and White	1
+Dothraki people	House Clegane	2
+House Greyjoy	House Tarth	1
+House Baratheon of Dragonstone	Dothraki people	2
+House Dondarrion	Free Folk	3
+House Targaryen	House Mormont	19
+female	House Westerling	23
+House Greyjoy	House Tully	6
+House Thorne	House Frey	1
+House Baratheon of King's Landing	House Nymeros Martell	1
+House Clegane	Wildings	2
+male	House Baratheon	378
+brotherhood without banners	Free Folk	3
+House Stokeworth	House Trant	1
+House Frey	House Tully	8
+Brotherhood without banners	House Bolton	4
+Thirteen	Wildings	1
+male	House Dayne	1
+House Frey	Wildings	5
+Night's Watch	House Targaryen	56
+House Martell	House Baratheon	12
+House Tyrell	House Reed	7
+House Dondarrion	R'hllor	1
+House Tyrell	House Trant	3
+Night's Watch	House Greyjoy	17
+brotherhood without banners	House Stokeworth	1
+Brotherhood without banners	Chataya's brothel	2
+No House	Mance Rayder	20
+House Baratheon	House Payne	6
+House Martell	House Uller	2
+female	R'hllor	12
+House Bolton	Wildings	5
+House Baratheon of Dragonstone	House of Black and White	1
+House Baratheon	House Baelish	1
+brotherhood without banners	House Baratheon	6
+House Arryn	Fre Folk	2
+House Payne	Fre Folk	1
+House Westerling	House Mormont	2
+House Stark	No House	232
+House Tarth	House Stokeworth	1
+Wildings	House of Black and White	1
+Night's Watch	House Mormont	8
+House Lorch	Chataya's brothel	1
+House Baelish	female	3
+Night's Watch	No House	94
+House Greyjoy	House Stokeworth	2
+House Tully	House Tully	3
+House Bolton	House Tully	7
+House Stark	House Baratheon	49
+House Tyrell	House Baratheon of King's Landing	3
+male	House Stokeworth	61
+House Stark	House Lorch	6
+House Lannister	Mance Rayder	5
+House Lorch	House Tully	3
+Brotherhood without banners	House Baratheon	7
+House Lannister of Casterly Rock	Chataya's brothel	1
+Night's Watch	female	130
+House Greyjoy	House Lannister of Casterly Rock	2
+Thenn	House of Black and White	1
+House Westerling	Mance Rayder	1
+House Dondarrion	brotherhood without banners	1
+brotherhood without banners	House Bolton	2
+House Forrester	Wildings	1
+House Lorch	House Forrester	1
+Mance Rayder	Wildings	1
+House Bolton	House Targaryen	29
+Free Folk	House Stokeworth	1
+House Clegane	House Mormont	2
+House Arryn	Thirteen	2
+male	House Forrester	44
+male	House Bolton	154
+Mance Rayder	House Bolton	1
+House Blackfyre	Mance Rayder	1
+House Reed	Wildings	2
+House Stark	Peach	5
+House Lorch	House Tyrell	3
+House Tyrell	House Tyrell	4
+House Payne	House Uller	1
+male	House Trant	52
+House Tully	House Baratheon of King's Landing	3
+House Stark	House Tarth	9
+Mance Rayder	House Lannister of Casterly Rock	1
+No House	R'hllor	7
+House Stark	House Tully	29
+Brotherhood without banners	Free Folk	6
+House Reed	House Nymeros Martell	1
+House Targaryen	Chataya's brothel	9
+female	brotherhood without banners	24
+House Dondarrion	House Westerling	1
+female	House Baratheon	128
+House Bolton	House Tyrell	7
+Thenn	House Baelish	1
+House Stark	Chataya's brothel	9
+Thenn	House Cassel	2
+Night's Watch	House Martell	4
+House Clegane	House Trant	2
+female	House Dondarrion	23
+House Greyjoy	Mance Rayder	2
+House Cassel	House Frey	4
+House Thorne	House Payne	1
+House Martell	Brotherhood without banners	3
+House Trant	Chataya's brothel	1
+Night's Watch	House Tyrell	13
+Thirteen	House of Black and White	1
+House Blackfyre	House Stokeworth	1
+female	House Greyjoy	68
+Thenn	House Bolton	1
+House Reed	R'hllor	2
+Night's Watch	House Reed	10
+male	House Cassel	48
+House Stark	Brotherhood without banners	24
+Brotherhood without banners	No House	33
+House Thorne	Thenn	1
+House Dondarrion	House Baratheon	1
+female	House Trant	11
+male	House Tyrell	223
+Brotherhood without banners	House Clegane	2
+House Frey	House Lannister of Casterly Rock	2
+House Stokeworth	House Payne	1
+Thenn	House Arryn	2
+House Reed	House Reed	1
+House Tarth	House Baratheon of King's Landing	1
+male	House Stark	753
+House Greyjoy	Free Folk	7
+House Targaryen	Wildings	12
+House Tully	House Uller	3
+House Lorch	House Bolton	1
+House Lannister	House Clegane	11
+brotherhood without banners	House Mormont	2
+male	House Lannister of Casterly Rock	70
+Free Folk	No House	72
+House Blackfyre	Night's Watch	4
+Thirteen	House Clegane	1
+House Targaryen	House Baelish	4
+House Baratheon	Chataya's brothel	5
+Brotherhood without banners	R'hllor	2
+House Baratheon	House Westerling	6
+House Dondarrion	House Uller	1
+House Frey	House Forrester	1
+House Lorch	House Westerling	1
+House Frey	House Uller	1
+House Tyrell	House Lannister of Casterly Rock	3
+House Targaryen	House Stokeworth	9
+brotherhood without banners	Mance Rayder	1
+House Lorch	House Martell	2
+House Clegane	House Payne	1
+Thenn	Thirteen	1
+Night's Watch	House Uller	2
+House Martell	Wildings	2
+Night's Watch	House Arryn	10
+House Stokeworth	House Westerling	1
+House Thorne	House Martell	2
+Brotherhood without banners	House Tarth	2
+Brotherhood without banners	House Tully	3
+brotherhood without banners	House Tyrell	3
+Thenn	Fre Folk	1
+House Tyrell	Chataya's brothel	3
+Thenn	House Baratheon	1
+House Blackfyre	House Bolton	1
+House Tully	House Mormont	4
+House Forrester	House Baratheon of King's Landing	1
+female	Mance Rayder	22
+House Lannister	House Bolton	15
+House Dondarrion	House Tully	2
+House Reed	Mance Rayder	2
+House Baratheon	House Baratheon of Dragonstone	3
+male	Dothraki people	85
+House Stark	House Uller	5
+House Greyjoy	House Trant	2
+House Targaryen	House Trant	2
+House Lorch	House Lannister of Casterly Rock	1
+Brotherhood without banners	House Tyrell	4
+House Greyjoy	House Forrester	1
+House Lannister	brotherhood without banners	8
+Dothraki people	Dothraki people	1
+House Dondarrion	House Tarth	1
+Dothraki people	Wildings	3
+House Westerling	Free Folk	3
+House Stark	House Martell	16
+House Reed	House Tully	6
+brotherhood without banners	House Tarth	1
+brotherhood without banners	House Tully	1
+House Blackfyre	House Greyjoy	2
+House Lannister of Casterly Rock	Peach	1
+House Dondarrion	Chataya's brothel	1
+R'hllor	House Mormont	1
+male	House Frey	155
+Dothraki people	House of Black and White	2
+House Baratheon	House Stokeworth	5
+male	House Dondarrion	53
+House Greyjoy	Wildings	4
+Night's Watch	House Baratheon of King's Landing	5
+Free Folk	House Payne	1
+House Tully	Mance Rayder	2
+No House	House Uller	14
+male	House Nymeros Martell	58
+House Reed	House Stokeworth	1
+Night's Watch	Wildings	8
+House Bolton	House Bolton	1
+House Stark	House Mormont	22
+House Lannister	House of Black and White	2
+House Lannister	House Baratheon of King's Landing	8
+House Targaryen	House Baratheon of King's Landing	9
+House Clegane	House Baratheon	7
+House Stokeworth	Chataya's brothel	1
+Free Folk	House Frey	1
+Brotherhood without banners	Mance Rayder	2
+male	Mance Rayder	59
+House Tyrell	House Tarth	3
+Night's Watch	Brotherhood without banners	8
+Peach	Wildings	1
+Night's Watch	House Bolton	9
+House Tyrell	House Tully	12
+House Arryn	House Frey	2
+House Cassel	Wildings	2
+No House	House Tarth	14
+House Baratheon of King's Landing	House Bolton	2
+male	R'hllor	32
+No House	House Westerling	19
+House Blackfyre	Free Folk	3
+female	No House	501
+House Blackfyre	House Stark	11
+House Lannister	House Frey	17
+House Stark	House Westerling	11
+House Tarth	House Payne	1
+No House	House Tully	48
+House Targaryen	House Lannister of Casterly Rock	9
+House Lannister of Casterly Rock	House Uller	1
+No House	House Baratheon of Dragonstone	5
+House Baratheon of Dragonstone	Thirteen	1
+Free Folk	House Clegane	4
+House Baratheon of Dragonstone	Peach	1
+House Targaryen	House Frey	13
+House Dondarrion	House Stokeworth	1
+House Tyrell	House Mormont	4
+No House	No House	184
+House Tyrell	House Payne	3
+female	House Forrester	14
+House Baratheon	House Trant	6
+female	House Baratheon of King's Landing	22
+House Dondarrion	House Nymeros Martell	1
+House Mormont	Wildings	2
+House Lannister	House Payne	6
+House Targaryen	House Tarth	1
+Thenn	House Greyjoy	2
+female	Peach	15
+House Blackfyre	House Westerling	1
+House Lannister of Casterly Rock	Wildings	1
+Thenn	House Clegane	1
+Free Folk	Dothraki people	5
+male	House Thorne	29
+House Frey	House Mormont	1
+female	House Bolton	67
+Chataya's brothel	Wildings	1
+female	House Stokeworth	19
+House Arryn	House Greyjoy	4
+House Stokeworth	House Nymeros Martell	1
+House Martell	House Tyrell	6
+House Stark	House Nymeros Martell	9
+House Reed	Dothraki people	1
+House Greyjoy	House Frey	10
+House Westerling	House Bolton	2
+House Lorch	House Baratheon	6
+No House	brotherhood without banners	17
+House Clegane	Mance Rayder	1
+House Thorne	House of Black and White	1
+House Targaryen	House Tully	19
+House Payne	House Baratheon of King's Landing	1
+House Stark	House Dondarrion	12
+House Baratheon of Dragonstone	Fre Folk	1
+House Baelish	Fre Folk	1
+House Dondarrion	House Greyjoy	2
+House Blackfyre	Dothraki people	1
+female	House Uller	14
+House Greyjoy	Thirteen	2
+House Tully	House of Black and White	1
+House Martell	brotherhood without banners	2
+House Baratheon of Dragonstone	House Clegane	1
+male	House Payne	42
+House Tully	Chataya's brothel	3
+House Lorch	Wildings	1
+House Baelish	House Frey	1
+Night's Watch	House Nymeros Martell	2
+male	Free Folk	226
+House Lannister	Dothraki people	7
+Peach	House Greyjoy	1
+House Tarth	House Lannister of Casterly Rock	1
+House Blackfyre	House Dondarrion	1
+House Lorch	House Trant	1
+Fre Folk	Wildings	1
+House Lorch	House Frey	2
+House Targaryen	House Lorch	9
+No House	House Reed	40
+House Martell	House Frey	3
+Brotherhood without banners	brotherhood without banners	2
+Night's Watch	Mance Rayder	5
+House Baratheon	House Greyjoy	13
+House Baratheon	Peach	1
+House Tyrell	House Nymeros Martell	3
+House Trant	House of Black and White	1
+House Baratheon	House Mormont	9
+House Martell	House Forrester	2
+Brotherhood without banners	House Reed	4
+Free Folk	House Baratheon of King's Landing	4
+House Blackfyre	Chataya's brothel	1
+female	Fre Folk	7
+No House	House of Black and White	4
+R'hllor	Wildings	1
+House Stark	Wildings	13
+House Lannister	House Greyjoy	21
+House Targaryen	House of Black and White	3
+House Targaryen	Fre Folk	3
+House Bolton	Dothraki people	4
+House Baratheon	House Forrester	4
+House Forrester	House Bolton	1
+male	House Westerling	70
+House Thorne	House Uller	1
+House Cassel	Dothraki people	4
+Night's Watch	House Lorch	2
+female	House Reed	47
+Night's Watch	House Lannister	35
+House Dondarrion	House Reed	2
+House Reed	House Baratheon	6
+House Lannister	Free Folk	21
+House Targaryen	House Lannister	82
+House Cassel	House Baratheon	2
+House Tarth	House Frey	3
+Thirteen	No House	2
+Free Folk	House Tyrell	13
+House Targaryen	House Uller	9
+Thenn	House Frey	2
+House Dondarrion	Mance Rayder	1
+House Westerling	House Nymeros Martell	1
+House Blackfyre	House Frey	1
+House Dondarrion	House Clegane	1
+House Targaryen	Thirteen	3
+female	Wildings	33
+House Tarth	House Westerling	1
+House Lorch	House Greyjoy	2
+female	House Tully	64
+brotherhood without banners	Wildings	1
+House Greyjoy	House of Black and White	2
+House Cassel	House Stark	1
+House Greyjoy	Fre Folk	2
+female	House Tarth	16
+House Stark	brotherhood without banners	12
+male	Peach	20
+House Martell	House Lannister of Casterly Rock	2
+male	brotherhood without banners	65
+House Martell	House Baratheon of King's Landing	1
+House Bolton	House of Black and White	1
+female	House Mormont	41
+House Payne	Night's Watch	6
+House Clegane	House Baratheon of King's Landing	1
+House Lannister	female	204
+Free Folk	House Trant	1
+Free Folk	House Lannister of Casterly Rock	4
+House Thorne	Night's Watch	5
+House Baratheon of Dragonstone	House Bolton	2
+Thenn	House Baratheon of Dragonstone	1
+House Lannister	House Arryn	2
+House Clegane	House Greyjoy	4
+House Forrester	Chataya's brothel	1
+House Stark	House Clegane	11
+House Stark	House Bolton	23
+House Thorne	Fre Folk	1
+House Lorch	House Clegane	1
+House Baratheon of Dragonstone	House Greyjoy	2
+House Baratheon	Mance Rayder	3
+female	Chataya's brothel	18
+Night's Watch	House of Black and White	5
+House Lorch	brotherhood without banners	1
+House Thorne	Thirteen	1
+House Targaryen	Free Folk	41
+Night's Watch	House Stokeworth	2
+House Blackfyre	House Targaryen	11
+Night's Watch	Thirteen	5
+brotherhood without banners	House Lannister of Casterly Rock	1
+Brotherhood without banners	House Greyjoy	4
+House Greyjoy	House Westerling	2
+House Lannister	Brotherhood without banners	13
+House Bolton	House Tarth	2
+House Martell	House Tully	6
+House Uller	Wildings	1
+House Thorne	House Targaryen	4
+House Lorch	No House	18
+House Targaryen	House Nymeros Martell	9
+House Frey	House Clegane	4
+Brotherhood without banners	House Westerling	2
+Night's Watch	House Lannister of Casterly Rock	5
+House Stokeworth	Wildings	1
+House Tyrell	House Westerling	3
+House Baratheon of King's Landing	Chataya's brothel	1
+House Blackfyre	No House	19
+Dothraki people	House Baratheon	3
+House Blackfyre	Brotherhood without banners	2
+male	male	2685
+House Targaryen	Peach	7
+House Stark	House Greyjoy	24
+House Baratheon of Dragonstone	House Stark	2
+House Stokeworth	House Bolton	1
+House Lannister	House Thorne	2
+Free Folk	House Baratheon	11
+House Clegane	House Nymeros Martell	1
+House Martell	House Westerling	2
+Night's Watch	House Cassel	10
+Thenn	House Lannister	1
+House Lannister	House Forrester	7
+male	House Baratheon of King's Landing	66
+House Targaryen	House Cassel	7
+House Stark	Free Folk	38
+male	Night's Watch	405
+House Payne	Thenn	1
+House Tarth	House Baratheon	1
+House Baratheon of Dragonstone	House Lannister	1
+House Lorch	female	18
+Night's Watch	Free Folk	18
+House Baratheon of King's Landing	House Mormont	1
