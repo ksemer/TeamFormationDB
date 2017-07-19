@@ -25,6 +25,7 @@ public class CompatibleSkillsAlgorithm {
 	private int compatible_mode=0;
 	private String mode= new String();
 	
+	private boolean most_compatibles_mode;
 	private boolean compatibility_mode;
 	private int best_diameter=0;
 	private String compatible_table;
@@ -39,7 +40,9 @@ public class CompatibleSkillsAlgorithm {
 	private String lessSkill1="";
 	private String lessSkill2="";
 	
-	public CompatibleSkillsAlgorithm(HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,String dataset,int compatible_mode,ArrayList<String> initialTask, SkillInfo skillInfo){
+	public CompatibleSkillsAlgorithm(boolean most_compatibles_mode,HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,String dataset,int compatible_mode,ArrayList<String> initialTask, SkillInfo skillInfo){
+		
+		this.most_compatibles_mode=most_compatibles_mode;
 		
 		this.skillsCompatibilityMatrix=skillsCompatibilityMatrix;
 		
@@ -78,7 +81,10 @@ public class CompatibleSkillsAlgorithm {
 		//System.out.println(initialTask.get(initialTask.size()-1));
 	}
 	
-	public CompatibleSkillsAlgorithm(HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,String dataset, int compatible_mode, ArrayList<String> initialTask,Network network, SkillInfo skillInfo){
+	public CompatibleSkillsAlgorithm(boolean most_compatibles_mode,HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,String dataset, int compatible_mode, ArrayList<String> initialTask,Network network, SkillInfo skillInfo){
+		
+		
+		this.most_compatibles_mode=most_compatibles_mode;
 		
 		this.skillsCompatibilityMatrix=skillsCompatibilityMatrix;
 		
@@ -256,14 +262,24 @@ public class CompatibleSkillsAlgorithm {
 					//choose best candidate
 					int user;
 					if(compatibility_mode==true){
-						//user=getBestCompatibleCandidate(users,star);
+						if(most_compatibles_mode==true){
+							user=getMostCompatiblesCompatibleCandidate(users,star);
+						}
+						else{
+							user=getBestCompatibleCandidate(users,star);
+						}
 						//user=getRandomCompatibleCandidate(users,star);
-						user=getMostCompatiblesCompatibleCandidate(users,star);
+						
 					}
 					else{
-						//user=getBestNoNegativeCandidate(users,star);
+						if(most_compatibles_mode==true){
+							user=getMostCompatiblesNoNegativeCandidate(users,star);
+						}
+						else{
+							user=getBestNoNegativeCandidate(users,star);
+						}
 						//user=getRandomNoNegativeCandidate(users,star);
-						user=getMostCompatiblesNoNegativeCandidate(users,star);
+						
 					}
 					
 					if(user!=-1){
