@@ -45,7 +45,7 @@ public class CompatibleSkillsAlgorithm {
 		
 		this.compatiblesDistribution=compatiblesDistribution;
 		
-		db.init();
+		db.init(mode);
 		
 		this.mode=mode;
 		
@@ -84,7 +84,7 @@ public class CompatibleSkillsAlgorithm {
 		
 		this.compatiblesDistribution=compatiblesDistribution;
 		
-		db.init();
+		db.init(mode);
 		
 		this.mode=mode;
 				
