@@ -8,10 +8,18 @@ import com.mysql.jdbc.ResultSet;
 import java.sql.Statement;
 
 public class Database {
-	 private String url = "jdbc:mysql://localhost:3306/negative_teams?user=root&password=root";
+	private String mode="";
+	 private String url = "";//"jdbc:mysql://localhost:3306/negative_teams?user=root&password=root";
 	 private Connection con;
 	
-	public void init(){
+	public void init(String mode){
+		
+		if(mode.equals("sbp")){
+			url="jdbc:mysql://localhost:3306/negative_teams?user=root&password=root";
+		}
+		else{
+			url="jdbc:mysql://localhost:3306/negativeteams?user=root&password=root";
+		}
 		
 		try {
 		    Class.forName("com.mysql.jdbc.Driver");
