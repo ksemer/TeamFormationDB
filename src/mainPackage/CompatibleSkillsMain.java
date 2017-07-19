@@ -48,7 +48,7 @@ public class CompatibleSkillsMain {
 		String mode;
 		ArrayList<String> time = new ArrayList<String>();
 		for(int mp=0;mp<compatibility_modes.length;mp++){
-			int compatibility_mode=compatibility_modes[5];
+			int compatibility_mode=compatibility_modes[mp];
 			for(int kp=0;kp<nums_of_skills.length;kp++){
 				int numOfSkills=nums_of_skills[kp];
 				
