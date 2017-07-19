@@ -43,8 +43,19 @@ public class TaskGenerator {
 					temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
 				}
 				for(int j=0;j<initialTask.size();j++){
-					if(matrix.get(initialTask.get(j)).get(temp)>=avg){
-						good=false;
+					if(matrix.containsKey(initialTask.get(j))){
+						if(matrix.get(initialTask.get(j)).containsKey(temp)){
+							if(matrix.get(initialTask.get(j)).get(temp)>=avg){
+								good=false;
+							}
+						}
+					}
+					if(matrix.containsKey(temp)){
+						if(matrix.get(temp).containsKey(initialTask.get(j))){
+							if(matrix.get(temp).get(initialTask.get(j))>=avg){
+								good=false;
+							}
+						}
 					}
 				}
 			}while(good==false);
@@ -73,8 +84,19 @@ public class TaskGenerator {
 					temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
 				}
 				for(int j=0;j<additionalTask.size();j++){
-					if(matrix.get(additionalTask.get(j)).get(temp)>=avg){
-						good=false;
+					if(matrix.containsKey(additionalTask.get(j))){
+						if(matrix.get(additionalTask.get(j)).containsKey(temp)){
+							if(matrix.get(additionalTask.get(j)).get(temp)>=avg){
+								good=false;
+							}
+						}
+					}
+					if(matrix.containsKey(temp)){
+						if(matrix.get(temp).containsKey(additionalTask.get(j))){
+							if(matrix.get(temp).get(additionalTask.get(j))>=avg){
+								good=false;
+							}
+						}
 					}
 				}
 			}while(good==false);
@@ -98,8 +120,19 @@ public class TaskGenerator {
 					temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
 				}
 				for(int j=0;j<initialTask.size();j++){
-					if(matrix.get(initialTask.get(j)).get(temp)<=avg){
-						good=false;
+					if(matrix.containsKey(initialTask.get(j))){
+						if(matrix.get(initialTask.get(j)).containsKey(temp)){
+							if(matrix.get(initialTask.get(j)).get(temp)<=avg){
+								good=false;
+							}
+						}
+					}
+					if(matrix.containsKey(temp)){
+						if(matrix.get(temp).containsKey(initialTask.get(j))){
+							if(matrix.get(temp).get(initialTask.get(j))<=avg){
+								good=false;
+							}
+						}
 					}
 				}
 			}while(good==false);
@@ -128,8 +161,19 @@ public class TaskGenerator {
 					temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
 				}
 				for(int j=0;j<additionalTask.size();j++){
-					if(matrix.get(additionalTask.get(j)).get(temp)<=avg){
-						good=false;
+					if(matrix.containsKey(additionalTask.get(j))){
+						if(matrix.get(additionalTask.get(j)).containsKey(temp)){
+							if(matrix.get(additionalTask.get(j)).get(temp)<=avg){
+								good=false;
+							}
+						}
+					}
+					if(matrix.containsKey(temp)){
+						if(matrix.get(temp).containsKey(additionalTask.get(j))){
+							if(matrix.get(temp).get(additionalTask.get(j))<=avg){
+								good=false;
+							}
+						}
 					}
 				}
 			}while(good==false);
