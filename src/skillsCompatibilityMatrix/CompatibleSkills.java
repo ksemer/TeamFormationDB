@@ -20,10 +20,8 @@ import compatibilityMatrix.Counter;
  */
 public class CompatibleSkills {
 
-	private static String dataset = "wikipedia";
-	private static String pathCompatibility = "compatibilityLists/" + dataset + "more_positive_paths.txt";
-	private static String pathSkills = "data/" + dataset + "/skills.txt";
-	private static String output = "compatible_" + dataset;
+	private static String pathCompatibility = "compatibilityLists/";
+	private static String datasetsSkillsFolder = "data/";
 	private static Map<Integer, List<String>> users_skills;
 
 	/**
@@ -34,20 +32,35 @@ public class CompatibleSkills {
 	 */
 	public static void main(String[] args) throws IOException {
 
-		users_skills = new HashMap<>();
-		loadSkills();
+		String dataset, compFile;
+
+		dataset = "epinions";
+		users_skills = loadSkills(dataset);
+
+		compFile = "more_positive_paths";
+		runCompatibilitySkills(dataset, compFile);
+
+		compFile = "no_negative_paths";
+		runCompatibilitySkills(dataset, compFile);
+
+		compFile = "one_positive_path";
+		runCompatibilitySkills(dataset, compFile);
+	}
+
+	private static void runCompatibilitySkills(String dataset, String compFile) throws IOException {
 
 		Map<String, Counter> comp = new HashMap<>();
-		BufferedReader br = new BufferedReader(new FileReader(pathCompatibility));
+		BufferedReader br = new BufferedReader(new FileReader(pathCompatibility + dataset + "/" + compFile + ".txt"));
 		String line = null;
 		String[] token;
 		List<String> userA_skills, userB_skills;
 		Counter c1, c2 = null;
-		int countNull = 0, count = 0;
+		int countNull = 0;
+
+		System.out.println("Computation for dataset: " + dataset + " and compfile: " + compFile + " has started...");
 
 		while ((line = br.readLine()) != null) {
 			token = line.split("\\s+");
-			System.out.println(++count);
 
 			userA_skills = users_skills.get(Integer.parseInt(token[0]));
 			userB_skills = users_skills.get(Integer.parseInt(token[1]));
@@ -75,7 +88,7 @@ public class CompatibleSkills {
 		br.close();
 		System.out.println("Pairs with at least one user without any skill: " + countNull);
 
-		FileWriter w = new FileWriter(output);
+		FileWriter w = new FileWriter("compatibilitySkills_" + compFile + "_" + dataset);
 		String skills;
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
@@ -89,14 +102,20 @@ public class CompatibleSkills {
 	/**
 	 * Load skills per user
 	 * 
+	 * @param dataset
+	 * @return
+	 * 
 	 * @throws IOException
 	 */
-	private static void loadSkills() throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(pathSkills));
+	private static Map<Integer, List<String>> loadSkills(String dataset) throws IOException {
+
 		String line = null, skill;
 		String[] token, users;
 		int user;
 		List<String> skills = null;
+		Map<Integer, List<String>> users_skills = new HashMap<>();
+		BufferedReader br = new BufferedReader(new FileReader(datasetsSkillsFolder + dataset + "/skills.txt"));
+
 		System.out.println("Skills loading....");
 
 		while ((line = br.readLine()) != null) {
@@ -121,6 +140,8 @@ public class CompatibleSkills {
 			}
 		}
 		br.close();
+
 		System.out.println("Skills loaded....");
+		return users_skills;
 	}
 }
