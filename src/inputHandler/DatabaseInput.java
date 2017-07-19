@@ -8,8 +8,8 @@ import mainPackage.Database;
 public class DatabaseInput {
 	private Database db = new Database();
 	
-	public void init(){
-		db.init();
+	public void init(String mode){
+		db.init(mode);
 	}
 	
 	public HashMap<Integer,Integer> getCompatibles(String table, int node){
