@@ -158,7 +158,7 @@ public class CompatibleSkills {
 			for (int j = i + 1; j < nodes.size(); j++) {
 				userB = nodes.get(j);
 
-				if ((sign = neighbors.get(g.getNode(userB))) == null || sign == -1)
+				if ((sign = neighbors.get(g.getNode(userB))) != null && sign == -1)
 					continue;
 
 				userA_skills = users_skills.get(userA);
