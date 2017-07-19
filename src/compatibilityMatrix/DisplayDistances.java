@@ -15,8 +15,8 @@ import java.util.HashMap;
  */
 public class DisplayDistances {
 
-	private static String path_sbp = "wikipedia_sbp_heuristic";
-	private static String path_spc = "wikipedia_spc";
+	private static String path_sbp = "";
+	private static String path_spc = "";
 	private static final int INF = 1000000000;
 	private static final boolean INTERSECTION = false;
 
@@ -28,7 +28,7 @@ public class DisplayDistances {
 		read(spc, path_spc);
 		read(sbp, path_sbp);
 
-		int id1, id2, dist_sbp, dist_spc, max_spc = 0, max_sbp = 0;
+		int id1, id2, dist_sbp, dist_spc;
 		int count = 0, count_inf = 0, dist_sbp_A = 0, dist_spc_A = 0;
 
 		for (Entry<Integer, Map<Integer, Integer>> entry : spc.entrySet()) {
@@ -56,12 +56,6 @@ public class DisplayDistances {
 					continue;
 				}
 
-				if (max_spc < dist_spc)
-					max_spc = dist_spc;
-
-				if (max_sbp < dist_sbp)
-					max_sbp = dist_sbp;
-
 				count++;
 				dist_spc_A += dist_spc;
 				dist_sbp_A += dist_sbp;
@@ -70,8 +64,6 @@ public class DisplayDistances {
 
 		System.out.println("Avg dist spc: " + dist_spc_A / count);
 		System.out.println("Avg dist sbp: " + dist_sbp_A / count);
-		System.out.println("Max dist spc: " + max_spc);
-		System.out.println("Max dist sbp: " + max_sbp);
 		System.out.println("#inf sbp: " + count_inf);
 		System.out.println("#pairs: " + count);
 		System.out.println("SBP size: " + sbp.size());
@@ -90,7 +82,7 @@ public class DisplayDistances {
 		if (path.contains("spc"))
 			flag = true;
 
-		int id1, id2, dist, pos;
+		int id1, id2, dist, pos, max_spc = 0, max_sbp = 0;
 
 		while ((line = br.readLine()) != null) {
 			token = line.split("\t");
@@ -101,13 +93,20 @@ public class DisplayDistances {
 				dist = Integer.parseInt(token[4]);
 				pos = Integer.parseInt(token[2]);
 
+				if (max_spc < dist)
+					max_spc = dist;
+
 				if (INTERSECTION) {
 					if (pos == 0)
 						continue;
 				} else if (pos != 0)
 					continue;
-			} else
+			} else {
 				dist = Integer.parseInt(token[2]);
+
+				if (dist != INF && max_sbp < dist)
+					max_sbp = dist;
+			}
 
 			if ((m = map.get(id1)) == null) {
 				m = new HashMap<>();
@@ -118,6 +117,12 @@ public class DisplayDistances {
 				m.put(id2, dist);
 		}
 		br.close();
+
 		System.out.println(path + " is loaded");
+
+		if (flag)
+			System.out.println("Max dist spc: " + max_spc);
+		else
+			System.out.println("Max dist sbp: " + max_sbp);
 	}
 }
