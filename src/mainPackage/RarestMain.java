@@ -18,26 +18,37 @@ public class RarestMain {
 	public static void main(String[] args){
 		
 		//********** PARAMETERS **********//*
-		//int numOfSkills=Integer.parseInt(args[0]);
-		//String dataset=args[1];
-		// 0 : sbp, 1 : no_negative_paths, 2 : more_positive_paths, 3 : one_positive_path, 4 : no_negative_edge, -1 : only for slashdot sbp not heuristic
-		//int compatibility_mode=Integer.parseInt(args[2]);
-		//modes: spc, sbp
-		String mode;
-		//String task=args[3];
-		boolean most_compatibles_mode=false;
-		//********** ********** **********//*
+		
+		String dataset="got";
+		
+		boolean most_compatibles_mode=true;
 		
 		//hard:1, easy:2, random:3
 		int task_mode=3;
 		
-		ArrayList<String> time = new ArrayList<String>();
-		String dataset="got";
-		int[]  compatibility_modes ={-1,0,1,2,3,4};
-		//int[]  compatibility_modes ={0,1,2,3,4};
 		int nums_of_skills[]={3,5,10,20};
-		//for(int mp=0;mp<compatibility_modes.length;mp++){
-			int compatibility_mode=compatibility_modes[5];
+		
+		//compatibility_modes:
+		// 0 : sbp, 1 : no_negative_paths, 2 : more_positive_paths, 3 : one_positive_path, 4 : no_negative_edge, -1 : only for slashdot sbp not heuristic
+		
+		if(dataset.equals("got") || dataset.equals("slashdot")){
+			int[] compatibility_modes ={-1,0,1,2,3,4};
+			execute(dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
+		}
+		else{
+			int[] compatibility_modes ={0,1,2,3,4};
+			execute(dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
+		}
+		
+		//********** ********** **********//*
+		
+	}
+	
+	public static void execute(String dataset,int[] compatibility_modes, int[] nums_of_skills,boolean most_compatibles_mode,int task_mode){
+		String mode;
+		ArrayList<String> time = new ArrayList<String>();
+		for(int mp=0;mp<compatibility_modes.length;mp++){
+			int compatibility_mode=compatibility_modes[mp];
 			for(int kp=0;kp<nums_of_skills.length;kp++){
 				int numOfSkills=nums_of_skills[kp];
 				
@@ -53,13 +64,7 @@ public class RarestMain {
 				String resultPath;
 				String distributionPath;
 				
-				String spl="";		
-				if(dataset.equals("epinions")){
-					spl="\t";
-				}
-				else{
-					spl=",";
-				}
+				String spl="\t";		
 				
 				System.out.print("Started at: ");
 				System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
@@ -173,11 +178,11 @@ public class RarestMain {
 						}
 							
 						if(compatibility_mode<4){
-							result=runCompatibilityAlgorithm(compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
+							result=runCompatibilityAlgorithm(most_compatibles_mode,compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
 							
 						}
 						else{
-							result=runNoNegativeAlgorithm(compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
+							result=runNoNegativeAlgorithm(most_compatibles_mode,compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
 						}
 						
 						FileWriter writer = new FileWriter(resultPath);
@@ -191,7 +196,7 @@ public class RarestMain {
 					}	
 				time.add("Finished : mode: "+compatibility_mode+", numOfSkills: "+numOfSkills+" at:"+ new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()));
 			}
-		//}
+		}
 		System.out.print("Finished at: ");
 		System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
 		
@@ -199,30 +204,29 @@ public class RarestMain {
 		FileWriter timeWriter = new FileWriter(timePath);
 		timeWriter.initAppendWriter();
 		timeWriter.writeData(time);
-		
 	}
 	
 	
-	public static String runCompatibilityAlgorithm(HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
+	public static String runCompatibilityAlgorithm(boolean most_compatibles_mode,HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
 		InputManager manager = new InputManager(networkPath,userPath,skillPath);
 		manager.retrieveSkillInfo();
 		
 		//ArrayList<String> initialTask = produceTask(numOfSkills,manager.getSkillInfo());
 				
-		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getSkillInfo());
+		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(most_compatibles_mode,compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getSkillInfo());
 		algorithm.start();
 		
 		return algorithm.getResult();
 	}
 	
-	public static String runNoNegativeAlgorithm(HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
+	public static String runNoNegativeAlgorithm(boolean most_compatibles_mode,HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
 		InputManager manager = new InputManager(networkPath,userPath,skillPath);
 		manager.retrieveNetwork();
 		manager.retrieveSkillInfo();
 		
 		//ArrayList<String> initialTask = produceTask(numOfSkills,manager.getSkillInfo());
 				
-		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getNetwork(), manager.getSkillInfo());
+		TeamFormationAlgorithm algorithm = new TeamFormationAlgorithm(most_compatibles_mode,compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getNetwork(), manager.getSkillInfo());
 		algorithm.start();
 		
 		return algorithm.getResult();
