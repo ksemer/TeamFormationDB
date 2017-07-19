@@ -3,6 +3,7 @@ package mainPackage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -17,22 +18,37 @@ public class CompatibleSkillsMain {
 	public static void main(String[] args){
 		
 		//********** PARAMETERS **********//*
-		//int numOfSkills=Integer.parseInt(args[0]);
-		//String dataset=args[1];
-		// 0 : sbp, 1 : no_negative_paths, 2 : more_positive_paths, 3 : one_positive_path, 4 : no_negative_edge, -1 : only for slashdot sbp not heuristic
-		//int compatibility_mode=Integer.parseInt(args[2]);
-		//modes: spc, sbp
-		String mode;
-		//String task=args[3];
+		
+		String dataset="got";
+		
 		boolean most_compatibles_mode=true;
-		//********** ********** **********//*
-		ArrayList<String> time = new ArrayList<String>();
-		String dataset="wikipedia";
-		//int[]  compatibility_modes ={-1,0,1,2,3,4};
-		int[]  compatibility_modes ={0,1,2,3,4};
+		
+		//hard:1, easy:2, random:3
+		int task_mode=3;
+		
 		int nums_of_skills[]={3,5,10,20};
+		
+		//compatibility_modes:
+		// 0 : sbp, 1 : no_negative_paths, 2 : more_positive_paths, 3 : one_positive_path, 4 : no_negative_edge, -1 : only for slashdot sbp not heuristic
+		
+		if(dataset.equals("got") || dataset.equals("slashdot")){
+			int[] compatibility_modes ={-1,0,1,2,3,4};
+			execute(dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
+		}
+		else{
+			int[] compatibility_modes ={0,1,2,3,4};
+			execute(dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
+		}
+		
+		//********** ********** **********//*
+		
+	}
+	
+	public static void execute(String dataset,int[] compatibility_modes, int[] nums_of_skills,boolean most_compatibles_mode,int task_mode){
+		String mode;
+		ArrayList<String> time = new ArrayList<String>();
 		for(int mp=0;mp<compatibility_modes.length;mp++){
-			int compatibility_mode=compatibility_modes[mp];
+			int compatibility_mode=compatibility_modes[5];
 			for(int kp=0;kp<nums_of_skills.length;kp++){
 				int numOfSkills=nums_of_skills[kp];
 				
@@ -49,13 +65,7 @@ public class CompatibleSkillsMain {
 				String distributionPath;
 				String compatibleSkillPath;
 				
-				String spl="";		
-				if(dataset.equals("epinions")){
-					spl="\t";
-				}
-				else{
-					spl=",";
-				}
+				String spl="\t";		
 				
 				System.out.print("Started at: ");
 				System.out.println( new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()) );
@@ -112,13 +122,15 @@ public class CompatibleSkillsMain {
 					 { 
 						 inputReader = new Scanner(new FileInputStream(file)); 
 						 while(inputReader.hasNextLine()){
-							tasks.add(inputReader.nextLine());
+							 String line=inputReader.nextLine();
+							 //System.out.println(line);
+							tasks.add(line);
 						 }
 						inputReader.close();
 					 } 
-					 catch(FileNotFoundException e) 
+					 catch(IOException e) 
 					 { 
-						 System.out.printf("File %s was not found or could not be opened.\n",inputPath); 
+						 System.out.printf("File %s was not found or could not be opened.\n",inputPath);
 					 }
 					
 					HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix = new HashMap<String,HashMap<String,Integer>>();
@@ -162,7 +174,7 @@ public class CompatibleSkillsMain {
 						 } 
 						 catch(FileNotFoundException e) 
 						 { 
-							 System.out.printf("File %s was not found or could not be opened.\n",inputPath); 
+							 System.out.printf("File %s was not found or could not be opened.\n",distributionPath); 
 						 }
 					}
 					
@@ -191,11 +203,11 @@ public class CompatibleSkillsMain {
 						}
 							
 						if(compatibility_mode<4){
-							result=runCompatibilityAlgorithm(skillsCompatibilityMatrix,compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
+							result=runCompatibilityAlgorithm(most_compatibles_mode,skillsCompatibilityMatrix,compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
 							
 						}
 						else{
-							result=runNoNegativeAlgorithm(skillsCompatibilityMatrix,compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
+							result=runNoNegativeAlgorithm(most_compatibles_mode,skillsCompatibilityMatrix,compatiblesDistribution,mode,initialTask,dataset,compatibility_mode,numOfSkills, networkPath, userPath, skillPath);
 						}
 						
 						FileWriter writer = new FileWriter(resultPath);
@@ -221,26 +233,26 @@ public class CompatibleSkillsMain {
 	}
 	
 	
-	public static String runCompatibilityAlgorithm(HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
+	public static String runCompatibilityAlgorithm(boolean most_compatibles_mode,HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
 		InputManager manager = new InputManager(networkPath,userPath,skillPath);
 		manager.retrieveSkillInfo();
 		
 		//ArrayList<String> initialTask = produceTask(numOfSkills,manager.getSkillInfo());
 				
-		CompatibleSkillsAlgorithm algorithm = new CompatibleSkillsAlgorithm(skillsCompatibilityMatrix,compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getSkillInfo());
+		CompatibleSkillsAlgorithm algorithm = new CompatibleSkillsAlgorithm(most_compatibles_mode,skillsCompatibilityMatrix,compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getSkillInfo());
 		algorithm.start();
 		
 		return algorithm.getResult();
 	}
 	
-	public static String runNoNegativeAlgorithm(HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
+	public static String runNoNegativeAlgorithm(boolean most_compatibles_mode,HashMap<String,HashMap<String,Integer>> skillsCompatibilityMatrix,HashMap<Integer,Integer> compatiblesDistribution,String mode,ArrayList<String> initialTask,String dataset,int compatibility_mode,int numOfSkills,String networkPath, String userPath, String skillPath){
 		InputManager manager = new InputManager(networkPath,userPath,skillPath);
 		manager.retrieveNetwork();
 		manager.retrieveSkillInfo();
 		
 		//ArrayList<String> initialTask = produceTask(numOfSkills,manager.getSkillInfo());
 				
-		CompatibleSkillsAlgorithm algorithm = new CompatibleSkillsAlgorithm(skillsCompatibilityMatrix,compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getNetwork(), manager.getSkillInfo());
+		CompatibleSkillsAlgorithm algorithm = new CompatibleSkillsAlgorithm(most_compatibles_mode,skillsCompatibilityMatrix,compatiblesDistribution,mode,dataset,compatibility_mode,initialTask,manager.getNetwork(), manager.getSkillInfo());
 		algorithm.start();
 		
 		return algorithm.getResult();
