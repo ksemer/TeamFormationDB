@@ -53,7 +53,7 @@ public class CompatibleSkillsMain {
 		
 	}
 	
-	public static void execute(String resultPath,String dataset,int[] compatibility_modes, int[] nums_of_skills,boolean most_compatibles_mode,int task_mode){
+	public static void execute(String path,String dataset,int[] compatibility_modes, int[] nums_of_skills,boolean most_compatibles_mode,int task_mode){
 		String mode;
 		ArrayList<String> time = new ArrayList<String>();
 		for(int mp=0;mp<compatibility_modes.length;mp++){
@@ -70,7 +70,7 @@ public class CompatibleSkillsMain {
 					mode="sbp";
 				}
 				
-				//String resultPath;
+				String resultPath=path;
 				String distributionPath;
 				String compatibleSkillPath;
 				
@@ -242,7 +242,7 @@ public class CompatibleSkillsMain {
 				time.add("Finished : mode: "+compatibility_mode+", numOfSkills: "+numOfSkills+" at:"+ new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime()));
 			}
 		}
-		String timePath="/home/formation/Desktop/results/"+dataset+"/"+"time.txt";
+		String timePath=path+"/"+"time.txt";
 		FileWriter timeWriter = new FileWriter(timePath);
 		timeWriter.initWriter();
 		timeWriter.writeData(time);
