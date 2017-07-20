@@ -23,6 +23,15 @@ public class CompatibleSkillsMain {
 		
 		boolean most_compatibles_mode=true;
 		
+		String resultPath="";
+		
+		if(most_compatibles_mode==true){
+			resultPath="/home/formation/Desktop/results/"+dataset+"/rarest/most_compatibles";
+		}
+		else{
+			resultPath="/home/formation/Desktop/results/"+dataset+"/rarest/min_diameter";
+		}
+		
 		//hard:1, easy:2, random:3
 		int task_mode=3;
 		
@@ -33,18 +42,18 @@ public class CompatibleSkillsMain {
 		
 		if(dataset.equals("got") || dataset.equals("slashdot")){
 			int[] compatibility_modes ={-1,0,1,2,3,4};
-			execute(dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
+			execute(resultPath,dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
 		}
 		else{
 			int[] compatibility_modes ={0,1,2,3,4};
-			execute(dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
+			execute(resultPath,dataset,compatibility_modes,nums_of_skills,most_compatibles_mode,task_mode);
 		}
 		
 		//********** ********** **********//*
 		
 	}
 	
-	public static void execute(String dataset,int[] compatibility_modes, int[] nums_of_skills,boolean most_compatibles_mode,int task_mode){
+	public static void execute(String resultPath,String dataset,int[] compatibility_modes, int[] nums_of_skills,boolean most_compatibles_mode,int task_mode){
 		String mode;
 		ArrayList<String> time = new ArrayList<String>();
 		for(int mp=0;mp<compatibility_modes.length;mp++){
@@ -61,7 +70,7 @@ public class CompatibleSkillsMain {
 					mode="sbp";
 				}
 				
-				String resultPath;
+				//String resultPath;
 				String distributionPath;
 				String compatibleSkillPath;
 				
@@ -75,38 +84,45 @@ public class CompatibleSkillsMain {
 				//for(int j=1;j<6;j++){
 					//System.out.println("Started random iteration : "+j);
 				
+			
 					if(compatibility_mode==1){
-						resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_paths.txt";
+						resultPath+="/"+dataset+"_"+numOfSkills+"_no_negative_paths.txt";
+						//resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_paths.txt";
 						//resultPath="/home/formation/Desktop/results/"+dataset+"/random/"+j+"/"+dataset+"_"+numOfSkills+"_no_negative_paths.txt";
 						distributionPath="compatibles_distribution/"+dataset+"/"+"no_negative_paths.txt";
 						compatibleSkillPath="skillsCompatibilityMatrix/"+dataset+"/"+dataset+"_no_negative_paths.txt";
 					}
 					else if(compatibility_mode==2){
-						resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_more_positive_paths.txt";
+						resultPath+="/"+dataset+"_"+numOfSkills+"_more_positive_paths.txt";
+						//resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_more_positive_paths.txt";
 						//resultPath="/home/formation/Desktop/results/"+dataset+"/random/"+j+"/"+dataset+"_"+numOfSkills+"_more_positive_paths.txt";
 						distributionPath="compatibles_distribution/"+dataset+"/"+"more_positive_paths.txt";
 						compatibleSkillPath="skillsCompatibilityMatrix/"+dataset+"/"+dataset+"_more_positive_paths.txt";
 					}
 					else if(compatibility_mode==3){
-						resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_one_positive_path.txt";
+						resultPath+="/"+dataset+"_"+numOfSkills+"_one_positive_path.txt";
+						//resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_one_positive_path.txt";
 						//resultPath="/home/formation/Desktop/results/"+dataset+"/random/"+j+"/"+dataset+"_"+numOfSkills+"_one_positive_path.txt";
 						distributionPath="compatibles_distribution/"+dataset+"/"+"one_positive_path.txt";
 						compatibleSkillPath="skillsCompatibilityMatrix/"+dataset+"/"+dataset+"_one_positive_path.txt";
 					}
 					else if(compatibility_mode==4){
-						resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_edge.txt";
+						resultPath+="/"+dataset+"_"+numOfSkills+"_no_negative_edge.txt";
+						//resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_no_negative_edge.txt";
 						//resultPath="/home/formation/Desktop/results/"+dataset+"/random/"+j+"/"+dataset+"_"+numOfSkills+"_no_negative_edge.txt";
 						distributionPath="compatibles_distribution/"+dataset+"/"+"no_negative_edge.txt";
 						compatibleSkillPath="skillsCompatibilityMatrix/"+dataset+"/"+dataset+"_no_negative_edge.txt";
 					}	
 					else if(compatibility_mode==0){
-						resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp.txt";
+						resultPath+="/"+dataset+"_"+numOfSkills+"_sbp.txt";
+						//resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp.txt";
 						//resultPath="/home/formation/Desktop/results/"+dataset+"/random/"+j+"/"+dataset+"_"+numOfSkills+"_sbp.txt";
 						distributionPath="compatibles_distribution/"+dataset+"/"+"sbp.txt";
 						compatibleSkillPath="skillsCompatibilityMatrix/"+dataset+"/"+dataset+"_sbp.txt";
 					}
 					else{
-						resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp_not_heuristic.txt";
+						resultPath+="/"+dataset+"_"+numOfSkills+"_sbp_not_heuristic.txt";
+						//resultPath="/home/formation/Desktop/results/"+dataset+"/"+dataset+"_"+numOfSkills+"_sbp_not_heuristic.txt";
 						//resultPath="/home/formation/Desktop/results/"+dataset+"/random/"+j+"/"+dataset+"_"+numOfSkills+"_sbp_not_heuristic.txt";
 						distributionPath="compatibles_distribution/"+dataset+"/"+"sbp_not_heuristic.txt";
 						compatibleSkillPath="skillsCompatibilityMatrix/"+dataset+"/"+dataset+"_sbp_not_heuristic.txt";
