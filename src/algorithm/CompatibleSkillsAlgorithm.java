@@ -130,7 +130,8 @@ public class CompatibleSkillsAlgorithm {
 				if(i==0 && j==1){
 					lessSkill1=skill1;
 					lessSkill2=skill2;
-					if(skillsCompatibilityMatrix.containsKey(skill1)){
+					
+					/*if(skillsCompatibilityMatrix.containsKey(skill1)){
 						if(skillsCompatibilityMatrix.get(skill1).containsKey(skill2)){
 							min=skillsCompatibilityMatrix.get(skill1).get(skill2);
 						}
@@ -145,10 +146,21 @@ public class CompatibleSkillsAlgorithm {
 						else{
 							min=0;
 						}
+					}*/
+					Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					Integer tmp2=skillsCompatibilityMatrix.get(skill2).get(skill1);
+					if(tmp1!=null){
+						min=tmp1;
+					}
+					else if(tmp2!=null){
+						min=tmp2;
+					}
+					else{
+						min=0;
 					}
 				}
 				else{
-					if(skillsCompatibilityMatrix.containsKey(skill1)){
+					/*if(skillsCompatibilityMatrix.containsKey(skill1)){
 						if(skillsCompatibilityMatrix.get(skill1).containsKey(skill2)){
 							if(skillsCompatibilityMatrix.get(skill1).get(skill2)<min){
 								lessSkill1=skill1;
@@ -165,6 +177,22 @@ public class CompatibleSkillsAlgorithm {
 								min=skillsCompatibilityMatrix.get(skill2).get(skill1);
 							}
 						}
+					}*/
+					Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					Integer tmp2=skillsCompatibilityMatrix.get(skill2).get(skill1);
+					if(tmp1!=null){
+						if(tmp1<min){
+							lessSkill1=skill1;
+							lessSkill2=skill2;
+							min=tmp1;
+						}
+					}
+					else if(tmp2!=null){
+						if(tmp2<min){
+							lessSkill1=skill1;
+							lessSkill2=skill2;
+							min=tmp2;
+						}
 					}
 				}
 			}
@@ -180,7 +208,7 @@ public class CompatibleSkillsAlgorithm {
 			for(int j=0;j<initialTask.size();j++){
 				String skill2=initialTask.get(j);
 				if(i!=j){
-					if(skillsCompatibilityMatrix.containsKey(skill1)){
+					/*if(skillsCompatibilityMatrix.containsKey(skill1)){
 						if(skillsCompatibilityMatrix.get(skill1).containsKey(skill2)){
 							score+=skillsCompatibilityMatrix.get(skill1).get(skill2);
 						}
@@ -189,7 +217,15 @@ public class CompatibleSkillsAlgorithm {
 						if(skillsCompatibilityMatrix.get(skill2).containsKey(skill1)){
 							score+=skillsCompatibilityMatrix.get(skill2).get(skill1);
 						}
+					}*/
+					Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					Integer tmp2=skillsCompatibilityMatrix.get(skill2).get(skill1);
+					if(tmp1!=null){
+						score+=tmp1;
 					}
+					else if(tmp2!=null){
+						score+=tmp2;
+					}					
 					
 				}
 			}
@@ -279,7 +315,7 @@ public class CompatibleSkillsAlgorithm {
 							user=getBestNoNegativeCandidate(users,star);
 						}
 						//user=getRandomNoNegativeCandidate(users,star);
-						
+						//
 					}
 					
 					if(user!=-1){
