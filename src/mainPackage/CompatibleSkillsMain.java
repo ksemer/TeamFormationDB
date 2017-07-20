@@ -26,10 +26,10 @@ public class CompatibleSkillsMain {
 		String resultPath="";
 		
 		if(most_compatibles_mode==true){
-			resultPath="/home/formation/Desktop/results/"+dataset+"/rarest/most_compatibles";
+			resultPath="/home/formation/Desktop/results/"+dataset+"/skills/most_compatibles";
 		}
 		else{
-			resultPath="/home/formation/Desktop/results/"+dataset+"/rarest/min_diameter";
+			resultPath="/home/formation/Desktop/results/"+dataset+"/skills/min_diameter";
 		}
 		
 		//hard:1, easy:2, random:3
