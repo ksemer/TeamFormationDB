@@ -147,7 +147,21 @@ public class CompatibleSkillsAlgorithm {
 							min=0;
 						}
 					}*/
-					Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					
+					try{
+						min=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					}
+					catch(NullPointerException e){
+						try{
+							min=skillsCompatibilityMatrix.get(skill2).get(skill1);
+						}
+						catch(NullPointerException e1){
+							min=0;
+						}
+					}
+					
+					
+					/*Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
 					Integer tmp2=skillsCompatibilityMatrix.get(skill2).get(skill1);
 					if(tmp1!=null){
 						min=tmp1;
@@ -157,7 +171,7 @@ public class CompatibleSkillsAlgorithm {
 					}
 					else{
 						min=0;
-					}
+					}*/
 				}
 				else{
 					/*if(skillsCompatibilityMatrix.containsKey(skill1)){
@@ -178,7 +192,9 @@ public class CompatibleSkillsAlgorithm {
 							}
 						}
 					}*/
-					Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					
+					
+					/*Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
 					Integer tmp2=skillsCompatibilityMatrix.get(skill2).get(skill1);
 					if(tmp1!=null){
 						if(tmp1<min){
@@ -193,6 +209,24 @@ public class CompatibleSkillsAlgorithm {
 							lessSkill2=skill2;
 							min=tmp2;
 						}
+					}*/
+					
+					try{
+						if(skillsCompatibilityMatrix.get(skill1).get(skill2)<min){
+							lessSkill1=skill1;
+							lessSkill2=skill2;
+							min=skillsCompatibilityMatrix.get(skill1).get(skill2);
+						}
+					}
+					catch(NullPointerException e){
+						try{
+							if(skillsCompatibilityMatrix.get(skill2).get(skill1)<min){
+								lessSkill1=skill1;
+								lessSkill2=skill2;
+								min=skillsCompatibilityMatrix.get(skill2).get(skill1);
+							}
+						}
+						catch(NullPointerException e1){}
 					}
 				}
 			}
@@ -218,14 +252,24 @@ public class CompatibleSkillsAlgorithm {
 							score+=skillsCompatibilityMatrix.get(skill2).get(skill1);
 						}
 					}*/
-					Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					/*Integer tmp1=skillsCompatibilityMatrix.get(skill1).get(skill2);
 					Integer tmp2=skillsCompatibilityMatrix.get(skill2).get(skill1);
 					if(tmp1!=null){
 						score+=tmp1;
 					}
 					else if(tmp2!=null){
 						score+=tmp2;
-					}					
+					}*/
+
+				    try{
+						score+=skillsCompatibilityMatrix.get(skill1).get(skill2);
+					}
+					catch(NullPointerException e){
+						try{
+							score+=skillsCompatibilityMatrix.get(skill2).get(skill1);
+						}
+						catch(NullPointerException e1){}
+					}
 					
 				}
 			}
