@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import compatibilityMatrix.Counter;
 import compatibilityMatrix.Graph;
 import compatibilityMatrix.Node;
 
@@ -45,35 +44,99 @@ public class CompatibleSkills {
 
 		String compFile;
 
-		users_skills = loadSkills(dataset);
+		users_skills = loadSkills();
 
 		compFile = "more_positive_paths";
-		runCompatibilitySkills(dataset, compFile);
+		runCompatibilitySkills(compFile);
 
 		compFile = "no_negative_paths";
-		runCompatibilitySkills(dataset, compFile);
+		runCompatibilitySkills(compFile);
 
 		compFile = "one_positive_path";
-		runCompatibilitySkills(dataset, compFile);
+		runCompatibilitySkills(compFile);
 
 		compFile = "sbp_heuristic";
-		runCompatibilitySkills(dataset, compFile);
+		runCompatibilitySkills(compFile);
+
+		compFile = "percentage_positive_paths";
+		runCompatibilitySkillsPosPercent(compFile);
 
 		compFile = "sbp";
-		runCompatibilitySkills(dataset, compFile);
+		runCompatibilitySkills(compFile);
 
 		compFile = "no_negative_edge";
-		runCompatibilitySkillsNoNegEdge(dataset, compFile);
+		runCompatibilitySkillsNoNegEdge(compFile);
 	}
 
 	/**
-	 * Compute compatibility skills
+	 * Compute compatibility skills usign percentage of positive paths
 	 * 
 	 * @param dataset
 	 * @param compFile
 	 * @throws IOException
 	 */
-	private static void runCompatibilitySkills(String dataset, String compFile) throws IOException {
+	private static void runCompatibilitySkillsPosPercent(String compFile) throws IOException {
+		System.out.println("Computation for dataset: " + dataset + " and compfile: " + compFile + " has started...");
+
+		Map<String, Counter> comp = new HashMap<>();
+		BufferedReader br = new BufferedReader(new FileReader(pathCompatibility + dataset + "/" + compFile + ".txt"));
+		String line = null;
+		String[] token;
+		List<String> userA_skills, userB_skills;
+		Counter c1, c2 = null;
+		int countNull = 0, userA, userB;
+		double percentage;
+
+		while ((line = br.readLine()) != null) {
+			token = line.split("\\s+");
+
+			userA = Integer.parseInt(token[0]);
+			userB = Integer.parseInt(token[1]);
+			percentage = Double.parseDouble(token[2]);
+			userA_skills = users_skills.get(userA);
+			userB_skills = users_skills.get(userB);
+
+			if (userA_skills == null || userB_skills == null) {
+				countNull++;
+				continue;
+			}
+
+			for (String skillA : userA_skills) {
+				for (String skillB : userB_skills) {
+					if ((c1 = comp.get(skillA + "," + skillB)) == null
+							&& (c2 = comp.get(skillB + "," + skillA)) == null) {
+						c1 = new Counter(0.0);
+						comp.put(skillA + "," + skillB, c1);
+					}
+
+					if (c1 != null)
+						c1.increase(percentage);
+					else if (c2 != null)
+						c2.increase(percentage);
+				}
+			}
+		}
+		br.close();
+		System.out.println("Pairs with at least one user without any skill: " + countNull);
+
+		FileWriter w = new FileWriter("compatibilitySkills_" + compFile + "_" + dataset + ".txt");
+		String skills;
+
+		for (Entry<String, Counter> entry : comp.entrySet()) {
+			skills = entry.getKey().replace(",", "\t");
+			w.write(skills + "\t" + entry.getValue().getDoubleValue() + "\n");
+		}
+		w.close();
+		System.out.println("Finished....");
+	}
+
+	/**
+	 * Compute compatibility skills
+	 * 
+	 * @param compFile
+	 * @throws IOException
+	 */
+	private static void runCompatibilitySkills(String compFile) throws IOException {
 
 		System.out.println("Computation for dataset: " + dataset + " and compfile: " + compFile + " has started...");
 
@@ -121,7 +184,7 @@ public class CompatibleSkills {
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
 			skills = entry.getKey().replace(",", "\t");
-			w.write(skills + "\t" + entry.getValue().getValue() + "\n");
+			w.write(skills + "\t" + entry.getValue().getIntValue() + "\n");
 		}
 		w.close();
 		System.out.println("Finished....");
@@ -130,11 +193,10 @@ public class CompatibleSkills {
 	/**
 	 * Compute compatibility skills for no negative edge
 	 * 
-	 * @param dataset
 	 * @param compFile
 	 * @throws IOException
 	 */
-	private static void runCompatibilitySkillsNoNegEdge(String dataset, String compFile) throws IOException {
+	private static void runCompatibilitySkillsNoNegEdge(String compFile) throws IOException {
 
 		System.out.println("Computation for dataset: " + dataset + " and compfile: " + compFile + " has started...");
 
@@ -193,7 +255,7 @@ public class CompatibleSkills {
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
 			skills = entry.getKey().replace(",", "\t");
-			w.write(skills + "\t" + entry.getValue().getValue() + "\n");
+			w.write(skills + "\t" + entry.getValue().getIntValue() + "\n");
 		}
 		w.close();
 		System.out.println("Finished....");
@@ -202,12 +264,11 @@ public class CompatibleSkills {
 	/**
 	 * Load skills per user
 	 * 
-	 * @param dataset
 	 * @return
 	 * 
 	 * @throws IOException
 	 */
-	private static Map<Integer, List<String>> loadSkills(String dataset) throws IOException {
+	private static Map<Integer, List<String>> loadSkills() throws IOException {
 
 		String line = null, skill;
 		String[] token, users;
