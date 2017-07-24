@@ -30,7 +30,12 @@ public class Main {
 		outputPath="/home/formation/Desktop/compatibilityLists/"+dataset+"/one_positive_path.txt";
 		fe = new FileEditor(inputPath,outputPath);
 		fe.processOnePositive();
-		 
+		
+		//Percentage positive
+		outputPath="compatibilityLists/"+dataset+"/percentage_positive_paths.txt";
+		System.out.println(inputPath);
+		fe = new FileEditor(inputPath,outputPath);
+		fe.processPercentagePositive();
 		
 		//sbp
 		inputPath="/home/formation/Desktop/"+dataset+"_sbp";
