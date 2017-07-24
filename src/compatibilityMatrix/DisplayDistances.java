@@ -3,6 +3,7 @@ package compatibilityMatrix;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.HashMap;
@@ -24,12 +25,14 @@ public class DisplayDistances {
 
 		Map<Integer, Map<Integer, Integer>> sbp = new HashMap<>();
 		Map<Integer, Map<Integer, Integer>> spc = new HashMap<>();
+		DecimalFormat dF = new DecimalFormat("#.###");
 
 		read(spc, path_spc);
 		read(sbp, path_sbp);
 
 		int id1, id2, dist_sbp, dist_spc;
-		int count = 0, count_inf = 0, dist_sbp_A = 0, dist_spc_A = 0;
+		int count = 0, count_inf = 0;
+		double dist_sbp_A = 0, dist_spc_A = 0;
 
 		for (Entry<Integer, Map<Integer, Integer>> entry : spc.entrySet()) {
 			id1 = entry.getKey();
@@ -62,8 +65,8 @@ public class DisplayDistances {
 			}
 		}
 
-		System.out.println("Avg dist spc: " + dist_spc_A / count);
-		System.out.println("Avg dist sbp: " + dist_sbp_A / count);
+		System.out.println("Avg dist spc: " + dF.format(dist_spc_A / count));
+		System.out.println("Avg dist sbp: " + dF.format(dist_sbp_A / count));
 		System.out.println("#inf sbp: " + count_inf);
 		System.out.println("#pairs: " + count);
 		System.out.println("SBP size: " + sbp.size());
