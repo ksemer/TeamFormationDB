@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -78,6 +79,7 @@ public class CompatibleSkills {
 	private static void runCompatibilitySkillsPosPercent(String compFile) throws IOException {
 		System.out.println("Computation for dataset: " + dataset + " and compfile: " + compFile + " has started...");
 
+		DecimalFormat decimalFormat = new DecimalFormat("#.###");
 		Map<String, Counter> comp = new HashMap<>();
 		BufferedReader br = new BufferedReader(new FileReader(pathCompatibility + dataset + "/" + compFile + ".txt"));
 		String line = null;
@@ -124,7 +126,7 @@ public class CompatibleSkills {
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
 			skills = entry.getKey().replace(",", "\t");
-			w.write(skills + "\t" + entry.getValue().getDoubleValue() + "\n");
+			w.write(skills + "\t" + decimalFormat.format(entry.getValue().getDoubleValue()) + "\n");
 		}
 		w.close();
 		System.out.println("Finished....");
