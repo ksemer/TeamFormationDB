@@ -288,12 +288,13 @@ public class NaiveAlgorithm {
 				}
 				if(not_compatible==false){
 					if(!compatibles.get(current_team_member).containsKey(candidates.get(i))){
+						not_compatible=true;
 						notCompatible.add(candidates.get(i));
 					}
-					else{
-						compatibleList.add(candidates.get(i));
-					}
 				}
+			}
+			if(not_compatible==false){
+				compatibleList.add(candidates.get(i));
 			}
 		}
 		
