@@ -1,50 +1,50 @@
-House Martell,House Baratheon,brotherhood without banners,House Payne,House Clegane
-House Lannister of Casterly Rock,House Baelish,R'hllor,House Nymeros Martell,House Umber
-R'hllor,House Westerling,House Baratheon,House Martell,Unsullied
-House Baratheon of King's Landing,Peach,R'hllor,Brotherhood without banners,House Baratheon of Dragonstone
-House Lannister,House Bolton,House Dondarrion,Mance Rayder,No House
-Undying Ones,House Reed,House Uller,House of Black and White,House Tarth
-Mance Rayder,House Forrester,Brotherhood without banners,Peach,Free Folk
-House Baelish,House Baratheon,House Tyrell,House Trant,male
-Undying Ones,House Blackfyre,House Clegane,Unsullied,brotherhood without banners
-House Payne,Free Folk,House Frey,House Baratheon of Dragonstone,House Bolton
-Free Folk,Unsullied,House Westerling,House Mormont,House Greyjoy
-House Tyrell,House Lannister,House Mormont,House Forrester,R'hllor
-House of Black and White,House Tarth,House Clegane,House Tully,House Baelish
-House of Loraq,House Lannister of Casterly Rock,Thenn,House Dayne,R'hllor
-Night's Watch,House Tarth,House Dondarrion,Chataya's brothel,House Greyjoy
-House Tyrell,House Stark,Unsullied,brotherhood without banners,No House
-House Thorne,House Greyjoy,House Mormont,Dothraki people,Night's Watch
-House Tyrell,House Dondarrion,Chataya's brothel,No House,male
-House Martell,Thirteen,House Stark,House Uller,House Tyrell
-Wildings,House Clegane,Night's Watch,House Bolton,House Greyjoy
-Thenn,House Dondarrion,Undying Ones,House Trant,House Tyrell
-House Bolton,House Umber,House Baratheon of Dragonstone,House Nymeros Martell,Brotherhood without banners
-House of Loraq,No House,House Forrester,House Dondarrion,House Blackfyre
-House Uller,Free Folk,Peach,House Thorne,House Tarth
-Free Folk,House Mormont,House Forrester,House Baratheon,Undying Ones
-Undying Ones,Night's Watch,R'hllor,House Lannister of Casterly Rock,House Mormont
-House Lorch,R'hllor,House Nymeros Martell,House Dayne,House Reed
-House Arryn,House Frey,House Clegane,female,House Mormont
-Peach,House Stark,House Stokeworth,House Umber,Brotherhood without banners
-House Dondarrion,female,House of Black and White,Mance Rayder,Thenn
-House Baelish,House Greyjoy,House Thorne,House Targaryen,House Arryn
-House Mormont,Unsullied,House Baratheon,Thirteen,House Reed
-House Arryn,Peach,House Uller,House Blackfyre,House Baratheon
-Thenn,House Mormont,House Dayne,House Westerling,House Tully
-brotherhood without banners,House Dondarrion,House Lannister of Casterly Rock,House Bolton,House Tarth
-brotherhood without banners,Wildings,House Mormont,House of Black and White,House Stokeworth
-Thenn,House Dayne,brotherhood without banners,House Payne,House Bolton
-female,House Umber,House Frey,Brotherhood without banners,House Arryn
-Wildings,House Baratheon of King's Landing,House Lorch,House Targaryen,House Umber
-House Bolton,House Targaryen,House Dondarrion,Free Folk,House Arryn
-House Baelish,House Cassel,House Uller,Night's Watch,House Blackfyre
-House Baratheon of King's Landing,House Uller,House Bolton,Peach,Brotherhood without banners
-Thenn,House Mormont,House Tarth,Chataya's brothel,House Lannister of Casterly Rock
-House Reed,Peach,House Cassel,House Lannister,House Thorne
-House Martell,House Baratheon,R'hllor,House Lannister,House Baratheon of King's Landing
-Fre Folk,House Trant,House Westerling,Mance Rayder,House Baratheon of Dragonstone
-House Payne,House Stokeworth,House Baelish,brotherhood without banners,House Frey
-House Baelish,Peach,Free Folk,House Lorch,Thenn
-male,House Forrester,Free Folk,Brotherhood without banners,House Blackfyre
-House of Loraq,House Cassel,House Frey,House Lorch,House Tarth
+House of Loraq,House Stokeworth,Thirteen,Mance Rayder,Brotherhood without banners
+House Payne,Brotherhood without banners,Peach,Night's Watch,Dothraki people
+House of Loraq,House Baratheon of King's Landing,Night's Watch,House Uller,House Trant
+House Nymeros Martell,House Reed,No House,House Baelish,R'hllor
+House Trant,Dothraki people,House Clegane,House Cassel,House Baratheon of Dragonstone
+Wildings,House of Loraq,House Baelish,House Baratheon of King's Landing,Undying Ones
+House Dondarrion,House Blackfyre,House Cassel,House Frey,House Tully
+Night's Watch,House Umber,brotherhood without banners,Thirteen,House Frey
+Unsullied,House Dondarrion,Wildings,House Targaryen,brotherhood without banners
+House Stokeworth,House Payne,Peach,House Lorch,Undying Ones
+House Dayne,Dothraki people,House Arryn,Chataya's brothel,No House
+House Tarth,House Westerling,House Arryn,House Payne,House Forrester
+House Baratheon of Dragonstone,House Tarth,Fre Folk,House Payne,Peach
+House Thorne,Thenn,Undying Ones,House Stark,Wildings
+House Baratheon,Wildings,House Stark,Mance Rayder,Peach
+House of Black and White,House Dondarrion,House Lannister of Casterly Rock,Wildings,Chataya's brothel
+House Cassel,Free Folk,House of Black and White,House Thorne,House Clegane
+brotherhood without banners,Wildings,Unsullied,House Clegane,House Thorne
+House Dondarrion,House Blackfyre,Mance Rayder,House Arryn,House Mormont
+House Clegane,House Tarth,House Umber,House Dayne,Thirteen
+Chataya's brothel,House Lannister of Casterly Rock,Peach,Dothraki people,House Trant
+House Forrester,Thirteen,House Reed,House Bolton,House Baratheon
+House Forrester,House Dayne,House Umber,House Bolton,Thirteen
+House Trant,House Blackfyre,Peach,House Stark,House Lannister of Casterly Rock
+House Cassel,House Tyrell,House Nymeros Martell,Wildings,Chataya's brothel
+House Tyrell,House Nymeros Martell,House Thorne,House Targaryen,R'hllor
+House Baratheon of Dragonstone,Dothraki people,House Lorch,R'hllor,Chataya's brothel
+No House,House Lorch,Wildings,House Nymeros Martell,Unsullied
+House Blackfyre,House Clegane,House of Loraq,House Payne,House Greyjoy
+House of Black and White,House Nymeros Martell,House Martell,House Stokeworth,House Westerling
+House Tyrell,Brotherhood without banners,Unsullied,House Frey,House Clegane
+brotherhood without banners,House Payne,House Reed,Mance Rayder,House Dondarrion
+Undying Ones,House Tyrell,Brotherhood without banners,House Cassel,House Forrester
+House Baratheon of King's Landing,Free Folk,Night's Watch,Brotherhood without banners,House Forrester
+House Forrester,House Uller,House Umber,Undying Ones,House Stokeworth
+House Umber,House Frey,Mance Rayder,House Dondarrion,House Uller
+House of Black and White,Mance Rayder,House Tyrell,House Stokeworth,House Lorch
+House Thorne,House Uller,brotherhood without banners,R'hllor,House Lannister of Casterly Rock
+House Clegane,Thenn,House of Black and White,House Frey,brotherhood without banners
+House Mormont,Night's Watch,House Trant,House Martell,House Greyjoy
+House Thorne,House Baratheon of Dragonstone,House Payne,Dothraki people,House Forrester
+R'hllor,House Targaryen,House Umber,Thenn,House of Black and White
+House Stokeworth,brotherhood without banners,Fre Folk,Brotherhood without banners,House Frey
+House Baratheon,House Westerling,brotherhood without banners,House Forrester,Fre Folk
+House Westerling,Brotherhood without banners,Mance Rayder,House Martell,Thirteen
+House Mormont,Chataya's brothel,House Targaryen,Brotherhood without banners,House Umber
+House Nymeros Martell,House Forrester,House Baratheon of Dragonstone,No House,House Umber
+House Umber,Peach,House Targaryen,R'hllor,Undying Ones
+House Tarth,Thirteen,House Westerling,No House,House Baratheon of King's Landing
+House Baratheon,R'hllor,Thenn,House Baratheon of King's Landing,House Blackfyre
