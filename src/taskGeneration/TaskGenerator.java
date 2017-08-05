@@ -29,6 +29,85 @@ public class TaskGenerator {
 		return avg;
 	}
 	
+	public static ArrayList<String> produceHardFeasibleInitialTask(int numOfTasks, SkillInfo skillInfo,double avg,HashMap<String,Integer> skillDistribution,HashMap<String,HashMap<String,Integer>> matrix){
+		
+		ArrayList<String> initialTask = new ArrayList<String>();
+		
+		Random rndGen = new Random();
+		for(int i=0;i<numOfTasks;i++){
+			String temp;
+			boolean good=true;
+			do{
+				good=true;
+				temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
+				while(initialTask.contains(temp) || skillDistribution.get(temp)>=avg){
+					temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
+				}
+				for(int j=0;j<initialTask.size();j++){
+					if(matrix.containsKey(initialTask.get(j))){
+						if(matrix.get(initialTask.get(j)).containsKey(temp)){
+							if(matrix.get(initialTask.get(j)).get(temp)==0){
+								good=false;
+							}
+						}
+					}
+					if(matrix.containsKey(temp)){
+						if(matrix.get(temp).containsKey(initialTask.get(j))){
+							if(matrix.get(temp).get(initialTask.get(j))==0){
+								good=false;
+							}
+						}
+					}
+				}
+			}while(good==false);
+			initialTask.add(temp);
+		}
+		
+		return initialTask;
+	}
+	
+	public static ArrayList<String> produceHardFeasibleAdditionalTask(ArrayList<String> initial,int numOfTasks, SkillInfo skillInfo,double avg,HashMap<String,Integer> skillDistribution,HashMap<String,HashMap<String,Integer>> matrix){
+		ArrayList<String> additionalTask = new ArrayList<String>();
+		
+		Random rndGen = new Random();
+		
+		for(int j=0;j<initial.size();j++){
+			additionalTask.add(initial.get(j));
+		}
+		
+		for(int i=0;i<numOfTasks;i++){
+			String temp;
+			boolean good=true;
+			do{
+				good=true;
+				temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
+				while(additionalTask.contains(temp) || skillDistribution.get(temp)>=avg){
+					temp = skillInfo.getSkills().get(rndGen.nextInt(skillInfo.getSkills().size()));
+				}
+				for(int j=0;j<additionalTask.size();j++){
+					if(matrix.containsKey(additionalTask.get(j))){
+						if(matrix.get(additionalTask.get(j)).containsKey(temp)){
+							if(matrix.get(additionalTask.get(j)).get(temp)==0){
+								good=false;
+							}
+						}
+					}
+					if(matrix.containsKey(temp)){
+						if(matrix.get(temp).containsKey(additionalTask.get(j))){
+							if(matrix.get(temp).get(additionalTask.get(j))==0){
+								good=false;
+							}
+						}
+					}
+				}
+			}while(good==false);
+			additionalTask.add(temp);
+		}
+		
+		return additionalTask;
+	}
+	
+	
 	public static ArrayList<String> produceHardInitialTask(int numOfTasks, SkillInfo skillInfo,double avg,HashMap<String,HashMap<String,Integer>> matrix){
 		ArrayList<String> initialTask = new ArrayList<String>();
 		
@@ -45,14 +124,14 @@ public class TaskGenerator {
 				for(int j=0;j<initialTask.size();j++){
 					if(matrix.containsKey(initialTask.get(j))){
 						if(matrix.get(initialTask.get(j)).containsKey(temp)){
-							if(matrix.get(initialTask.get(j)).get(temp)>=avg){
+							if(matrix.get(initialTask.get(j)).get(temp)>=avg || matrix.get(initialTask.get(j)).get(temp)==0){
 								good=false;
 							}
 						}
 					}
 					if(matrix.containsKey(temp)){
 						if(matrix.get(temp).containsKey(initialTask.get(j))){
-							if(matrix.get(temp).get(initialTask.get(j))>=avg){
+							if(matrix.get(temp).get(initialTask.get(j))>=avg || matrix.get(temp).get(initialTask.get(j))==0){
 								good=false;
 							}
 						}
@@ -86,14 +165,14 @@ public class TaskGenerator {
 				for(int j=0;j<additionalTask.size();j++){
 					if(matrix.containsKey(additionalTask.get(j))){
 						if(matrix.get(additionalTask.get(j)).containsKey(temp)){
-							if(matrix.get(additionalTask.get(j)).get(temp)>=avg){
+							if(matrix.get(additionalTask.get(j)).get(temp)>=avg || matrix.get(additionalTask.get(j)).get(temp)==0){
 								good=false;
 							}
 						}
 					}
 					if(matrix.containsKey(temp)){
 						if(matrix.get(temp).containsKey(additionalTask.get(j))){
-							if(matrix.get(temp).get(additionalTask.get(j))>=avg){
+							if(matrix.get(temp).get(additionalTask.get(j))>=avg || matrix.get(temp).get(additionalTask.get(j))==0){
 								good=false;
 							}
 						}
