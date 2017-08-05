@@ -98,7 +98,134 @@ public class NaiveAlgorithm {
 	}
 
 	public void start(){
-		algorithm();
+		naiveAlgorithm();
+		//algorithm();
+	}
+	
+	public void naiveAlgorithm(){
+		//System.out.println(skillInfo.getSkillUsers().get(rarestSkill).size());
+		Random rndGen = new Random();
+		String firstSkill= initialTask.get(rndGen.nextInt(initialTask.size()));
+		int numOfUsers=skillInfo.getSkillUsers().get(firstSkill).size();
+		int numOfIterations=0;
+		if(numOfUsers<5){
+			numOfIterations=numOfUsers;
+		}
+		else{
+			numOfIterations=5;
+		}
+		ArrayList<Integer> visitedNumbers = new ArrayList<Integer>();
+	
+		for(int i=0;i<numOfIterations;i++){
+			int firstUser;
+			int randomNum;
+			do{
+				rndGen = new Random();
+				randomNum=rndGen.nextInt(numOfIterations);
+			}while(visitedNumbers.contains(randomNum));
+			visitedNumbers.add(randomNum);
+			firstUser=skillInfo.getSkillUsers().get(firstSkill).get(randomNum);
+		//for(int i=0;i<skillInfo.getSkillUsers().get(firstSkill).size();i++){
+			//int firstUser = skillInfo.getSkillUsers().get(firstSkill).get(i);
+			
+			//System.out.println("Starting for rare user: "+firstUser);
+			//create star team
+			StarTeam star = new StarTeam();
+			star.addMember(firstUser);
+			
+			//cover firstUser's skill
+			ArrayList<String> taskSkills = getUserTaskSkills(firstUser);
+			for(int k=0;k<taskSkills.size();k++){
+				if(!star.getCoveredSkills().contains(taskSkills.get(k))){
+					star.addSkill(taskSkills.get(k));
+				}	
+			}
+			
+			for(int j=0;j<initialTask.size();j++){
+				
+				String current_skill=initialTask.get(j);
+				
+				if(!star.getCoveredSkills().contains(current_skill)){
+					ArrayList<Integer> users = new ArrayList<Integer>();
+					for(int m=0;m<skillInfo.getSkillUsers().get(current_skill).size();m++){
+						users.add(skillInfo.getSkillUsers().get(current_skill).get(m));
+					}
+					
+					//choose best candidate
+					int user;
+					if(compatibility_mode==true){
+						user=getRandomCompatibleCandidate(users,star);
+						
+					}
+					else{
+						user=getRandomNoNegativeCandidate(users,star);	
+					}
+					
+					if(user!=-1){
+						//add to team
+						star.addMember(user);
+						
+						//add his skills in team
+						ArrayList<String> skillsCovered = getUserTaskSkills(user);
+						for(int k=0;k<skillsCovered.size();k++){
+							if(!star.getCoveredSkills().contains(skillsCovered.get(k))){
+								star.addSkill(skillsCovered.get(k));
+							}	
+						}
+					}
+					else{
+						teams.put(firstUser, null);
+						break;
+					}
+				}
+			}
+			if(!teams.containsKey(firstUser)){
+				teams.put(firstUser, star);
+			}
+		}
+		ArrayList<Integer> toRemove = new ArrayList<Integer>();
+		for(Integer rareNode : teams.keySet()){
+			if(teams.get(rareNode)==null){
+				toRemove.add(rareNode);
+			}
+		}
+		for(int i=0;i<toRemove.size();i++){
+			teams.remove(toRemove.get(i));
+		}
+		
+		result+=teams.keySet().size()+";";
+		
+		if(teams.keySet().size()==1){
+			//System.out.println("Found 1 team:");
+			for(Integer key : teams.keySet()){
+				//System.out.println("Starnode's "+key+" team: ");
+				for(int i=0;i<teams.get(key).getTeam().size()-1;i++){
+					result+=teams.get(key).getTeam().get(i)+",";
+					//System.out.print(teams.get(key).getTeam().get(i)+" , ");
+				}
+				result+=teams.get(key).getTeam().get(teams.get(key).getTeam().size()-1)+";";
+				//System.out.println(teams.get(key).getTeam().get(teams.get(key).getTeam().size()-1));
+				
+				getRandomTeam();
+				result+=teams.get(key).getTeam().size()+";"+best_diameter;
+			}
+		}
+		else if(teams.keySet().size()>1){
+			
+			StarTeam best=getRandomTeam();
+			//System.out.println("Best team:");
+			for(int i=0;i<best.getTeam().size()-1;i++){
+				result+=best.getTeam().get(i)+",";
+				//System.out.print(best.getTeam().get(i)+"   ,   ");
+			}
+			result+=best.getTeam().get(best.getTeam().size()-1)+";";
+			//System.out.println(best.getTeam().get(best.getTeam().size()-1));
+			result+=best.getTeam().size()+";"+best_diameter;
+		}
+		else{
+			result+="0;-;-;-";
+			//System.out.println("No team found!");
+		}
 	}
 	
 	public void algorithm(){
