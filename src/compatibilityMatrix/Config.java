@@ -33,7 +33,7 @@ public class Config {
 			// ============================================================
 			DATA_PATH = Settings.getProperty("DataPath", "");
 			OUTPUT_PATH = Settings.getProperty("OutputPath", "");
-			RUN_HEURISTIC = Boolean.parseBoolean(Settings.getProperty("RunHeuristic", "false"));
+			RUN_HEURISTIC = Boolean.parseBoolean(Settings.getProperty("RunHeuristicSBP", "false"));
 			MAX_PATH_LENGTH = Integer.parseInt(Settings.getProperty("MaxPathLength", "-1"));
 		} catch (Exception e) {
 			_log.log(Level.SEVERE, "Failed to Load " + SETTINGS_FILE + " File.", e);

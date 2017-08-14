@@ -8,8 +8,10 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.Map.Entry;
 
 import compatibilityMatrix.Graph;
@@ -24,13 +26,19 @@ import compatibilityMatrix.Node;
 public class CompatibleSkills {
 
 	// dataset
-	private static String dataset = "";
+	private static String dataset = "epinions";
+
+	// output folder
+	private static String outputPath = "compatibilitySkills/" + dataset + "/";
 
 	// main dir of compatibility lists
 	private static String pathCompatibility = "compatibilityLists/";
 
 	// dataset's network folder
 	private static String datasetsFolder = "data/";
+
+	// giant component path
+	private static String giantCompPath = datasetsFolder + dataset + "/bcc_users.txt";
 
 	// user -> list of skills
 	private static Map<Integer, List<String>> users_skills;
@@ -88,12 +96,17 @@ public class CompatibleSkills {
 		Counter c1, c2 = null;
 		int countNull = 0, userA, userB;
 		double percentage;
+		Set<Integer> users = getUsersInGiantComponent();
 
 		while ((line = br.readLine()) != null) {
 			token = line.split("\\s+");
 
 			userA = Integer.parseInt(token[0]);
 			userB = Integer.parseInt(token[1]);
+
+			if (!users.contains(userA) || !users.contains(userB))
+				continue;
+
 			percentage = Double.parseDouble(token[2]);
 			userA_skills = users_skills.get(userA);
 			userB_skills = users_skills.get(userB);
@@ -121,7 +134,7 @@ public class CompatibleSkills {
 		br.close();
 		System.out.println("Pairs with at least one user without any skill: " + countNull);
 
-		FileWriter w = new FileWriter("compatibilitySkills_" + compFile + "_" + dataset + ".txt");
+		FileWriter w = new FileWriter(outputPath + compFile + ".txt");
 		String skills;
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
@@ -149,12 +162,17 @@ public class CompatibleSkills {
 		List<String> userA_skills, userB_skills;
 		Counter c1, c2 = null;
 		int countNull = 0, userA, userB;
+		Set<Integer> users = getUsersInGiantComponent();
 
 		while ((line = br.readLine()) != null) {
 			token = line.split("\\s+");
 
 			userA = Integer.parseInt(token[0]);
 			userB = Integer.parseInt(token[1]);
+
+			if (!users.contains(userA) || !users.contains(userB))
+				continue;
+
 			userA_skills = users_skills.get(userA);
 			userB_skills = users_skills.get(userB);
 
@@ -181,7 +199,7 @@ public class CompatibleSkills {
 		br.close();
 		System.out.println("Pairs with at least one user without any skill: " + countNull);
 
-		FileWriter w = new FileWriter("compatibilitySkills_" + compFile + "_" + dataset + ".txt");
+		FileWriter w = new FileWriter(outputPath + compFile + ".txt");
 		String skills;
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
@@ -208,6 +226,7 @@ public class CompatibleSkills {
 		int countNull = 0, userA, userB;
 		Graph g = new Graph();
 		g.load(datasetsFolder + dataset + "/network.txt");
+		Set<Integer> users = getUsersInGiantComponent();
 
 		List<Integer> nodes = new ArrayList<Integer>(g.getNodesAsMap().keySet());
 		Collections.sort(nodes);
@@ -219,8 +238,14 @@ public class CompatibleSkills {
 			userA = nodes.get(i);
 			neighbors = g.getNode(userA).getAdjacencyAsMap();
 
+			if (!users.contains(userA))
+				continue;
+
 			for (int j = i + 1; j < nodes.size(); j++) {
 				userB = nodes.get(j);
+
+				if (!users.contains(userB))
+					continue;
 
 				if ((sign = neighbors.get(g.getNode(userB))) != null && sign == -1)
 					continue;
@@ -252,7 +277,7 @@ public class CompatibleSkills {
 
 		System.out.println("Pairs with at least one user without any skill: " + countNull);
 
-		FileWriter w = new FileWriter("compatibilitySkills_" + compFile + "_" + dataset + ".txt");
+		FileWriter w = new FileWriter(outputPath + compFile + ".txt");
 		String skills;
 
 		for (Entry<String, Counter> entry : comp.entrySet()) {
@@ -306,5 +331,27 @@ public class CompatibleSkills {
 
 		System.out.println("Skills loaded....");
 		return users_skills;
+	}
+
+	/**
+	 * Return all users that are contained in giant component
+	 * 
+	 * @return
+	 * @throws IOException
+	 */
+	private static Set<Integer> getUsersInGiantComponent() throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader(giantCompPath));
+		String line = null;
+		String[] token = null;
+		Set<Integer> users = new HashSet<>();
+
+		while ((line = br.readLine()) != null) {
+			token = line.split("\t");
+
+			users.add(Integer.parseInt(token[0]));
+		}
+		br.close();
+
+		return users;
 	}
 }

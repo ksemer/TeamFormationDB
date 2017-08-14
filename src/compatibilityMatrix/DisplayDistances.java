@@ -16,10 +16,10 @@ import java.util.HashMap;
  */
 public class DisplayDistances {
 
-	private static String path_sbp = "";
-	private static String path_spc = "";
+	private static String path_sbp = "epinions_sbp_heuristic";
+	private static String path_spc = "epinions_spc";
 	private static final int INF = 1000000000;
-	private static final boolean INTERSECTION = false;
+	private static final boolean INTERSECTION = true;
 
 	public static void main(String[] args) throws IOException {
 
