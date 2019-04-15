@@ -1,0 +1,523 @@
+Video Game Consoles	581
+Test Prep Courses	45
+Tablets	22
+Other Power Accessories	9
+Itch Relief	2
+Scanner Accessories	1
+Jewelry	34
+As Seen on TV	2
+Infant Bedding & Linens	3
+Electronics Accessories	105
+Servers	28
+Mice and Trackballs	72
+Bottles	2
+Styling Aids	5
+Credit Reports	72
+Game Boy Color Games	201
+Health Aids	1443
+Coffee Grinders	142
+Bread Machines	183
+Printer Accessories	25
+Network Accessories	18
+Cellular Accessories	116
+Clothing Accessories	6
+Toddler Beds	103
+Amplifiers	1
+Other Memory	1
+Wireless Adapters	98
+Beds	2
+Sports Bras	42
+Headphones	393
+Changing Tables	1
+Bed Rails	1
+PlayStation 3 Games	48
+Toasters	300
+Car Equalizers	4
+Boomboxes	62
+Boat Motors	1
+Wound Care	9
+Gourmet Gifts	17
+Air Purifiers	144
+Shredders	204
+Online Stores & Services	9995
+USB and Firewire Hubs	33
+Feeding Accessories	6
+Xbox 360 Games	110
+Small Appliance Accessories	20
+Routers and Bridges	2
+Credit Cards	606
+Reel Mowers	2
+Keyboards and Mice	760
+Blenders	318
+Above-Ground Pools	1
+Bakeware	234
+Safety & Emergency Resources	1
+Dehumidifiers	61
+Marine Electronics	62
+Food	8
+Floppy Drives	6
+Video Game Accessories	335
+Strollers	701
+Popcorn Makers	68
+ISP	1895
+Fertilizers	2
+Drive Cases	26
+Archived Reviews	4565
+Photographic Film	25
+Motorcycles	277
+Flash Memory	231
+IMAX	91
+Input Adapters	81
+Flat Panel Televisions	326
+Camera Lenses	93
+Canoes & Kayaks	2
+Miscellaneous	1
+Microwave Ovens	331
+Scanners	562
+Baby Foods	6
+Flashlights	139
+Transceivers	2
+Over-the-Counter Medicine	43
+Diapers	2
+Sports Apparel and Memorabilia	10
+Hiking Poles	1
+Storage & Sheds	3
+Graphics Cards	262
+Network Terminals	1
+Skin Basics	15
+Networking Hubs and Switches	43
+Classic Console Games	109
+Paint	49
+Irons	163
+Mac Laptops	129
+Flashes	23
+Theme Parks	741
+Car Audio and Video Accessories	9
+Speakers and Subwoofers	295
+Sound Cards	111
+Potty Chairs	2
+Breweries	77
+MP3 Accessories	215
+Enterprise Applications	10
+Exercise Equipment	6
+Satellite TV	138
+2 Way Radios	138
+Hubs and Switches	3
+Lens Converters	12
+Boats	20
+PlayStation 1 Games	1075
+Diving Operations	17
+Waffle Makers	96
+Flowers	11
+Investor Organizations	7
+Tax Preparation	2
+Fryers	2
+Mixers	209
+Diaper Accessories	10
+Cosmetics	992
+Shipping	339
+Amplifiers and Preamps	20
+Diving Destinations	27
+Small Appliances	2
+Cutlery	265
+Web TV	24
+Garden	1213
+Food and Drink	660
+Collection Agencies	2
+Nutrition	707
+IP Phones	23
+TV Receivers and DVRs	126
+Mobile Audio/Video	2
+Shampoo	10
+Ankle Braces	1
+Football	1
+Restaurants	1560
+DVD Players	1044
+Microphones	26
+Office Accessories	3
+Rangefinders	2
+Credit Unions	196
+Removable Media	68
+High Chairs	1
+Health Club Chains	160
+Earplugs	16
+Car Racks	37
+Firewalls	6
+Hydration & Water Bottles	3
+Online Fax	19
+Merchant Accounts	4
+Zoos & Aquariums	532
+Diving Schools	11
+Wiring & Cable Management	21
+Ovens	45
+Aquariums	1
+Microscopes	2
+Hard Drives	207
+Personal Cassette Players	8
+Boating and Sailing Accessories	57
+Bedding & Linens	59
+Memory Adapters	65
+Sunglasses	49
+Diets	248
+Theater	238
+Baseball	3
+Bath & Hygiene Accessories	4
+Swings	2
+Moving Companies	270
+Other Network Devices	12
+Nintendo 64 Games	668
+Tires	248
+Parks	737
+Power Mowers & Tools	8
+Irrigation	4
+Turntables	20
+Gifts- Novelties- Collectibles & Gadgets	73
+Baby Monitors	2
+Dreamcast Games	428
+Computer Games	1914
+Payroll	8
+Overhead Projectors	4
+Acne & Blemish Control	1
+Mattresses	316
+Camcorder Accessories	42
+Teethers	1
+Books	4527
+THIS IS AN INVALID URL	3
+PDAs	678
+Insect Repellent	3
+Office Supplies	421
+PSP Games	32
+Receivers	219
+Security Systems and Surveillance	51
+Bathtubs & Bath Seats	1
+Kitchen Ranges	247
+Fishing Gear & Accessories	2
+Dryers	243
+Equalizers	1
+Sunscreen	3
+Insurance	435
+Binoculars	79
+N-Gage Games	9
+Electric Skillets and Woks	48
+Other Networking	6
+Drapes & Curtains	4
+Office Telephony	2
+Tape Decks	18
+Conditioner	13
+Destinations	2969
+Air Conditioners	134
+Electric Fans	122
+Computer Supplies	42
+Wines	254
+Conferencing Stations	3
+Nintendo Wii Games	111
+Leashes	1
+GameCube Games	187
+Water Heaters	13
+Diaper Bags	1
+Network Storage	19
+Used Cars	4276
+Wineries	64
+Spirits and Beers	1050
+Volleyball	1
+Cellular Phone Service	691
+Lip Color	9
+Taxes	142
+Multimedia Projector Replacement Lamps 	4
+Laptop Accessories	55
+Camping Stoves	1
+In Theaters	3
+Processors	146
+Web Hosts	125
+Mini Disc Players	3
+Surge Suppressors	41
+Ice Cream Makers	70
+Luggage	405
+ASPs	31
+35mm SLR Cameras	4
+PC Laptops	876
+TV Ads	162
+Kids' TV Shows	1514
+Multimedia Projectors	67
+Video Headsets	6
+Tour Operators	125
+Golf Courses	145
+Tennis	2
+Web Cameras	180
+Litter	1
+Scales & Body Fat Monitors	3
+VCRs	201
+Crock Pots and Slow Cookers	179
+Headphone Amplifiers	2
+Printers	1633
+Kitchen Cooktops	48
+Audio Shelf Systems	181
+Corporate Credit Cards	1
+Beers	19
+Golf Bags & Accessories	1
+GPS Car Navigation Systems	3
+Electric Kettles	39
+Humidifiers	167
+Answering Machines	51
+Baby Formula	3
+Outdoor Electronics	1
+Financial Web Sites	191
+Xbox Games	240
+Scooters	32
+Tools and Accessories	756
+Electronic Translators and Dictionaries	13
+Shoes	225
+PC Gaming Devices	202
+Maternity Aids	3
+Flea & Pest Control	4
+Pianos	1
+Optics Accessories	9
+Shavers	508
+Wine Accessories	58
+Monitor Accessories	29
+Transcribers	2
+Old Restaurants	62
+Calculators	188
+Computer Accessories	38
+MP3 and Digital Media Players	956
+Cordless Phones	1
+Vacuum Cleaner Accessories	63
+Business Schools	15
+Diaper Pails	2
+Cellular Phones	1648
+Bridges	3
+Single Use Cameras	1
+Monitors	551
+Newspapers	298
+Telescopes	25
+Running	3
+Golf Balls	7
+Glucose & Cholesterol Monitors	1
+Summer Camps	87
+Collars and Leads	1
+Clocks	1
+Ski Resorts	416
+Personal Care	2310
+Musical Instruments	370
+Face Makeup	9
+TV Channels	1393
+ATVs	48
+Slide Projectors	5
+Pacifiers	1
+Banks	696
+Networking Repeaters	4
+Shop Tools	24
+Zip and Other Drives	114
+Tablet PCs	35
+Toaster Ovens	200
+Motorsports Accessories	43
+Soccer	2
+KVM Switches	19
+Network Cables	8
+Baby Care	1627
+Safety & Emergency Security Products	10
+Grills and Smokers	289
+Thermometers	1
+Treats	8
+Music	4308
+Washing Machines	595
+Guitars & Basses	5
+Network Adapters	54
+Golf Clubs	8
+Magazine Subscriptions	2142
+Sport and Outdoor	1952
+Personal CD Players	363
+Projection Televisions	204
+Motherboards	164
+Remote Controls	127
+Spotting Scopes	5
+Frequent Flyer Programs	99
+Cooking Tools	322
+Kitchen Hoods	21
+Home Furnishings	614
+Enterprise Computing Accessories	1
+Movies in Theaters	957
+Corded Phones	1
+Phones	854
+Video Games	283
+Camcorders	480
+Cribs and Bassinets	122
+Car Video Players	18
+Online Bill Payment	242
+Cookware	697
+Disposals	9
+Clothing	71
+RVs	21
+In Dash Receivers	236
+Other Small Appliances	4
+Kitchen	30
+Outdoor Apparel	112
+Enterprise Storage	7
+Coffee and Espresso Makers	720
+Member Center	6
+Radar Detectors	97
+Serial Adapters	14
+Garden Tools	3
+Recruiting	1
+Random Access Memory (RAM)	27
+Cables and Connectors	44
+Tripods	29
+Basketball	3
+Financial Applications	4
+Mac Desktops	186
+Diet Foods	10
+Print Servers	16
+Toys	2813
+Typewriters	12
+Food Processors	206
+Car Rental	301
+Cigars and Tobacco Accessories	80
+Shop Tool Accessories	1
+GPS Accessories	27
+Digital Cameras	1830
+Car Amplifiers	70
+Digital Camera Accessories	217
+PlayStation 2 Games	612
+CB Radios	5
+Indoor Grills and Sandwich Makers	407
+Telephone Accessories	14
+Photograph Storage & Display	13
+Portable Televisions	37
+DS Games	92
+Sewing Machines	86
+Barcode Scanners	6
+Debt Consolidation	11
+Anti-Aging/Treatments	9
+Freezers	55
+Cartridges and Toners	71
+Tape Drives	10
+Furniture	59
+Remote Access Servers	4
+Mortgage	128
+Colleges and Universities	1235
+Cleaning Appliances	1
+Locks & Guards	4
+Modems	140
+Photography Accessories	73
+Chain Restaurants	2356
+Fishing Lines	2
+Graphic Tablets	18
+Computer Speakers	334
+Crib Mattresses	1
+Venture Capital	5
+Cars	569
+Business Travel	1
+Local Services	104
+Hotels and Resorts	2060
+Fishing Advice	33
+Bouncers	2
+Computer Bags	2
+Headsets	149
+Classic Consoles	120
+Expansion Modules	3
+Pagers	77
+Keyboards & MIDI	2
+Deep Fryers	99
+Coffee and Tea Makers	89
+Bike Parts & Accessories	8
+Server Software	9
+Backpacks	2
+Grill and Smoker Accessories	75
+Bikes	1
+Dishwashers	373
+Coffee	3
+Weed Control	4
+Personal  Audio Mini Disc Players	117
+Airlines	1298
+Safety & Emergency Supplies	2
+Hockey & In-line Skating	3
+Voice Recorders and Transcribers	63
+Patio Furniture	33
+Satellite Radio Receivers	56
+Cable TV Providers	306
+Blood Pressure Monitors	1
+Dental Care	3
+Stadiums and Arenas	672
+Vitamins	3
+Glue & Adhesives	29
+Pets	1361
+Cruises	444
+Competitions	23
+Other Storage	5
+Video Editors	1
+Home Theater Systems	176
+Other Components	25
+Standard Televisions	567
+Pest Control	6
+Storage Controllers	10
+Specialty Kitchen Appliances	517
+Refrigerators	426
+Wireless Access Points	50
+PDA Accessories	93
+CD Players	138
+Car Care	121
+Projection Screens	3
+Sensitive Skin	1
+Pasta Makers	18
+Baby Carriers	252
+Walking Shoes	5
+Accounting Software	5
+Travel Precautions	3
+Car Seats	641
+Fragrance	430
+Security Systems	19
+Appliance Accessories	17
+Liquor & Spirits	5
+Videos & DVDs	6309
+Cradles	15
+Brokers	262
+Eye Makeup	10
+Juicers	117
+Travel Accessories & Handbags	4
+Video Conferencing	2
+Car CD Changers	70
+Game Boy Advance Games	162
+PC Cases	52
+Personal Radios	77
+DVD Drives	26
+TV Accessories	33
+Vacuums	1425
+Nail Products	1
+Software	1359
+Employee Benefits	12
+New Cars	42
+PC Desktops	967
+GPS Devices	282
+Audio and Video Media	13
+UPS Systems Devices	44
+Barebone Systems	5
+Copiers	36
+Watches	192
+Clock Radios	142
+Film Cameras	577
+Tableware	160
+Databases	13
+Other Peripherals	11
+Styling Tools	3
+Car Speakers and Subwoofers	163
+Blank Media Accessories	17
+Safety & Emergency Electronics	20
+Containment	1
+Radio Scanners	1
+Bath & Body	35
+Server Racks	2
+Routers	179
+Night Vision	17
+Sports Nutrition	7
+Play Pens	2
+Fax Machines	88
+Internet Banks	200
+CD-ROM Drives	22
+Heaters	202
+Law Schools	30
+Tents	2
+Office Chairs	4
+Printing Services	12
+CD and DVD Burners	339
+Hot & Cold Therapy	2
+Rice Cookers and Steamers	146
